@@ -1,0 +1,28 @@
+# Generated audio — regenerate with run_edge_tts.sh
+*.mp3
+*.wav
+*.ogg
+
+# Voice model artifacts
+*.pth
+
+# Self-contained HTML deliverables — regenerate with inject_audio.py
+*— Audio.html
+*-- Audio.html
+
+# Logs
+*.log
+edge_tts*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Node (if any tooling added)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
