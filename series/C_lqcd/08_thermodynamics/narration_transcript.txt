@@ -1,0 +1,65 @@
+# LQCD-V08 Narration — Thermodynamics and the Higgs-Yukawa Model
+
+<!-- Plain prose only. No SSML, no markdown, no stage directions.
+     Section headers MUST be exactly:  ## Scene NN
+     Source material: series_C_lqcd/lqcd_v08_slides.md -->
+
+## Scene 01
+TODO
+
+## Scene 02
+TODO
+
+## Scene 03
+TODO
+
+## Scene 04
+TODO
+
+## Scene 05
+TODO
+
+## Scene 06
+TODO
+
+## Scene 07
+TODO
+
+## Scene 08
+TODO
+
+## Scene 09
+TODO
+
+## Scene 10
+TODO
+
+## Scene 11
+TODO
+
+## Scene 12
+TODO
+
+## Scene 13
+TODO
+
+## Scene 14
+TODO
+
+## Scene 15
+TODO
+
+## Scene 16
+TODO
+
+## Scene 17
+TODO
+
+## Scene 18
+TODO
+
+## Scene 19
+TODO
+
+## Scene 20
+TODO
