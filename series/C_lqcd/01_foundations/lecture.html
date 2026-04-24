@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>LQCD 01 · Lattice Foundations</title>
+<link rel="stylesheet" href="colors_and_type.css" />
+<style>
+  :root {
+    --accent: #b589e8;
+  }
+  html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+  .video-root {
+    position: fixed; inset: 0;
+    background: var(--canvas-bg);
+  }
+  /* Stage children stacking */
+  [data-scene] { color: var(--canvas-text); }
+</style>
+<script type="application/json" id="speaker-notes">
+[]
+</script>
+</head>
+<body>
+<div class="video-root" data-screen-label-root data-screen-label="t=0:00"></div>
+
+<div id="app"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="animations.jsx"></script>
+<script type="text/babel" src="lqcd-primitives.jsx"></script>
+<script type="text/babel" src="lqcd-scenes-a.jsx"></script>
+<script type="text/babel" src="lqcd-scenes-b.jsx"></script>
+<script type="text/babel" src="lqcd-scenes-c.jsx"></script>
+<script type="text/babel" src="lqcd-scenes-d.jsx"></script>
+
+<script type="text/babel">
+function App() {
+  const SCENE_COMPS = [
+    Scene01, Scene02, Scene03, Scene04, Scene05,
+    Scene06, Scene07, Scene08, Scene09, Scene10,
+    Scene11, Scene12, Scene13, Scene14, Scene15,
+    Scene16, Scene17, Scene18, Scene19, Scene20,
+  ];
+
+  return (
+    <Stage width={1920} height={1080} duration={TOTAL_DUR} fps={30}>
+      <div style={{
+        position: 'absolute', inset: 0, background: 'var(--canvas-bg)',
+        fontFamily: 'var(--font-ui)', color: 'var(--canvas-text)',
+      }}>
+        {/* subtle field background behind everything */}
+        <FieldBackground accent={'#b589e8'} amplitude={0.25} speed={0.04} />
+
+        <TitleCard />
+
+        {/* Sigil + counter on every scene */}
+        <Sprite start={TITLE_END} end={TOTAL_DUR}>
+          {() => (
+            <>
+              <SeriesSigil />
+              <SceneCounter scenes={SCENE_BOUNDS} />
+            </>
+          )}
+        </Sprite>
+
+        {SCENE_BOUNDS.map((s, i) => {
+          const C = SCENE_COMPS[i];
+          return <C key={s.n} start={s.start} end={s.end} />;
+        })}
+
+        <TimecodeTagger />
+      </div>
+    </Stage>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('app'));
+root.render(<App />);
+</script>
+
+</body>
+</html>

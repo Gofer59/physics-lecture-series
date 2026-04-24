@@ -147,30 +147,39 @@ function AudioPlayer() {
             print(f"  inlined {fname}")
 
     # 2. AUDIO_DATA in a plain <script> before the final babel app block
+    import re
     babel_anchor = '<script type="text/babel" data-presets="react">'
     if babel_anchor not in html:
-        # fallback: last babel block
-        babel_anchor = html.rfind('<script type="text/babel">')
-        sys.exit("Could not find final babel app script anchor")
+        matches = list(re.finditer(r'<script type="text/babel"(?:\s[^>]*)?>(?!\s*\n[^<]*<script)', html))
+        if not matches:
+            sys.exit("Could not find any <script type=\"text/babel\"> block")
+        babel_anchor = matches[-1].group(0)
     html = html.replace(
         babel_anchor,
         f"\n<script>\n{audio_data_js}\n</script>\n" + babel_anchor,
         1,
     )
 
-    # 3. AudioPlayer definition + <AudioPlayer /> inside Stage
-    root_anchor = "ReactDOM.createRoot(document.getElementById('root')).render(<App />);"
-    if root_anchor not in html:
-        sys.exit("Could not find ReactDOM.createRoot anchor")
-    html = html.replace(root_anchor, audio_player_js + "\n" + root_anchor)
+    # 3. AudioPlayer definition inserted before ReactDOM.createRoot call
+    root_match = re.search(r'(\w+\s*=\s*)?ReactDOM\.createRoot\s*\(', html)
+    if not root_match:
+        sys.exit("Could not find ReactDOM.createRoot call")
+    insert_pos = root_match.start()
+    line_start = html.rfind('\n', 0, insert_pos) + 1
+    html = html[:line_start] + audio_player_js + "\n" + html[line_start:]
 
-    if "<CaptionOverlay" not in html:
-        sys.exit("Could not find <CaptionOverlay insertion point")
-    html = html.replace(
-        "        <CaptionOverlay",
-        "        <AudioPlayer />\n        <CaptionOverlay",
-        1,
-    )
+    # 4. <AudioPlayer /> rendered inside <Stage>: prefer inserting before <CaptionOverlay,
+    #    else insert before the </Stage> closing tag.
+    if "<CaptionOverlay" in html:
+        html = html.replace(
+            "        <CaptionOverlay",
+            "        <AudioPlayer />\n        <CaptionOverlay",
+            1,
+        )
+    elif "</Stage>" in html:
+        html = html.replace("</Stage>", "  <AudioPlayer />\n    </Stage>", 1)
+    else:
+        sys.exit("Could not find <Stage> closing tag or <CaptionOverlay insertion point")
 
     out_html.write_text(html, encoding="utf-8")
     size_mb = out_html.stat().st_size / 1024 / 1024
