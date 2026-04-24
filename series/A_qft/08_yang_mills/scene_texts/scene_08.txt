@@ -1,0 +1,5 @@
+Gauge invariance dies once we fix a gauge. What replaces it is BRST symmetry — a nilpotent transformation mixing gauge fields and ghosts, whose square is exactly zero.
+
+Physical states are those annihilated by the BRST charge.
+
+This is the quantum-consistent replacement for gauge invariance. It is what guarantees the theory still makes sense after we have fixed the gauge and introduced ghosts.

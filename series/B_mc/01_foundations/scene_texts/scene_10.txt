@@ -1,0 +1,5 @@
+The variance-minimising proposal is proportional to the integrand times the target density. A result so clean it is almost a joke. You cannot compute it, because computing it requires the answer you are after.
+
+The practical move is to use it as a guide. Pick a proposal that hugs the regions where the integrand is large. For a Gaussian tail, a shifted exponential proposal gives ten thousand samples the accuracy of a million.
+
+The optimal proposal requires knowing the answer. Which is like Google telling you it could save you time if you already knew what you were looking for.

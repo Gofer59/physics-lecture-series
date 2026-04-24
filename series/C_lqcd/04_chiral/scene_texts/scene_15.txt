@@ -1,0 +1,3 @@
+With Wilson fermions, the pion is no longer an exact Goldstone at any finite a — chiral symmetry was broken explicitly, so the pion mass does not go cleanly to zero. With staggered fermions, one pion remains exactly massless in the chiral limit, while fifteen taste partners pick up discretization-induced masses.
+
+With Ginsparg–Wilson fermions, the full pattern of exact Goldstone bosons survives on the lattice — at much higher cost.

@@ -1,0 +1,5 @@
+Two things look alike and are often confused. Helicity is the projection of spin along momentum — whether the particle spins clockwise or anticlockwise around its direction of motion.
+
+Chirality is defined algebraically, as the eigenvalue of the gamma-five matrix. It corresponds to the Weyl decomposition into L and R. For massless particles, the two coincide exactly. For massive particles, helicity is observer-dependent — you can boost past a particle and flip its helicity — while chirality is intrinsic, but not conserved by the mass term.
+
+Almost every introductory QFT student confuses these two for about a week. The good news is you eventually stop confusing them. The bad news is it takes a week.

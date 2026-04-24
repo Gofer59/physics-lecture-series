@@ -1,0 +1,3 @@
+Check detailed balance directly. The product of f at x and the Metropolis-Hastings kernel equals a symmetric minimum. Symmetric in x and z by construction. So f is invariant.
+
+Add ergodicity, and you converge to f. The proof is three lines. The consequence is that a ratio of unnormalised densities is all you ever need to sample from a target.

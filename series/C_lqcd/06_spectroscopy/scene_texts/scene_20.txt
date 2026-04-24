@@ -1,0 +1,5 @@
+Masses are just numbers. Next we go inside the hadron.
+
+Three-point functions. Form factors. Decay constants. CKM matrix elements. Parton distributions. Generalized parton distributions.
+
+And finite volume itself — a simulation lives in a finite box, and that box both contaminates results and, through the Luscher method, becomes a powerful tool for extracting scattering amplitudes and resonance properties.

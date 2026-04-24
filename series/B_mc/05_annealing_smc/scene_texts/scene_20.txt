@@ -1,0 +1,5 @@
+Final video of the series. The nuts and bolts. Lattice representations in one-dimensional arrays with neighbour tables. Data structures matched to update patterns. Parallelisation via trivially parallel replicas, checkerboard decomposition, and parallel cluster algorithms.
+
+Multispin coding to pack sixty-four simulations into one machine word. Random-number generation, the unglamorous foundation that silently breaks everything when it's wrong.
+
+The theory is beautiful. The implementation is where your paper actually lives or dies.

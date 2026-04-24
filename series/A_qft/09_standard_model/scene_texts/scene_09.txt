@@ -1,0 +1,5 @@
+Quarks and gluons never appear alone. Produced in a collision, they immediately hadronize into collimated sprays of particles called jets.
+
+A three-jet event seen in 1979 was the direct discovery of the gluon. Modern jet algorithms, like anti-k-T, cluster particles into well-defined objects whose properties extract the strong coupling with percent-level precision.
+
+Quarks are shy. Jets are what you get when you point a detector at their general direction.

@@ -1,65 +1,121 @@
-# LQCD-V02 Narration — Gauge Fields and Wilson Loops
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_C_lqcd/lqcd_v02_slides.md -->
+# LQCD-V02 — Gauge Fields and Wilson Loops | Narration Transcript
 
 ## Scene 01
-TODO
+
+The naive move — store the gluon field A sub mu at each lattice site — destroys gauge invariance. A local gauge rotation at each site scrambles a site-valued field. There is no way to compare color at neighboring sites without a rule for parallel transport.
+
+Gauge theory on a lattice requires a completely different data structure. The continuum got away with storing gauge fields at points. The lattice knows better. The right object lives on links, not sites.
 
 ## Scene 02
-TODO
+
+On each oriented link, from site n to n plus mu-hat, place an SU(3) matrix U sub mu of n. Think of it as the parallel transporter from one site to the next — the discrete version of the path-ordered exponential of the continuum gauge field.
+
+The backward link is the hermitian conjugate. The theory is now a field of group elements, not algebra elements. The data is inherently compact.
 
 ## Scene 03
-TODO
+
+A gauge transformation is now a site-local rotation in SU(3). Each link transforms by a rotation at its start, multiplied on the left, and by the inverse rotation at its end, multiplied on the right.
+
+The product of links along a path picks up only the endpoint rotations. The product around any closed loop transforms by conjugation, so its trace is invariant. This is exact, not approximate — a property of the discretization itself.
 
 ## Scene 04
-TODO
+
+The smallest nontrivial closed loop on a hypercubic lattice is the plaquette — four links around a unit square in a given plane. Its trace is gauge-invariant.
+
+For small lattice spacing, the plaquette expands to one minus a to the fourth over two times the field strength squared, plus higher-order corrections. The plaquette is the discrete echo of F squared.
 
 ## Scene 05
-TODO
+
+Sum the real trace of one minus the plaquette over every plaquette on the lattice. Multiply by beta, which equals two N over g squared. That is Wilson's gauge action.
+
+As a goes to zero, it reproduces the continuum Yang–Mills action. It is exactly gauge-invariant at finite a. It has discretization errors of order a squared. And it is simple enough to program in an afternoon.
 
 ## Scene 06
-TODO
+
+To do the path integral we must integrate over every link variable. SU(3) is a compact group, so there is a unique invariant measure on it — the Haar measure — normalized to one.
+
+It is left- and right-invariant, which means the measure itself is gauge-invariant. No gauge fixing is required. Perturbation theory needs ghosts to exorcise its gauge redundancy. The lattice just integrates.
 
 ## Scene 07
-TODO
+
+The Haar measure projects onto the trivial representation. The integral of a single link matrix is zero. The integral of a link times its conjugate gives a color-delta divided by N. The integral of three links with an epsilon tensor gives another epsilon.
+
+These few identities power the strong-coupling expansion and let you compute simple lattice observables on paper, without a computer.
 
 ## Scene 08
-TODO
+
+The naive continuum derivative — psi at x plus mu minus psi at x — is not gauge-invariant on a lattice. Insert the link variable U sub mu between the two fermion fields and it becomes gauge-invariant by construction.
+
+The link parallel-transports the quark's color from one site to the next. Gauge coupling on the lattice is built into the very definition of a lattice derivative.
 
 ## Scene 09
-TODO
+
+Take a rectangular path of spatial extent R and temporal extent T. Multiply the link variables around it. Trace over color. This is the Wilson loop.
+
+In physical terms, it measures the work done by the gauge field as a quark–antiquark pair is created, separated by R, held for a time T, and annihilated. Its expectation value encodes the static potential between two color charges.
 
 ## Scene 10
-TODO
+
+At large temporal extent, the Wilson loop falls exponentially — like e to the minus V of R times T, where V of R is the energy of a static quark–antiquark pair at separation R.
+
+Extract the decay rate, get the potential. This single procedure lets us measure the force between color charges directly from the lattice, with no reference to perturbation theory.
 
 ## Scene 11
-TODO
+
+At strong coupling, the Wilson loop decays like e to the minus sigma times R times T. The exponent scales with the enclosed area. That area law is equivalent to a linearly rising potential.
+
+This is confinement. A perimeter law — where the exponent scales with R plus T — would give a finite potential at large R, meaning no confinement. The Wilson criterion is this: confinement is an area law.
 
 ## Scene 12
-TODO
+
+Numerical lattice data give a potential of the form V of R equals V-naught minus alpha over R plus sigma times R. The Coulomb-like piece dominates at short distance, from perturbative one-gluon exchange. The linear piece dominates at long distance — confinement.
+
+The string tension sigma is roughly 440 MeV squared. Above about 1.2 femtometers, in full QCD with dynamical quarks, the string breaks by creating a quark–antiquark pair from the vacuum. The string breaks. Your worldview bends.
 
 ## Scene 13
-TODO
+
+At very strong coupling, the Wilson action weights links toward random SU(3) elements. Expand the exponential in powers of beta, use the group integrals from earlier, and the leading contribution to the Wilson loop is the minimal tiling of its interior by plaquettes.
+
+That gives an area law automatically. Confinement emerges trivially in this limit. The nontrivial question is whether it survives as beta grows.
 
 ## Scene 14
-TODO
+
+Wrap a Wilson line once around the periodic time direction. That closed line — the Polyakov loop — is gauge-invariant, and its expectation value is related to the free energy of a single static quark.
+
+If it is zero, putting one quark into the vacuum costs infinite energy. That is confinement. If it is nonzero, the quark is free. The Polyakov loop is an order parameter.
 
 ## Scene 15
-TODO
+
+Pure SU(N) gauge theory has a global Z sub N center symmetry. Multiply all temporal links on one time slice by a root of unity. The action is unchanged, but the Polyakov loop picks up that phase.
+
+An unbroken center means confinement — expectation of P is zero. Spontaneous breaking means deconfinement — expectation of P is nonzero. For SU(3), it is a first-order phase transition. Deconfinement is just Z-three getting tired of behaving.
 
 ## Scene 16
-TODO
+
+Combine everything. Integrate over all link variables with the Haar measure, weight by the Wilson gauge action, and insert the fermion determinant to account for dynamical quarks.
+
+This is the full QCD partition function — a finite-dimensional, well-defined, non-perturbative integral. The Grassmann quark fields have been integrated out. What remains is a problem a computer can attack.
 
 ## Scene 17
-TODO
+
+The lattice only knows dimensionless ratios. To convert to MeV or femtometers, you need a physical reference. The Sommer parameter r-naught is defined by a condition on the force between static quarks — r squared times dV dr equals 1.65 — and evaluates to about half a femtometer.
+
+Compute r-naught over a on the lattice, match to the physical value, and you have fixed the lattice spacing in femtometers.
 
 ## Scene 18
-TODO
+
+As we increase beta — decreasing the bare coupling — the lattice spacing must shrink according to a two-loop renormalization-group formula. This is asymptotic scaling. It is a prediction, not a convention.
+
+Compare r-naught over a measured at different beta to the predicted curve. If they fall on it, the continuum limit is being approached correctly. The lattice has a built-in consistency check.
 
 ## Scene 19
-TODO
+
+A summary. Gauge fields on the lattice live on links, as SU(3) elements. The Wilson action is a sum of plaquettes — exactly gauge-invariant, and reproducing Yang–Mills in the continuum.
+
+The Haar measure makes gauge fixing unnecessary. The Wilson loop measures the static quark potential. An area law equals confinement. The Polyakov loop is the order parameter for deconfinement. And the Sommer parameter sets the scale.
 
 ## Scene 20
-TODO
+
+Coming up next: gauge fields went smoothly onto the lattice. Fermions do not. The naive discretization of the Dirac operator generates sixteen species instead of one — the doubling problem.
+
+The Nielsen–Ninomiya theorem proves this is unavoidable without sacrificing something: chiral symmetry, locality, or hypercubic symmetry. Next time we survey the zoo of lattice fermions — Wilson, staggered, overlap, domain wall, twisted mass. You asked for one electron. The lattice gave you sixteen. No refunds.

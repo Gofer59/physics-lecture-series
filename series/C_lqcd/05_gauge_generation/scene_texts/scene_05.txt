@@ -1,0 +1,5 @@
+Start from a cold lattice, with all links equal to the identity, or from a hot one with random SU(3) matrices. The first few thousand sweeps are thermalization. Throw them away.
+
+Once equilibrated, successive configurations are still correlated. The integrated autocorrelation time, tau-int, tells you how many sweeps separate effectively independent samples. Good observables have tau-int around ten. Some, like the topological charge at fine lattice spacing, have tau-int of thousands.
+
+Topological freezing: when your Monte Carlo chain would really just prefer not to.

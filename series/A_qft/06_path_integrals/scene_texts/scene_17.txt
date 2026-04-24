@@ -1,0 +1,3 @@
+Evaluate the effective action on a constant field and you get the effective potential. Its minimum — not the minimum of the classical potential — is the actual quantum ground state.
+
+Loop corrections can shift or tilt the potential, sometimes drastically. Spontaneous symmetry breaking, the Higgs mechanism, radiative symmetry breaking — all are most cleanly understood as statements about the shape of the effective potential.

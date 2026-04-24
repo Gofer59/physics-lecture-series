@@ -1,0 +1,5 @@
+Perturbation theory is where quantum field theory began. Where it ends — in strong coupling, in critical phenomena, in lattice gauge theory, in cosmological sampling — it needs computation.
+
+The next series is Monte Carlo Methods. How we turn path integrals into random walks. How we turn random walks into measurements. How we turn measurements into physics we could not compute any other way.
+
+Series A closes. Series B begins.

@@ -1,0 +1,3 @@
+To compute tau-int, you estimate the autocorrelation function and sum it. But at large lag, estimates are dominated by noise. You must truncate.
+
+Common rules. Cut when the autocorrelation estimate turns negative. Or at a window roughly six times the emerging tau-int, self-consistently. Or fit an exponential at intermediate lags. Either way, truncation is a bias-variance trade, and you don't get tau-int for free.

@@ -1,0 +1,3 @@
+An invariant distribution is a fixed point of the Markov kernel. Start there, stay there. The easiest way to engineer invariance is to enforce detailed balance. Probability flowing from x to z exactly balances the flow back.
+
+This is strictly stronger than invariance. It is equivalent to time-reversibility. And it is the loophole that Metropolis-Hastings exploits.

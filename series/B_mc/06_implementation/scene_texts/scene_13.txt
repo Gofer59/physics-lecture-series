@@ -1,0 +1,3 @@
+Given a good uniform generator, everything else follows. For distributions with closed-form inverse CDFs, use the transformation method. X equals F-inverse of U.
+
+Exponential. Minus the logarithm of U, divided by lambda. Power law. x-min times one minus U, raised to the power minus one over n minus one. For more complex targets, rejection or specialised methods. Every library has these. Know what's inside.

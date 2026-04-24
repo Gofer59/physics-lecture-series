@@ -1,0 +1,3 @@
+Historically, Dirac's first interpretation of the negative-energy solutions was the Dirac sea — an infinite ocean of already-filled negative-energy states. A hole in the sea would behave like a positive-energy particle of opposite charge.
+
+When the positron was discovered in 1932, this became one of the great predictions of physics. In modern QFT, we do not need the sea. Antiparticles fall out of anticommutators. But it remains an evocative picture of why antimatter has to exist.

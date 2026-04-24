@@ -1,0 +1,5 @@
+Parity sends space to its mirror image, and exchanges left-handed and right-handed components of a spinor. For the electromagnetic current psi-bar gamma-mu psi, parity is a symmetry.
+
+But for the weak current, which involves gamma-mu times one-minus-gamma-five, parity exchanges something with nothing. Only left-handed fermions participate. The 1956 observation of parity violation in cobalt-60 decay was the experimental confirmation. The weak force literally tells left from right.
+
+Until 1956, physicists assumed the laws of nature respected mirror symmetry. They did not. Nature has a preferred handedness, and it is, for reasons nobody fully understands, left-handed.

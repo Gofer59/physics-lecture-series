@@ -1,0 +1,5 @@
+Fermion masses cannot come from a simple mass term. The left-handed and right-handed chiralities transform differently under the weak group.
+
+Instead, masses come from Yukawa couplings to the Higgs. Mass equals Yukawa times v over root two.
+
+The top quark has a Yukawa near one. The electron has one near two parts per million. No one knows why.

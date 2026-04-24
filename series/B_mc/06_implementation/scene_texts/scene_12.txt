@@ -1,0 +1,3 @@
+Better generators. Shift register. Bit n equals bit n minus p, XORed with bit n minus q. Period two to the p minus one. Lagged Fibonacci. x-n equals x-n-minus-p combined with x-n-minus-q, using plus, minus, or multiply.
+
+Much longer periods. Less high-dimensional correlation. Newman and Barkema recommend subtract-with-borrow lagged Fibonacci. Combine multiple generators with incommensurate periods for production use.

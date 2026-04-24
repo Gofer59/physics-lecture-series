@@ -1,65 +1,133 @@
-# MC-V01 Narration — Monte Carlo Foundations
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_B_mc/mc_v01_slides.md -->
+# MC-V01 — Monte Carlo Foundations | Narration Transcript
 
 ## Scene 01
-TODO
+
+You want to compute an integral in a thousand dimensions. A grid-based method needs N points per axis, which means N to the thousandth power evaluations. Hopeless, before the heat death of the universe.
+
+Throw random points at the problem, and the cost stops caring about dimension. This is the one-line miracle that makes statistical physics, Bayesian inference, and lattice QCD tractable.
+
+Deterministic quadrature in a thousand dimensions is a thought experiment. Monte Carlo is the thing you actually run on a Tuesday.
 
 ## Scene 02
-TODO
+
+Every integral of a function against a density is, by definition, an expected value. If you can sample from the density, the sample average converges to the integral. That is all Monte Carlo is. A disguise for the law of large numbers.
+
+The error shrinks as one over the square root of N, independent of dimension. You trade a deterministic bound for a random error bar. In a thousand dimensions, that trade is the only game in town.
 
 ## Scene 03
-TODO
+
+The same machinery underlies Bayesian posterior inference and the Boltzmann distribution of statistical mechanics. In both, the target density is known only up to a normalising constant, and that constant is itself an intractable integral.
+
+The observable you care about is always an expectation. Monte Carlo lets you compute that expectation without ever touching the normaliser. Two fields, one tool, one escape hatch.
 
 ## Scene 04
-TODO
+
+Naive Monte Carlo runs into six walls. High dimension. Unavailable targets. Multi-modal landscapes. Rare events. Correlated variables. And the question of when to stop.
+
+Every technique in the next five videos is a targeted attack on one of these. Before reaching for a hammer, know which of the six nails you are hitting.
 
 ## Scene 05
-TODO
+
+Given a uniform random number between zero and one, the inverse cumulative distribution function of your target maps it to a sample from that target. Plug uniform in, out comes the distribution you wanted.
+
+It is exact. It is one-shot. And it asks only for the ability to invert the CDF in closed form. Which is almost never the case in practice.
 
 ## Scene 06
-TODO
+
+If you cannot invert the CDF, try rejection sampling. Draw from a proposal, accept with probability proportional to the density ratio, bounded by a constant M. The accepted points are exactly the target.
+
+But in d dimensions, with a product structure, M grows like M to the d. Your acceptance rate collapses exponentially. Rejection dies the instant you leave low dimensions.
+
+In one dimension, rejection is efficient. In fifty, it's a ritual.
 
 ## Scene 07
-TODO
+
+Draw N independent samples from the target, average the observable, done. The estimator is unbiased. Its variance is the target variance divided by N.
+
+The central limit theorem gives you a Gaussian confidence interval that shrinks like one over the square root of N. Dimension-free, but brutally slow. One hundred times more samples buys a ten-fold tighter error bar. That is the deal.
 
 ## Scene 08
-TODO
+
+Throw points uniformly into a unit square. The fraction that land inside the inscribed circle, times four, estimates pi. With ten thousand samples you get roughly three point one four, plus or minus a percent.
+
+It is not the best way to compute pi. But it is the clearest demonstration of the three-step Monte Carlo recipe. Rewrite as expectation. Build the sample average. Attach the central limit error bar.
 
 ## Scene 09
-TODO
+
+You often cannot sample from the distribution you want. Rewrite the expectation under a distribution you can sample from, called g, and weight each sample by the density ratio f over g. The estimator is still unbiased.
+
+Choose g wisely, and variance plummets. Choose g poorly, and you are worse off than before. Importance sampling is both variance reduction and a workaround for intractable targets.
 
 ## Scene 10
-TODO
+
+The variance-minimising proposal is proportional to the integrand times the target density. A result so clean it is almost a joke. You cannot compute it, because computing it requires the answer you are after.
+
+The practical move is to use it as a guide. Pick a proposal that hugs the regions where the integrand is large. For a Gaussian tail, a shifted exponential proposal gives ten thousand samples the accuracy of a million.
+
+The optimal proposal requires knowing the answer. Which is like Google telling you it could save you time if you already knew what you were looking for.
 
 ## Scene 11
-TODO
+
+When you only know f up to a constant, which is most of the time, use self-normalised weights. Divide each weight by the sum of weights. The estimator becomes slightly biased, but the bias vanishes as one over N.
+
+The cost of admission is this. Unless your proposal is close to the target, a few samples end up carrying all the weight while the rest contribute nothing.
 
 ## Scene 12
-TODO
+
+Weight collapse is not subjective. It has a number. The effective sample size, defined as one over the sum of squared normalised weights, tells you how many independent samples your weighted set is really worth.
+
+Effective sample size equal to N means perfectly balanced weights. Equal to one means a single sample is doing all the work. It is a diagnostic, not a cure. A small effective sample size does not say your answer is wrong. Only that you should not trust it.
 
 ## Scene 13
-TODO
+
+If your observable has odd structure around some symmetry point, pair each sample with its mirror image. The two are perfectly anti-correlated for the odd part. So the odd-component variance cancels exactly.
+
+You get the same mean for half the computational cost, assuming the odd part dominated the variance. A free lunch, when symmetry is on your side.
 
 ## Scene 14
-TODO
+
+Find a function close to your observable whose mean you already know. Subtract it off. Estimate only the residual by Monte Carlo. Add back the known mean. Your variance is now controlled by how well the auxiliary function approximates yours.
+
+In the limit of a perfect approximation, variance is zero. In practice, fit a low-order polynomial and watch the error bar shrink.
+
+The better your guess, the less you need Monte Carlo. Philosophically uncomfortable, operationally useful.
 
 ## Scene 15
-TODO
+
+In the Boltzmann distribution, low-energy states carry enormous weight, and high-energy states are astronomically suppressed. Sample uniformly from state space and almost every sample lives where the Boltzmann factor is essentially zero.
+
+Reweighting is catastrophic. The handful of low-energy samples, if any, dominate the entire estimate. Naive sampling is not just inefficient. It is pathological.
 
 ## Scene 16
-TODO
+
+The cure is obvious in hindsight. Sample from the Boltzmann distribution itself. Every sample now carries equal weight. The observable is a simple average. The partition function never has to be computed, because it cancels.
+
+The only remaining question is how to actually draw from a distribution you cannot invert, cannot bound, and cannot evaluate pointwise in normalised form. That is the next video.
 
 ## Scene 17
-TODO
+
+In high dimensions, there is a clever generalisation of the inverse CDF. A triangular map that transforms a uniform vector into a target sample, component by component, using conditional CDFs.
+
+The Jacobian is lower-triangular. Easy determinant. It is a principled way to push randomness through a joint distribution. And it is the seed of modern normalising flows.
 
 ## Scene 18
-TODO
+
+Sometimes you have a simulator but no likelihood. You can generate fake data from parameters, but you cannot evaluate the probability of observed data.
+
+Approximate Bayesian computation solves this. Sample parameters from the prior. Simulate. Accept when the simulated data is within epsilon of the observed data. The result is an approximation to the posterior, with epsilon trading bias against acceptance rate. Likelihood-free inference in one paragraph.
 
 ## Scene 19
-TODO
+
+We established that Monte Carlo is the law of large numbers applied to expectations. Error one over the square root of N, dimension-free.
+
+We saw transformation methods, inverse CDF and Knothe-Rosenblatt. Accept-reject schemes, rejection and ABC. And two handles for variance. Importance sampling with effective sample size as diagnostic, and antithetic and control variates as symmetry-exploiting reducers.
+
+Naive sampling dies in statistical physics. Importance sampling via Boltzmann weighting is the escape hatch.
 
 ## Scene 20
-TODO
+
+Next video. How do you actually draw from the Boltzmann distribution, or any target known only up to a constant, without being able to invert or bound it?
+
+The answer is a Markov chain that stealths its way to the right distribution by construction. We meet Metropolis-Hastings, the single most important algorithm in computational statistical physics.
+
+One algorithm. Sixty years. A million papers. We'll do it in eight minutes.

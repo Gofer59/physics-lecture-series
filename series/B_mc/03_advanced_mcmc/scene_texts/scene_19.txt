@@ -1,0 +1,3 @@
+Gibbs handles conjugate models. Slice sampling handles multimodality without tuning. Unadjusted and adjusted Langevin exploit gradients for log-concave targets, scaling as d to the one-third. HMC uses Hamiltonian flow for d to the one-quarter and handles high dimensions best.
+
+Wolff and Swendsen-Wang break critical slowing down on lattice spin systems. Overrelaxation accelerates continuous spins. Loop and Kawasaki algorithms respect constraints. Choose your algorithm by failure mode.

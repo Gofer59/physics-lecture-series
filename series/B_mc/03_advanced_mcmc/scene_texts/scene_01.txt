@@ -1,0 +1,3 @@
+Random-walk Metropolis knows nothing about the target it is sampling. In high dimensions or near criticality, it crawls.
+
+The whole zoo of advanced MCMC exists to inject information into the proposal. Gradients, conditional structure, cluster topology, Hamiltonian dynamics. We will tour Gibbs, Langevin, HMC, and cluster methods in under eight minutes. Each is an attack on a specific failure mode of the baseline.

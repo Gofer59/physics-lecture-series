@@ -1,0 +1,5 @@
+Wick-rotate to Euclidean signature, discretize spacetime onto a finite lattice, and the path integral becomes a finite-dimensional integral suitable for a computer.
+
+Each link of the lattice carries a gauge-field element. Each site carries a fermion variable. A Monte Carlo sampler draws configurations with weight e to the minus Euclidean action.
+
+This is how lattice QCD computes the proton mass, hadron spectra, and nuclear matrix elements from first principles, and matches experiment.

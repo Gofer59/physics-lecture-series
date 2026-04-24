@@ -1,0 +1,5 @@
+Add a classical source j of x, coupled to phi. The equation of motion becomes Klein-Gordon with j on the right-hand side. Turn the source on, let it act, turn it off. The expected number of particles produced in each momentum mode is the Fourier transform of j, squared, divided by two E.
+
+This is the simplest model of particle production imaginable. And the template for how a radio antenna makes photons.
+
+This is also the mechanism by which the early universe filled itself with particles. A sufficiently vigorous expansion of spacetime is, for QFT, just a very loud j of x.

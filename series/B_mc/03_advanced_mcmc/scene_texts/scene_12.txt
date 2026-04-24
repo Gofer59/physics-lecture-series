@@ -1,0 +1,3 @@
+Back to the Ising model near the critical temperature. Single-spin flips have dynamic exponent about two point one seven. You cannot beat that with local updates, because the correlation length exceeds any local neighbourhood.
+
+The trick. Flip entire correlated clusters as a single move. The Fortuin-Kasteleyn representation encodes spin configurations as bond configurations, and the right bond probability makes whole-cluster flips leave the Boltzmann distribution invariant.

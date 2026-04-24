@@ -1,0 +1,3 @@
+Wrap the unadjusted Langevin in a Metropolis accept-reject step. The proposal is the biased Langevin move. The acceptance corrects for the bias. Result: exact samples from f, not f-epsilon.
+
+Scaling analysis gives optimal step size proportional to d to the minus one-third, convergence in d to the one-third steps, and an optimal acceptance rate of about zero point five seven four. Strictly better than random-walk Metropolis for log-concave targets.

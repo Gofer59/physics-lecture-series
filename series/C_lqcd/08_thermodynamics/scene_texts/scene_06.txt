@@ -1,0 +1,5 @@
+Lattice QCD produces the pressure, energy density, and entropy density as functions of temperature.
+
+The pressure is computed by integrating the plaquette expectation value with respect to the gauge coupling — the integral method. The energy density follows from thermodynamic identities.
+
+At temperatures well above the transition, these approach the Stefan–Boltzmann limit of a free quark–gluon gas, but with corrections from residual interactions. The equation of state is a direct input to the hydrodynamic models that describe heavy-ion collisions.

@@ -1,0 +1,3 @@
+Everything we will do reduces to two identities. First: the trace of an operator equals the path integral with the Boltzmann weight. Second: operator expectation values in the quantum theory equal classical averages over lattice fields weighted by e to the minus S sub E.
+
+These two equations are the bridge from Hilbert space to a Monte Carlo program.

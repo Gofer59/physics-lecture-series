@@ -1,0 +1,5 @@
+For an odd number of flavors, or for rooted staggered simulations, we need determinant of D-dagger D raised to a fractional power. Rational Hybrid Monte Carlo handles this.
+
+Factor the fractional power into a sum of partial fractions. Each one becomes a separate pseudofermion with a shifted inverse. The Remez algorithm tunes the coefficients to machine precision.
+
+RHMC is exact up to the quality of the rational approximation. MILC, HPQCD, and several others use it routinely.

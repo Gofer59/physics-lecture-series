@@ -1,0 +1,3 @@
+Cluster algorithms are intrinsically non-local, which fights parallelism. Bonds can be placed in parallel. The spins within each cluster can be flipped in parallel. The hard part is identifying which sites belong to which cluster. A global connectivity problem.
+
+Parallel union-find and label-propagation schemes solve it. Communication cost dominated by cross-boundary labelling. Efficient when the lattice is much bigger than the process grid.

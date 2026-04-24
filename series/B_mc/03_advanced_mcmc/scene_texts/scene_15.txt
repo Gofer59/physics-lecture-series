@@ -1,0 +1,3 @@
+A small table settles the hierarchy. Two-dimensional Ising. Metropolis, two point one seven. Swendsen-Wang, zero point three five. Wolff, zero point two five. Three-dimensional Ising. Metropolis, two point zero two. Swendsen-Wang, zero point five four. Wolff, zero point three three.
+
+Cluster algorithms give order-of-magnitude speed-ups at criticality, most dramatically for discrete symmetries and second-order transitions. Away from the critical point, the advantage shrinks but rarely reverses.

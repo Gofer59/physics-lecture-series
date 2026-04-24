@@ -1,0 +1,3 @@
+Six videos. We started with integrals as expectations, and the one-over-square-root-N miracle. Built MCMC from Markov chains and detailed balance. Conquered the Ising model with Metropolis, and then with Wolff cluster flips.
+
+Extracted honest physics numbers with binning, jackknife, pyerrors, and finite-size scaling. Escaped bad mixing with annealing, tempering, sequential Monte Carlo, and variational inference. Finally, the implementation craft that turns algorithm into code.

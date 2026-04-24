@@ -1,0 +1,5 @@
+Without any loops, tree-level QED already reproduces the Rutherford formula for Coulomb scattering. The Thomson cross section for low-energy light off electrons. The Bhabha angular distribution observed in every electron-positron collider. The one-plus-cosine-squared shape of muon pair production.
+
+Every one of these is a multi-decimal agreement with experiment. And we have not yet computed a single loop.
+
+Most physics theories do not survive their first meeting with experiment. QED's tree level just nails it — and that is before we start calculating anything difficult.

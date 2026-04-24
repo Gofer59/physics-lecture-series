@@ -1,0 +1,3 @@
+In 1980, Banks and Casher derived a striking identity. The condensate equals minus pi times rho at zero — where rho at zero is the density of small Dirac eigenvalues in the infinite-volume, massless limit.
+
+A nonzero condensate demands an accumulation of near-zero eigenvalues of the Dirac operator. Chiral symmetry breaking, viewed microscopically, is eigenvalues piling up at the spectral origin.

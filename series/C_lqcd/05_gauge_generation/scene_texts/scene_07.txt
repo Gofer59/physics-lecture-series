@@ -1,0 +1,7 @@
+Now add quarks. The partition function picks up a factor of determinant of D of U to the N sub f. This determinant is a functional of the gauge field. Every gauge update changes it.
+
+Direct computation scales like the volume cubed. For a realistic lattice that is completely impossible.
+
+For years the workaround was the quenched approximation: set the determinant to a constant. It costs about ten percent accuracy.
+
+Quenched QCD: a perfectly good approximation, if you are willing to delete the sea quarks from reality.

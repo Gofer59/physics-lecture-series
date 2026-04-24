@@ -1,0 +1,3 @@
+So far phi was real — the particle is its own antiparticle. Promote phi to a complex field, and the Lagrangian gains a U(1) symmetry under rephasing. Noether's theorem gives a conserved current and a conserved charge.
+
+Quantize. The field now contains a-dagger, which creates a particle of charge plus one, and a separate b-dagger, which creates an antiparticle of charge minus one. Same mass, opposite charge — exactly what the commutator argument demanded.

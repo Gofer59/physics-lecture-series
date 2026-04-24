@@ -1,0 +1,3 @@
+QED is the gauge theory of U(1). It is given by a Dirac Lagrangian with a covariant derivative, plus a Maxwell term. Its Feynman rules are a fermion propagator, a photon propagator, and a single vertex factor, minus i times e times gamma-mu.
+
+Trace technology reduces spin-summed amplitudes to algebra. Canonical processes — e-plus-e-minus to mu-plus-mu-minus, Compton, Bhabha — agree with experiment at tree level. The Ward identity protects gauge invariance quantum mechanically, and foreshadows renormalizability.

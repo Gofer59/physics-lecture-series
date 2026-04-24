@@ -1,0 +1,3 @@
+Variance of the sample mean is not sigma squared over N. It is sigma squared times one plus twice the sum of autocorrelations, all over N. Define tau-int as one-half plus that sum.
+
+Your effective sample size is N over two tau-int. Every MCMC paper should report it. Most don't. And the observable matters. Different observables have different tau-int on the same chain.

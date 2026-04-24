@@ -1,0 +1,3 @@
+Before diagrams, we need interacting Lagrangians. The simplest is phi-to-the-fourth theory — a scalar field with a lambda phi-fourth interaction.
+
+Next is Yukawa theory. A Dirac fermion and a scalar, with a coupling g times psi-bar psi phi. Finally QED: a Dirac electron coupled to an electromagnetic vector potential, through a covariant derivative. Each adds a specific vertex to the rulebook. The rest of the machinery is identical.

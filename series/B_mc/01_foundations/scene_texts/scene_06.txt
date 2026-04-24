@@ -1,0 +1,5 @@
+If you cannot invert the CDF, try rejection sampling. Draw from a proposal, accept with probability proportional to the density ratio, bounded by a constant M. The accepted points are exactly the target.
+
+But in d dimensions, with a product structure, M grows like M to the d. Your acceptance rate collapses exponentially. Rejection dies the instant you leave low dimensions.
+
+In one dimension, rejection is efficient. In fifty, it's a ritual.

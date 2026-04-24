@@ -1,0 +1,3 @@
+A cute trick. Augment the state with a height variable u, so the joint distribution on x and u is uniform under the curve of f. The full conditionals are both uniform. Uniform over a horizontal slice of the density, and uniform vertically up to f of x.
+
+Gibbs on the augmented space gives exact samples from the marginal f without a normalising constant. In theory, no tuning. In practice, identifying the slice can be costly.

@@ -1,0 +1,3 @@
+Discretise the Langevin equation with Euler-Maruyama. Take a small step down the gradient and add a Gaussian kick. This is the unadjusted Langevin algorithm.
+
+It is biased. The stationary distribution is f-epsilon, not f, with bias of order epsilon. But it converges exponentially fast to f-epsilon. For moderate dimensions and log-concave targets, it is cheap, simple, and often good enough.

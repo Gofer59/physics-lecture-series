@@ -1,0 +1,5 @@
+The central object of the path-integral formulation is the generating functional, called Z of J. It is the integral over all field configurations of the exponential of i times the action, plus an external source J coupled to the field.
+
+Take functional derivatives of Z with respect to J, set J to zero, and each derivative pulls a field down from the exponential. What drops out is a full correlation function of the theory.
+
+A single object, Z of J, contains every Green's function of quantum field theory. One generating functional, infinitely many correlators.

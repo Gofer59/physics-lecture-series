@@ -1,0 +1,5 @@
+Five videos of theory. None of it matters if your code runs a thousand times slower than it should, generates spin configurations with correlated random numbers, or silently allocates twenty gigabytes for a neighbour table that should fit in kilobytes.
+
+This final video is about the craft. Lattice representations, data structures, parallelism, multispin coding, and random-number generation. The unglamorous things that determine whether you finish your PhD.
+
+Theorists write pseudocode. Experimentalists write loops. The gap between them is the entire second half of your career.

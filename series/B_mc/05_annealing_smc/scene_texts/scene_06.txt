@@ -1,0 +1,3 @@
+Weight each state by one over the density of states. The resulting probability distribution over energies is flat. You visit all energies equally.
+
+Once the density of states is known, observables at any temperature follow by trivial reweighting. The catch is that the density of states is unknown a priori. You must estimate it iteratively. Wang-Landau solves this elegantly. It is the same idea reborn.

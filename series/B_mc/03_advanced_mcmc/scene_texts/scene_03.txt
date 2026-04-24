@@ -1,0 +1,3 @@
+The full conditional is just the joint divided by the marginal. And that marginal, being a constant in the conditional direction, drops out. You only need f up to proportionality in each coordinate.
+
+For many structured models, Gaussians, exponential families, graphical models via Hammersley-Clifford, the conditional is a textbook distribution you can sample instantly.

@@ -1,0 +1,5 @@
+The simplest practical choice. Propose the current state plus a Gaussian bump of width sigma. Symmetric proposal, so the acceptance collapses to the minimum of one and the density ratio. Always accept downhill in energy.
+
+Tuning sigma is everything. Too small and the chain crawls. Too large and every proposal is rejected.
+
+The optimal acceptance rate for high-dimensional random walk Metropolis is twenty-three point four percent. Not twenty, not twenty-five. Derived from a Langevin limit. Someone's PhD.

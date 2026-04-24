@@ -1,0 +1,7 @@
+Ji's sum rule says that twice the total angular momentum carried by quarks of flavor q equals the integral over x of x times H-q plus E-q, evaluated at zero skewness and zero t.
+
+Sum over flavors, add the gluons, and you must recover one-half.
+
+This is a direct route to the proton spin puzzle. The first moment of H is the momentum fraction; the integral involving E gives orbital angular momentum. The lattice can compute all ingredients.
+
+The proton spin: thirty percent quarks, some gluons, a surprising amount of orbital angular momentum, and an ongoing disagreement about the remaining percent.

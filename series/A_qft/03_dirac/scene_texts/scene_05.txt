@@ -1,0 +1,3 @@
+The two halves of a Dirac spinor are independent objects, called Weyl spinors. Left-handed psi-L transforms one way under boosts. Right-handed psi-R transforms the mirror-image way.
+
+In the massless case, they decouple completely, and satisfy separate equations — the Weyl equations. Mass is precisely the thing that couples them. Without it, a left-handed particle never mixes with a right-handed one. The electroweak interactions famously treat these two halves completely differently.

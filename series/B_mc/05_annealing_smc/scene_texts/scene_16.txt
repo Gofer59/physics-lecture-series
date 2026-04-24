@@ -1,0 +1,3 @@
+Expectation-Maximisation. Given observed data y and latent z, find the parameter theta that maximises the marginal likelihood. E-step. Compute the expected log-joint under the current posterior over z. M-step. Maximise in theta. Iterate.
+
+The likelihood rises monotonically. Convergence to a local max. For exponential families, the M-step is closed form. EM is the ELBO-maximisation sibling of VI.

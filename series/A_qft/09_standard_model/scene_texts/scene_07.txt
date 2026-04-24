@@ -1,0 +1,5 @@
+Collide an electron and a positron. At high energy they annihilate into a virtual photon, which decays to either a muon pair or a quark pair that becomes hadrons.
+
+The ratio of the two rates is the sum of quark charges squared, times three for colour.
+
+That ratio shows flat plateaus that step up every time you cross a new quark-pair threshold. Direct visual evidence that there are exactly three colours.

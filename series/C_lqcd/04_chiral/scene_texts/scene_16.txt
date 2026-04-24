@@ -1,0 +1,3 @@
+Run a simulation with overlap fermions. Count the zero modes of D on each gauge configuration, weight by chirality, and you get an integer for every configuration: the topological charge.
+
+This lattice index theorem is practically useful. It lets you monitor topological charge, check for topological freezing at fine lattice spacing, and probe theta-vacuum physics. An abstract geometric result becomes a diagnostic.

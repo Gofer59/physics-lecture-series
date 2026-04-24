@@ -1,0 +1,3 @@
+In high dimensions, there is a clever generalisation of the inverse CDF. A triangular map that transforms a uniform vector into a target sample, component by component, using conditional CDFs.
+
+The Jacobian is lower-triangular. Easy determinant. It is a principled way to push randomness through a joint distribution. And it is the seed of modern normalising flows.

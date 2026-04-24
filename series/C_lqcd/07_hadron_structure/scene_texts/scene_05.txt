@@ -1,0 +1,5 @@
+Neutral kaon mixing is governed by a four-quark operator with delta-S equals two. The bag parameter B sub K parametrizes its matrix element between K-bar and K.
+
+B sub K enters the epsilon-K constraint in the unitarity triangle.
+
+Computing it requires non-perturbative renormalization of a four-quark operator — a demanding technical problem. The FLAG world average, B-K-hat equals zero point seven six two five with an error of ninety-seven in the last digits, is a flagship lattice result.

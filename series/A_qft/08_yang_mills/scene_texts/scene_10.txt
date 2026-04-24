@@ -1,0 +1,5 @@
+When you compute how the coupling changes with energy, the gauge bosons' self-interactions contribute with the opposite sign to matter.
+
+For SU(3) with six quark flavours, the gauge term wins. The coupling gets weaker at higher energies. At asymptotic energies, quarks behave as free particles. This is asymptotic freedom. Gross, Politzer, and Wilczek won the 2004 Nobel Prize for it.
+
+Most theories blow up at high energy. QCD quietly goes to sleep.

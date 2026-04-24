@@ -1,0 +1,3 @@
+QED is the prototype of a gauge theory. Replace its U(1) symmetry by SU(3) and you get QCD. Replace it by SU(2) times U(1) and you get the electroweak theory.
+
+Replace its single vector boson by eight gluons, or three weak bosons, and the rest of the machinery survives. The Feynman rules, the Ward-like identities, the principle that propagators and vertices define the theory — all of it carries through. QED is the gateway to the Standard Model.

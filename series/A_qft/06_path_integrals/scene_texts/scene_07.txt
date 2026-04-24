@@ -1,0 +1,5 @@
+Bosons are described by ordinary numbers. Fermions are not. To reproduce the correct sign behaviour of fermion paths, we need anticommuting numbers — Grassmann variables.
+
+Two Grassmanns anticommute. Any Grassmann squared is zero. Integration is defined by two rules: the integral of one equals zero, and the integral of theta equals one.
+
+Those minimalist axioms, due to Berezin, are enough to build the entire fermionic path integral.

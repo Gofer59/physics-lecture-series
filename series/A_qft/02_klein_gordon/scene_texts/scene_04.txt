@@ -1,0 +1,3 @@
+Each Fourier mode of the field is a quantum harmonic oscillator. So we introduce creation and annihilation operators for it — ladder operators, a-dagger and a, one pair per momentum. They obey a commutator given by a delta function in momentum space.
+
+The field itself becomes an integral over all momenta: a destroying a particle, plus a-dagger creating one. Everything familiar from the harmonic oscillator generalizes. But now there is one oscillator per point in momentum space.

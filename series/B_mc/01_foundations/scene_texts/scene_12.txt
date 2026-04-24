@@ -1,0 +1,3 @@
+Weight collapse is not subjective. It has a number. The effective sample size, defined as one over the sum of squared normalised weights, tells you how many independent samples your weighted set is really worth.
+
+Effective sample size equal to N means perfectly balanced weights. Equal to one means a single sample is doing all the work. It is a diagnostic, not a cure. A small effective sample size does not say your answer is wrong. Only that you should not trust it.

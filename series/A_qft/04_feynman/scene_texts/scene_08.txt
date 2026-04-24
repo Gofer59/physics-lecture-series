@@ -1,0 +1,3 @@
+Because translation invariance gives momentum conservation at each vertex, it is usually easier to work in momentum space. The rules distill down.
+
+Propagator equals i over p-squared minus m-squared plus i-epsilon. Vertex equals minus i times lambda, or minus i times g, or minus i times e times gamma-mu, depending on the theory. External lines carry their on-shell momentum. Impose momentum conservation at each vertex. Integrate over every internal loop momentum. Divide by the symmetry factor. Six rules generate every perturbative QFT prediction.

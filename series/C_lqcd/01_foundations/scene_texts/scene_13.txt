@@ -1,0 +1,3 @@
+Coarse-graining — averaging fields over blocks — sends one lattice theory to another with doubled spacing. Fixed points of this flow are the continuum limits.
+
+Couplings come in three flavors. Relevant ones you must tune. Irrelevant ones die automatically, leaving discretization artifacts. Marginal ones — like the QCD gauge coupling — drift logarithmically. This is the operational meaning of renormalization.

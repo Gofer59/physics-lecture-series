@@ -1,0 +1,7 @@
+Finite chemical potential replaces the fermion determinant with a complex-valued one. The Boltzmann weight is no longer positive. Monte Carlo importance sampling — the algorithmic engine of everything we have done — fails. There is no probability left to sample.
+
+This is the sign problem. It is why the interior of the QCD phase diagram remains substantially unmapped from first principles.
+
+Partial workarounds exist. Taylor expansion around zero chemical potential. Imaginary chemical potential and analytic continuation. Reweighting. Complex Langevin. Lefschetz thimbles. None is a complete solution.
+
+The sign problem: thirty years of clever ideas, most of which almost work.

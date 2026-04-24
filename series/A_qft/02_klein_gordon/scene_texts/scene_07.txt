@@ -1,0 +1,3 @@
+In the Heisenberg picture, the field phi of x and t evolves as an operator. The Heisenberg equation recovers the operator Klein-Gordon equation.
+
+Write it out, and phi splits into two pieces. An annihilation part multiplied by a positive-frequency plane wave. And a creation part, multiplied by a negative-frequency plane wave. The field simultaneously destroys and creates quanta. A measurement of phi at a point is a mixture of both. That is what a quantum field does.

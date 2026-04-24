@@ -1,0 +1,5 @@
+The Lagrangian is minus one-quarter of the field strength squared, plus a Dirac term for matter. Write it out and expand.
+
+Because the field strength itself contains a commutator, squaring it produces cubic and quartic pieces. You get three-gluon vertices and four-gluon vertices automatically.
+
+These interactions exist purely because of the group structure. No matter required. The gauge bosons interact with each other just by virtue of living in a non-abelian theory.

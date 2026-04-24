@@ -1,0 +1,3 @@
+Quantization is the old trick applied to a new object. In quantum mechanics, position and momentum became operators with a nonzero commutator. Now the field phi of x, and its conjugate momentum pi of x, become operators.
+
+Their equal-time commutator is i times a three-dimensional delta function. The field at one point does not commute with its rate of change at the same point. That single postulate turns a classical field into a quantum one.

@@ -1,0 +1,5 @@
+You cannot prove a chain has converged. You can only detect when it hasn't. Geweke compares the mean from an early window with a late window, expecting a standard normal statistic. Gelman-Rubin runs several chains from dispersed starting points and looks at between-chain versus within-chain variance, expecting R-hat to approach one.
+
+Both flag problems. Neither certifies success.
+
+Convergence diagnostics can prove your chain has not converged. Proving the opposite requires religion.

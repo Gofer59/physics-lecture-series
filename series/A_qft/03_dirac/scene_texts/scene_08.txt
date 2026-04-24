@@ -1,0 +1,3 @@
+Plane-wave solutions of the Dirac equation come in two flavours. The u-spinors satisfy p-slash minus m, acting on u, equals zero. These are the positive-energy solutions — two of them, labelled by spin up or spin down.
+
+The v-spinors satisfy p-slash plus m, acting on v, equals zero. These are the negative-energy solutions, and they describe antiparticles. Every Dirac plane wave is a linear combination of four u's and v's, tagged by momentum and spin.

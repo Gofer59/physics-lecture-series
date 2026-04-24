@@ -1,0 +1,3 @@
+Invariance alone is not enough. You also need the chain to forget where it started and reach every region. Two conditions suffice. Irreducibility, meaning every state talks to every other, eventually. And aperiodicity, meaning no deterministic cycle.
+
+Together they give ergodicity. No matter your initial distribution, you converge to the invariant one. And geometric ergodicity gives it at an exponential rate.

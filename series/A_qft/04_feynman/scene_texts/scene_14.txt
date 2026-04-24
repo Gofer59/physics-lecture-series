@@ -1,0 +1,3 @@
+The simplest nontrivial process is two particles in, two particles out. In the centre-of-mass frame, the differential cross section with respect to solid angle is the squared amplitude, divided by sixty-four pi-squared times the centre-of-mass energy squared — with an extra factor of outgoing over incoming momentum, if the masses differ.
+
+This one formula dominates the undergraduate textbook, because almost every canonical experiment — e-plus-e-minus to mu-plus-mu-minus, Compton, Bhabha — is a two-to-two process.

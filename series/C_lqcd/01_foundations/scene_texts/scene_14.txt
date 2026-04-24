@@ -1,0 +1,3 @@
+The naive Wilson action has discretization errors of order a squared. Symanzik's insight: add carefully chosen higher-dimension operators to cancel the leading artifact, pushing errors down to order a to the fourth.
+
+The cost is a more complicated action. The reward is much coarser lattices achieving the same precision. Luscher–Weisz gauge actions and clover fermions are the workhorses built this way.

@@ -1,0 +1,5 @@
+At physical quark masses the chiral and deconfinement transitions are not genuine phase transitions. They are crossovers.
+
+The chiral condensate and the Polyakov loop change smoothly across a narrow temperature band around one hundred fifty-five MeV. The pseudocritical temperature is defined by the inflection point of some observable, not by a singularity.
+
+Only in the chiral limit, with the quark masses going to zero, is there a true second-order transition, expected in the O(4) universality class for two flavors.

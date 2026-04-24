@@ -1,0 +1,3 @@
+Simulate three to five system sizes spanning a decade. Near the critical temperature, use histogram reweighting to get smooth curves at any temperature.
+
+Vary trial values of the critical temperature and the exponents until the rescaled curves collapse. The quality of the collapse quantifies the fit. Corrections to scaling, governed by a subleading exponent, account for deviations at small L.

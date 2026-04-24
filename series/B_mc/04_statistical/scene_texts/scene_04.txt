@@ -1,0 +1,5 @@
+Too small a block. Blocks still correlated, error underestimated. Too large a block. Too few blocks, noisy estimate. The plateau, where the curve flattens for b well above tau-int, is the honest answer.
+
+No plateau means your simulation is too short. Run more. The ratio of the plateau value to the naive value gives you tau-int as a bonus.
+
+If you don't see a plateau, you haven't actually finished your simulation. Sorry.

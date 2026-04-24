@@ -1,0 +1,3 @@
+The vacuum is the state annihilated by every a. Acting with one creation operator gives a one-particle state. Acting with several gives multi-particle states. The whole Hilbert space is a direct sum over particle number. This is Fock space.
+
+Because the creation operators commute with each other, the states are automatically symmetric under particle exchange. Bose-Einstein statistics falls out for free. Identical particles are not a postulate of this theory. They are built into the algebra.

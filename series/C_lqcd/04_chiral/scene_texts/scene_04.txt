@@ -1,0 +1,3 @@
+We met this theorem already. Any doubler-free, local, translation-invariant lattice Dirac operator cannot satisfy the standard chiral anticommutator.
+
+For two decades, this seemed to be the final word. Every lattice fermion had to either double, delocalize, or break chiral symmetry explicitly. Wilson broke it. Staggered kept only a U(1) remnant. Something had to give.

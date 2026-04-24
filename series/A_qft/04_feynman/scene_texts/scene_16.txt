@@ -1,0 +1,3 @@
+For two-to-two processes, the three natural Lorentz-invariant kinematic variables are called s, t, and u — the Mandelstam variables. They are built from sums and differences of the ingoing and outgoing four-momenta.
+
+They satisfy the constraint that their sum equals the sum of squared masses. Each Feynman diagram lives in one of them. S-channel, t-channel, or u-channel — depending on which internal line carries the exchanged momentum.

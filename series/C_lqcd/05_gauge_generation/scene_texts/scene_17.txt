@@ -1,0 +1,5 @@
+A typical modern ensemble: a sixty-four cubed by one hundred twenty-eight lattice, physical pion mass, domain-wall or clover fermions, several thousand configurations.
+
+Cost: roughly ten million core-hours. Storage: terabytes. One ensemble is a piece of infrastructure.
+
+Ensembles are shared across collaborations. One group generates, many measure. International consortia like CLS and MILC produce libraries that dozens of physics projects rely on.

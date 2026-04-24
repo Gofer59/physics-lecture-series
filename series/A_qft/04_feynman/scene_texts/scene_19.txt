@@ -1,0 +1,3 @@
+We broke the Hamiltonian into free and interacting pieces. Expanded the time-evolution operator as a Dyson series. Applied Wick's theorem to time-ordered products. And matched each term to a Feynman diagram.
+
+Only connected amputated diagrams contribute to the S-matrix. Squaring the amplitude and integrating over phase space gives cross sections and decay rates. Every real-world particle-physics calculation fits into this skeleton.

@@ -1,0 +1,5 @@
+Effective mass points at different t are highly correlated. They come from the same configurations. A naive uncorrelated fit gives a meaningless chi squared.
+
+Use the jackknife covariance matrix for a correlated chi squared. Multi-state fits include sub-leading exponentials to extend the usable range. Bayesian priors stabilize the fits.
+
+Periodic boundary conditions require cosh-shaped fit forms to handle wrap-around. Rigor in fitting is not optional.

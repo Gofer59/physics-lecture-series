@@ -1,0 +1,5 @@
+You want to compute an integral in a thousand dimensions. A grid-based method needs N points per axis, which means N to the thousandth power evaluations. Hopeless, before the heat death of the universe.
+
+Throw random points at the problem, and the cost stops caring about dimension. This is the one-line miracle that makes statistical physics, Bayesian inference, and lattice QCD tractable.
+
+Deterministic quadrature in a thousand dimensions is a thought experiment. Monte Carlo is the thing you actually run on a Tuesday.

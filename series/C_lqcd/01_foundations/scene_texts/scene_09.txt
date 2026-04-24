@@ -1,0 +1,3 @@
+Not every lattice action defines a real quantum theory. Reflection positivity — a condition on how observables behave under time reversal — guarantees that the transfer matrix has non-negative eigenvalues.
+
+That in turn guarantees a unitary Hilbert space in the continuum limit. Wilson's action satisfies it. Some improved actions do not. Some lattice actions claim to be quantum mechanical. Reflection positivity is how we audit their tax returns.

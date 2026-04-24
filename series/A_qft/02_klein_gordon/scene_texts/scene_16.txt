@@ -1,0 +1,3 @@
+One technical but essential detail. The obvious normalization of one-particle states is not Lorentz invariant. Boosted observers would disagree on probabilities.
+
+The fix is to include a factor of the square root of two E-p in the definition of the momentum state. With this convention, the inner product of two momentum states is manifestly Lorentz covariant, and the integration measure over momenta becomes invariant too. This is the convention you will see everywhere in Peskin and Schroeder.

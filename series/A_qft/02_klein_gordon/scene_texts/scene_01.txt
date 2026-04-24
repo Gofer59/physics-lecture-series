@@ -1,0 +1,5 @@
+In ordinary relativistic quantum mechanics, the amplitude for a particle to propagate from one spacetime point to another does not vanish outside the light cone. It decays exponentially, but it is never zero. That is a disaster. Signals leak faster than light.
+
+The resolution is drastic. Stop treating particles as the fundamental objects. Promote the field itself to a quantum operator. Quantum field theory is the price causality exacts from quantum mechanics.
+
+If you thought single-particle quantum mechanics was the endpoint — it is not. It is an approximation that quietly violates relativity whenever you are not watching.

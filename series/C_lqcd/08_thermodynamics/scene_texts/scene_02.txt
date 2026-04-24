@@ -1,0 +1,5 @@
+Statistical mechanics is quantum field theory in imaginary time, with the Euclidean time extent equal to one over T.
+
+On the lattice, the temporal size — N-tau times a — is the inverse temperature. High T means small N-tau. Low T means large N-tau.
+
+You can vary T by changing N-tau at fixed a, or by changing a at fixed N-tau. The lattice is already a finite-temperature machine. We just have to label the axes correctly. Bosonic fields are periodic in time; fermions pick up a minus sign around the wrap.

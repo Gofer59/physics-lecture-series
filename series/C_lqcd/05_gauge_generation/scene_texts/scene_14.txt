@@ -1,0 +1,5 @@
+The innermost loop is always a Krylov solver for D x equals b. Conjugate gradient applies to D-dagger D, where gamma-five hermiticity helps. BiCGStab and GMRES handle non-Hermitian D directly.
+
+For near-chiral quark masses, multigrid solvers give ten to a hundred times speedups by mixing length scales. Domain-decomposition preconditioners accelerate things further.
+
+The solver determines the wall-clock cost of everything. Lattice QCD is secretly just ten years of solver engineering with some physics layered on top.

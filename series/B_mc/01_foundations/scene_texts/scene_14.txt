@@ -1,0 +1,5 @@
+Find a function close to your observable whose mean you already know. Subtract it off. Estimate only the residual by Monte Carlo. Add back the known mean. Your variance is now controlled by how well the auxiliary function approximates yours.
+
+In the limit of a perfect approximation, variance is zero. In practice, fit a low-order polynomial and watch the error bar shrink.
+
+The better your guess, the less you need Monte Carlo. Philosophically uncomfortable, operationally useful.

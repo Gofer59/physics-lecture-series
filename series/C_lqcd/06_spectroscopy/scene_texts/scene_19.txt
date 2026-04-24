@@ -1,0 +1,5 @@
+Hadron masses come from the large-time decay of two-point correlators. Smearing improves overlap with the ground state. The variational method extracts excited states.
+
+Correlated multi-state fits control systematics. Scale setting converts lattice units to MeV. Symanzik improvement and clover terms suppress discretization errors. Non-perturbative renormalization connects lattice operators to MS-bar.
+
+Step-scaling delivers alpha-s and Lambda-QCD. And the light hadron spectrum agrees with experiment to percent precision.

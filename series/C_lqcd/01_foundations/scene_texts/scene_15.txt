@@ -1,0 +1,3 @@
+A real simulation lives in a finite box, L cubed times T. Bosons get periodic boundary conditions. Fermions get antiperiodic in the time direction, which automatically implements finite temperature.
+
+Finite-size effects on pion masses scale like e to the minus m pi L. The standard rule — m pi L greater than four — keeps them under a percent. Your lattice is a tiny universe with a wraparound edge.

@@ -1,0 +1,3 @@
+For sampling rather than optimisation, augment the state with a temperature index. A ladder of temperatures, from hot to cold. The chain alternates between updating the state and changing temperature.
+
+At high temperatures, barriers are low, so the chain crosses multimodal structure. At low temperatures, it samples the actual target. The catch. You need the partition function ratios, which must be estimated beforehand.

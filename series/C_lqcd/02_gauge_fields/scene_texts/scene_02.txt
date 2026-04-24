@@ -1,0 +1,3 @@
+On each oriented link, from site n to n plus mu-hat, place an SU(3) matrix U sub mu of n. Think of it as the parallel transporter from one site to the next — the discrete version of the path-ordered exponential of the continuum gauge field.
+
+The backward link is the hermitian conjugate. The theory is now a field of group elements, not algebra elements. The data is inherently compact.

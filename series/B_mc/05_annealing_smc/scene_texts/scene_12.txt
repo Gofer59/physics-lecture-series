@@ -1,0 +1,3 @@
+The KL divergence from g to f is the expectation under g of the log of g over f. Minimise it to find the best approximation.
+
+Because f is only known up to a constant, rewrite. KL equals the negative of the evidence lower bound plus the log partition function. The ELBO is computable without the partition function. So maximising ELBO is equivalent to minimising KL, and neither needs the partition function.

@@ -1,0 +1,3 @@
+At large temporal extent, the Wilson loop falls exponentially — like e to the minus V of R times T, where V of R is the energy of a static quark–antiquark pair at separation R.
+
+Extract the decay rate, get the potential. This single procedure lets us measure the force between color charges directly from the lattice, with no reference to perturbation theory.

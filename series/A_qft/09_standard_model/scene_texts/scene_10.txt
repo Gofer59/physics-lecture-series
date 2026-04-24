@@ -1,0 +1,5 @@
+The Standard Model is not just qualitatively right. It is quantitatively, obnoxiously right.
+
+Before the top quark and the Higgs were directly produced, precision measurements at LEP and SLD pinned down their masses through virtual loop corrections.
+
+When the real particles were found, they landed exactly where the precision fits said they should.

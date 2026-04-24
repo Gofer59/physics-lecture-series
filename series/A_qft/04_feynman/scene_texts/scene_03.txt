@@ -1,0 +1,3 @@
+To do perturbation theory, we split the Hamiltonian into a free part, H-zero, and an interaction part, H-int. Fields are evolved with H-zero, so they behave like the free theory we already understand. States pick up the effect of H-int.
+
+This is the interaction picture — a hybrid between Schrödinger and Heisenberg, purpose-built for computing transition amplitudes, order by order.

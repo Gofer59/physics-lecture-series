@@ -1,0 +1,5 @@
+Monte Carlo consumes staggering quantities of random numbers. Billions per hour. True random from hardware is too slow. Pseudo-random is deterministic, fast, reproducible, with a long period.
+
+Three properties matter. Period, how long before repetition. Quality, do the numbers pass statistical tests. And speed. Always validate your generator against a known-answer problem before trusting it for production.
+
+Your random number generator is the only thing in your code that can corrupt every result without ever throwing an error. Test it.

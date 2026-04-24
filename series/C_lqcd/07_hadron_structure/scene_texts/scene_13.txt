@@ -1,0 +1,5 @@
+Push the box small enough that m-pi L is of order one. Now zero modes of the Dirac operator dominate the path integral. The theory reduces to a chiral random matrix theory, in which low-energy constants become measurable directly.
+
+The Banks–Casher relation holds volume by volume.
+
+The epsilon regime is a controlled corner of QCD, where finite-volume physics is calculable in closed form. It is a probe, not a problem.

@@ -1,0 +1,3 @@
+Pure SU(N) gauge theory has a global Z sub N center symmetry. Multiply all temporal links on one time slice by a root of unity. The action is unchanged, but the Polyakov loop picks up that phase.
+
+An unbroken center means confinement — expectation of P is zero. Spontaneous breaking means deconfinement — expectation of P is nonzero. For SU(3), it is a first-order phase transition. Deconfinement is just Z-three getting tired of behaving.

@@ -1,0 +1,3 @@
+The naive continuum derivative — psi at x plus mu minus psi at x — is not gauge-invariant on a lattice. Insert the link variable U sub mu between the two fermion fields and it becomes gauge-invariant by construction.
+
+The link parallel-transports the quark's color from one site to the next. Gauge coupling on the lattice is built into the very definition of a lattice derivative.

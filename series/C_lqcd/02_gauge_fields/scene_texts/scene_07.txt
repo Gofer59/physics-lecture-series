@@ -1,0 +1,3 @@
+The Haar measure projects onto the trivial representation. The integral of a single link matrix is zero. The integral of a link times its conjugate gives a color-delta divided by N. The integral of three links with an epsilon tensor gives another epsilon.
+
+These few identities power the strong-coupling expansion and let you compute simple lattice observables on paper, without a computer.

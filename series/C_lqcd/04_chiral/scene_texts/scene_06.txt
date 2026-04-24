@@ -1,0 +1,3 @@
+In 1998, Luscher showed the Ginsparg–Wilson relation implies an exact symmetry of the massless action. A modified chiral rotation, where gamma-five gets replaced by gamma-five times one minus a D.
+
+This is not a trick. It is a genuine continuous symmetry, with a conserved current, Ward identities, and all the structure you expect. Nielsen–Ninomiya assumed the naive rotation. Luscher found a better one.

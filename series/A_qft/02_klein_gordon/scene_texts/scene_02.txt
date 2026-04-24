@@ -1,0 +1,3 @@
+Before quantizing, remind yourself what a classical relativistic scalar field looks like. Its Lagrangian is the simplest Lorentz-invariant expression you can write. A kinetic term quadratic in derivatives, minus a mass term quadratic in the field.
+
+The equation of motion is the Klein-Gordon equation: the d'Alembertian plus mass squared, acting on phi of x. Fourier-decompose it, and every momentum mode obeys the equation of a simple harmonic oscillator, with frequency equal to the relativistic energy, omega-p.

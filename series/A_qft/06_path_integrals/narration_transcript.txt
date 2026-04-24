@@ -1,65 +1,157 @@
-# QFT-V06 Narration — Path Integrals
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_A_qft/qft_v06_slides.md -->
+# QFT-V06 — Path Integrals | Narration Transcript
 
 ## Scene 01
-TODO
+
+Canonical quantization turns fields into operators. It insists on a preferred direction of time. Feynman found this unsatisfying, so he proposed something radically different.
+
+Compute quantum amplitudes by summing over every conceivable history. Weight each one by the exponential of i times the classical action. That sum is the path integral. In quantum field theory, the histories are not particle trajectories. They are entire field configurations spread across all of spacetime.
+
+Feynman's idea was: instead of asking what happens, just average over everything that could happen, with a funny oscillatory weight. And somehow it works.
 
 ## Scene 02
-TODO
+
+The central object of the path-integral formulation is the generating functional, called Z of J. It is the integral over all field configurations of the exponential of i times the action, plus an external source J coupled to the field.
+
+Take functional derivatives of Z with respect to J, set J to zero, and each derivative pulls a field down from the exponential. What drops out is a full correlation function of the theory.
+
+A single object, Z of J, contains every Green's function of quantum field theory. One generating functional, infinitely many correlators.
 
 ## Scene 03
-TODO
+
+For a free scalar theory, the action is quadratic in the field, so the path integral is Gaussian. Complete the square, do the integral, and a clean answer appears.
+
+Z of J equals Z of zero times the exponential of minus one-half J times the Feynman propagator times J.
+
+This is exactly the same Feynman propagator we built from canonical quantization. The two methods agree. All the hard work of Dyson, Wick, and normal ordering is reproduced by a single Gaussian integral.
 
 ## Scene 04
-TODO
+
+Z of J contains both connected and disconnected diagrams. Take its logarithm — minus i times log of Z — and call the result W of J.
+
+W of J generates only the connected correlators. This is the same simplification that cancelled vacuum bubbles in the canonical picture, now rephrased as: just take a log.
+
+Connected diagrams are the ones that matter, and they are the functional derivatives of W. Everything else was bookkeeping.
 
 ## Scene 05
-TODO
+
+Take one more Legendre transform, from W of J to Gamma of phi classical, and you land on the effective action. It generates the one-particle-irreducible correlation functions — the true building blocks, because every reducible diagram is a product of irreducible ones.
+
+At tree level, the effective action equals the classical action. Loop corrections, resummed, give Gamma its full quantum content. Its effective potential, evaluated at its minimum, tells you the actual ground state of the theory.
 
 ## Scene 06
-TODO
+
+The factor of i in the exponential makes the path integral oscillatory and formally ill-defined. Rotate time to imaginary values — t goes to minus i tau — and the exponential becomes e to the minus Euclidean action. Real, convergent, well-behaved.
+
+That is exactly the Boltzmann weight of statistical mechanics, with the action playing the role of energy. Zero-temperature quantum field theory in d dimensions is the same mathematical object as statistical mechanics in d plus one.
+
+Wick rotation is the trick by which physicists pretend quantum field theory is just a very elaborate statistical-mechanics problem. The pretence works well enough to simulate QCD on supercomputers.
 
 ## Scene 07
-TODO
+
+Bosons are described by ordinary numbers. Fermions are not. To reproduce the correct sign behaviour of fermion paths, we need anticommuting numbers — Grassmann variables.
+
+Two Grassmanns anticommute. Any Grassmann squared is zero. Integration is defined by two rules: the integral of one equals zero, and the integral of theta equals one.
+
+Those minimalist axioms, due to Berezin, are enough to build the entire fermionic path integral.
 
 ## Scene 08
-TODO
+
+For a quadratic fermion action, psi-bar A psi, the Gaussian Grassmann integral gives the determinant of A. Not its inverse, as for bosons.
+
+This single sign flip — determinant in the numerator for fermions, determinant to the minus one-half in the denominator for bosons — is where every fermion loop picks up its factor of minus one.
+
+It is how the spin-statistics theorem embeds itself directly into the path integral.
 
 ## Scene 09
-TODO
+
+Try to integrate naively over the photon field A-mu and you get infinity. The reason is gauge redundancy. Infinitely many A-mu configurations are physically equivalent, differing only by a gauge transformation.
+
+The path integral double-counts an entire gauge orbit. Each orbit has infinite volume. Every physical point is counted infinitely often, and the result is meaningless.
+
+Something must be done before the theory makes any sense at all.
 
 ## Scene 10
-TODO
+
+Faddeev and Popov's solution is ingenious. Insert a gauge-fixing condition — say, partial-mu A-mu equals zero — together with a Jacobian determinant that compensates for the insertion.
+
+Rewrite that determinant as a Grassmann integral, and you pick up new anticommuting fields called ghosts. In QED the ghosts decouple from everything and can be quietly ignored.
+
+In non-abelian theories they are essential for unitarity, as we will see in Lecture 8.
 
 ## Scene 11
-TODO
+
+After gauge fixing with a parameter xi, the photon propagator becomes minus i over q squared, times g-mu-nu minus one minus xi times q-mu q-nu over q squared.
+
+Set xi equal to one and you get Feynman gauge — the simplest. Set xi equal to zero and you get Landau gauge — purely transverse.
+
+Physical observables have to be independent of xi. Checking xi-independence is a standard sanity check in any serious QED or QCD calculation.
 
 ## Scene 12
-TODO
+
+The path integral is invariant under shifts of its integration variable. Shift phi by an infinitesimal amount and out falls an exact equation relating correlators: the Schwinger-Dyson equation.
+
+Roughly, the classical equation of motion holds inside correlation functions, up to contact terms that appear when the field coincides with another insertion.
+
+This is the non-perturbative quantum generalization of the classical equations of motion. It holds to all orders, exactly.
 
 ## Scene 13
-TODO
+
+Apply the same trick with a symmetry transformation instead of a shift. If the path-integral measure is invariant under, say, a global U(1) rotation, an identity drops out: the Ward-Takahashi identity.
+
+It relates the divergence of the current to a sum of contact terms. In QED this is the same Ward identity we saw from canonical reasoning, now derived in two lines from symmetry of the measure.
+
+Every continuous symmetry generates an analogous identity. These are what tie the whole theory together.
 
 ## Scene 14
-TODO
+
+Sometimes a classical symmetry fails to be a symmetry of the quantum measure. The mismatch has a name: an anomaly. And it has physical consequences.
+
+The axial current in QED picks up a nonzero divergence at one loop — the chiral anomaly — and that correctly predicts the rate of neutral pion decay into two photons. In the Standard Model, anomaly cancellation across all fermions is a nontrivial constraint on particle content.
+
+The word "anomaly" sounds like a bug. It is a feature. Some of the most important numbers in particle physics come from the measure being quietly non-invariant.
 
 ## Scene 15
-TODO
+
+Wick-rotate to Euclidean signature, discretize spacetime onto a finite lattice, and the path integral becomes a finite-dimensional integral suitable for a computer.
+
+Each link of the lattice carries a gauge-field element. Each site carries a fermion variable. A Monte Carlo sampler draws configurations with weight e to the minus Euclidean action.
+
+This is how lattice QCD computes the proton mass, hadron spectra, and nuclear matrix elements from first principles, and matches experiment.
 
 ## Scene 16
-TODO
+
+Feynman diagrams are a Taylor series of the path integral around a classical vacuum. But not every phenomenon is close to that vacuum.
+
+Instantons are finite-action classical solutions in Euclidean time. They contribute non-perturbative effects invisible to any diagram. Solitons, vacuum tunneling, theta vacua in QCD — all of these live outside perturbation theory.
+
+The path integral sees them naturally. It is the more general framework.
 
 ## Scene 17
-TODO
+
+Evaluate the effective action on a constant field and you get the effective potential. Its minimum — not the minimum of the classical potential — is the actual quantum ground state.
+
+Loop corrections can shift or tilt the potential, sometimes drastically. Spontaneous symmetry breaking, the Higgs mechanism, radiative symmetry breaking — all are most cleanly understood as statements about the shape of the effective potential.
 
 ## Scene 18
-TODO
+
+Path integrals won the modern quantum field theory textbook because they do the things canonical quantization does poorly.
+
+Gauge theories are natural. Symmetries are manifest. Non-perturbative effects are tractable. Statistical mechanics and lattice simulation are a Wick rotation away. The formalism even extends cleanly to gravity, and has generated every serious attempt at quantum gravity since the 1960s.
+
+Canonical quantization still has its place. But the path integral is the lingua franca.
 
 ## Scene 19
-TODO
+
+The path integral reformulates quantum field theory as a functional integral over field configurations, weighted by the exponential of i times the action.
+
+Correlators come from functional derivatives of Z of J. Connected correlators come from W of J. Irreducible ones come from the effective action. Grassmann variables handle fermions, with a determinant where bosons get its inverse. Gauge fields need Faddeev-Popov ghosts. Wick rotation links the theory to statistical mechanics and the lattice.
+
+Symmetries give Ward identities, and occasionally, anomalies.
 
 ## Scene 20
-TODO
+
+Loop integrals diverge at high energy. The path integral has this problem, and so does the Feynman-diagram approach. Next episode we confront the ultraviolet.
+
+Regularization, dimensional regularization, counterterms, the running of couplings, and Wilson's picture of integrating out high-energy modes. After that lecture, QED predictions will go from three decimal places to twelve.
+
+And the concept of a theory will quietly shift. Not one immutable Lagrangian, but a family of Lagrangians that live at different energy scales.

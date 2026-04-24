@@ -1,0 +1,5 @@
+Euclidean time was the lattice's founding trick. But some questions — transport coefficients, spectral functions, thermalization of the quark–gluon plasma, scattering amplitudes at high energy — are intrinsically real-time.
+
+Euclidean lattice data encodes real-time information only indirectly, through an inverse Laplace transform that is mathematically ill-posed.
+
+Proposed solutions: quantum computing, tensor network methods — matrix product states in low dimensions, more general networks elsewhere — and dedicated inverse-problem algorithms. This is an open research frontier.

@@ -1,0 +1,5 @@
+To make the theory work under local rotations of the internal group, the ordinary derivative is not enough. It picks up unwanted terms whenever the rotation depends on position.
+
+We add a gauge field whose transformation precisely cancels the mess. Ordinary derivative plus gauge field gives the covariant derivative.
+
+Its transformation rule is the definition of gauge symmetry. Everything else in Yang-Mills theory is built on top of it.

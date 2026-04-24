@@ -1,0 +1,7 @@
+We started with path integrals. We met propagators and Feynman rules. We renormalized divergences. We summed loop corrections. We built gauge theories. Yang-Mills gave us the structure of the strong and weak forces. Spontaneous symmetry breaking and the Higgs gave us masses.
+
+Today we assembled the full Standard Model. Its content, its successes, and its gaps.
+
+You now hold the best-tested theory humans have ever written, in its correct form.
+
+Nine lectures. A century of work. And we still do not know what most of the universe is made of.

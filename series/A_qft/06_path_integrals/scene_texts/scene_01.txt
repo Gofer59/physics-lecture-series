@@ -1,0 +1,5 @@
+Canonical quantization turns fields into operators. It insists on a preferred direction of time. Feynman found this unsatisfying, so he proposed something radically different.
+
+Compute quantum amplitudes by summing over every conceivable history. Weight each one by the exponential of i times the classical action. That sum is the path integral. In quantum field theory, the histories are not particle trajectories. They are entire field configurations spread across all of spacetime.
+
+Feynman's idea was: instead of asking what happens, just average over everything that could happen, with a funny oscillatory weight. And somehow it works.

@@ -1,0 +1,3 @@
+For continuous spins in O(n) models, overrelaxation reflects the spin about its local field direction. The energy is exactly preserved, so the move is always accepted.
+
+It is microcanonical and deterministic. But when mixed with heat-bath updates, it dramatically reduces autocorrelation for XY and Heisenberg models. No analogue for discrete spins.

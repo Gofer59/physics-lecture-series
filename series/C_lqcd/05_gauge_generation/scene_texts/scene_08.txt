@@ -1,0 +1,5 @@
+The trick is to write determinant of D-dagger D as a Gaussian integral over an auxiliary bosonic field phi. The integrand becomes e to the minus phi-dagger times the inverse of D-dagger D times phi.
+
+The fermionic degrees of freedom are gone. The path integral is now purely bosonic, with an effective action we can sample.
+
+For two degenerate flavors this gives the determinant squared exactly. For one flavor, or for rooted staggered fermions, we reach for a rational approximation. The determinant never appears directly. Only solver calls do.

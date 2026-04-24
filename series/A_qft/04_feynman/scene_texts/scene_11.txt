@@ -1,0 +1,3 @@
+The physical object of ultimate interest is the S-matrix — the amplitude to go from an asymptotic incoming state to an asymptotic outgoing state. Write S equals one plus i times T, where T is the non-trivial piece.
+
+Each matrix element of T extracts a four-momentum-conserving delta function, and an invariant amplitude M. M is the sum of connected amputated Feynman diagrams. S-matrix unitarity — S-dagger S equals one — imposes the optical theorem, linking the imaginary part of forward scattering to total cross sections.

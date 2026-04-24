@@ -1,0 +1,3 @@
+pyerrors wraps these ideas in Python. The Obs class carries not just a number, but its full fluctuation history across ensembles. Arithmetic between Obs objects propagates errors exactly via automatic differentiation.
+
+The Corr class handles correlator matrices for lattice QCD, including generalised-eigenvalue problems. FFT-based autocorrelations run in N log N. It is what honest error analysis looks like at scale.

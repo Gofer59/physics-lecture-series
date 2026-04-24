@@ -1,0 +1,3 @@
+A preview of what awaits. At tree level, the Dirac equation predicts g equals two, exactly, for the electron. The one-loop QED correction, computed by Schwinger in 1948, shifts it by alpha over two pi. A number around zero point zero zero one one six.
+
+This is the anomalous magnetic moment. It has been computed to five loops, and measured in Penning traps. Theory and experiment agree to twelve figures. This is the number that proves QED really is the right theory of electromagnetism at quantum scales.

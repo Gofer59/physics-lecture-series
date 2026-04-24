@@ -1,0 +1,5 @@
+Monte Carlo is not one algorithm. It is a discipline. The discipline of replacing intractable deterministic computation with controlled randomness, and treating the resulting errors with honesty.
+
+Every method in this series, from classical sample averages to Hamiltonian Monte Carlo to variational inference, is a specialisation of that principle. The hard parts are never the random numbers themselves. They are the estimators, the diagnostics, and the implementation that carry them.
+
+If you remember one thing. The error bar is not optional.

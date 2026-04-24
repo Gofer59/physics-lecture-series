@@ -1,0 +1,3 @@
+Coming up next: a scalar field on a lattice was the easy part. QCD is a non-Abelian gauge theory. Writing gauge fields on a lattice requires a genuinely new idea.
+
+We will not store the gluon field at sites. We will store SU(3) transporters on links. Next time we build Wilson's gauge action, define the Wilson loop, and extract the static quark potential. Scalar fields were the easy part. Now we put a Lie group on every edge.

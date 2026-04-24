@@ -1,0 +1,5 @@
+Your simulation lives in a box — L cubed times T. Pions, the lightest hadrons, feel the box most strongly. Their Compton wavelength is the largest.
+
+The rule of thumb: keep m-pi times L above four, and finite-volume corrections stay below about one percent.
+
+Chiral perturbation theory predicts the leading correction falls like e to the minus m-pi L, divided by m-pi L to the three-halves. Smaller boxes can be pushed into the chiral regime, where finite volume is a feature, not a bug.

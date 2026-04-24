@@ -1,0 +1,5 @@
+Lattice QCD at finite temperature gives a deconfinement crossover at one hundred fifty-five MeV, an equation of state used by heavy-ion physics, and a Columbia plot mapping phase structure.
+
+Finite chemical potential is obstructed by the sign problem.
+
+Beyond QCD, the lattice establishes phi to the fourth triviality, bounds the Higgs mass, and probes vacuum stability through Yukawa models. The full edifice — Lagrangian, path integral, discretization, gauge invariance, fermion actions, Monte Carlo, improvement, renormalization, structure functions, thermodynamics — is one coherent framework.

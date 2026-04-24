@@ -1,0 +1,3 @@
+Coordinate-Ascent Variational Inference optimises each factor in turn, keeping the others fixed. The update for each factor is proportional to the exponential of the expected log joint under the remaining factors.
+
+For exponential-family models it has closed form. Each step increases the ELBO monotonically. Analogous to Gibbs sampling. But deterministic, and biased.

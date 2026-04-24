@@ -1,0 +1,3 @@
+For correlated data, the variance of the sample mean is sigma squared over N, times one plus two times the sum of lagged autocorrelations. That sum, packaged as the integrated autocorrelation time tau-int, captures everything about how much your correlations inflate the error.
+
+Without it, you don't know what you computed. With it, you do.

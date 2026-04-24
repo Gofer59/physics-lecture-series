@@ -1,0 +1,3 @@
+You cannot integrate Hamilton's equations exactly except in trivial cases. The leapfrog scheme does a half-step in momentum, a full step in position, and another half-step in momentum.
+
+It is exactly symplectic and exactly time-reversible, even though the energy is only approximately conserved. The energy error is second order in step size and bounded over long trajectories. Symplecticity is what makes leapfrog the right tool for HMC.

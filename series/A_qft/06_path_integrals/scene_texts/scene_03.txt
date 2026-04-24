@@ -1,0 +1,5 @@
+For a free scalar theory, the action is quadratic in the field, so the path integral is Gaussian. Complete the square, do the integral, and a clean answer appears.
+
+Z of J equals Z of zero times the exponential of minus one-half J times the Feynman propagator times J.
+
+This is exactly the same Feynman propagator we built from canonical quantization. The two methods agree. All the hard work of Dyson, Wick, and normal ordering is reproduced by a single Gaussian integral.

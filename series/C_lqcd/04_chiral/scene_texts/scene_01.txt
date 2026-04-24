@@ -1,0 +1,3 @@
+Massless quarks come in two independent chiralities: left and right. The QCD Lagrangian in the massless limit treats them as two decoupled worlds, related only by color. This is chiral symmetry.
+
+But the physical world has pions that are absurdly light compared to other hadrons. Baryons whose masses refuse to line up in mirror multiplets. A nucleon built almost entirely from binding energy. All of that is chiral symmetry — spontaneously broken by the vacuum. Pions are light because they are the vacuum remembering a broken symmetry. Physics: where a ghost determines the mass spectrum.

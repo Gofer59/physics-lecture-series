@@ -1,0 +1,5 @@
+Write the target as the exponential of minus V. Gradient descent on V finds the mode. One point.
+
+Langevin dynamics adds Gaussian noise to gradient descent, and instead of collapsing to a point, it samples from the exponential of minus V. The stochastic differential equation has f as its invariant distribution. Gradient information makes proposals smarter than a blind random walk.
+
+Gradient descent finds one point. Langevin dynamics finds an entire distribution. Same machinery, very different goals.

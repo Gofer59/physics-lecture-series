@@ -1,0 +1,3 @@
+Tree level gives you three or four decimal places. The real magic — the anomalous magnetic moment, the Lamb shift, the running of the coupling — lives in loop diagrams.
+
+But loop diagrams contain integrals over internal momenta, that diverge at high energy. This is the UV problem, and it is what will force us to renormalize in Lecture Seven. For now, the message is: tree level is shockingly good, and loops will make it better, once we know how to handle their infinities.

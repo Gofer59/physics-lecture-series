@@ -1,0 +1,3 @@
+Every integral of a function against a density is, by definition, an expected value. If you can sample from the density, the sample average converges to the integral. That is all Monte Carlo is. A disguise for the law of large numbers.
+
+The error shrinks as one over the square root of N, independent of dimension. You trade a deterministic bound for a random error bar. In a thousand dimensions, that trade is the only game in town.

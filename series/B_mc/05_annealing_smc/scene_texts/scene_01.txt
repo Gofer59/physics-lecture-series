@@ -1,0 +1,3 @@
+Sometimes you don't want a distribution. You want its mode. Sometimes your target is so rugged that a single chain can't cross the barriers between modes. Sometimes the data is streaming in one observation at a time. And sometimes you'd rather have a fast approximation than an exact but slow Monte Carlo estimate.
+
+This video is a tour of the algorithms for those cases. Annealing, tempering, sequential Monte Carlo, and variational inference.

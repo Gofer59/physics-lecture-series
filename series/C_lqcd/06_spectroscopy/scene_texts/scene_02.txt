@@ -1,0 +1,5 @@
+Choose an operator O with the quantum numbers of the hadron you want. For the pion, d-bar gamma-five u.
+
+Measure the Euclidean correlator C of t — the sum over space of the expectation value of O at x,t times O-dagger at the origin. Average it across configurations.
+
+Its spectral decomposition is a sum over states of mod Z sub n squared times e to the minus E sub n times t. At large t the lowest state dominates. The correlator becomes mod Z zero squared times e to the minus m sub H times t. The mass is simply the slope on a log plot.

@@ -1,0 +1,3 @@
+The law of large numbers survives correlation. The time average of an observable along an ergodic Markov chain converges to the expectation under f. The central limit theorem also survives, but the asymptotic variance is tau squared. Sigma squared inflated by the autocorrelation sum.
+
+Unlike importance sampling, every sample carries equal weight. And there is no weight degeneracy.

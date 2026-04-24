@@ -1,0 +1,3 @@
+Store a d-dimensional cubic lattice of side L as a one-dimensional array of length L to the d. Index mapping. k equals i-one, plus i-two times L, plus i-three times L squared, and so on. Periodic boundary conditions via modular arithmetic.
+
+But modulo is slow. Pre-compute neighbour-index tables at the start and look them up at runtime. Memory versus speed, decided by cache size and lattice size.

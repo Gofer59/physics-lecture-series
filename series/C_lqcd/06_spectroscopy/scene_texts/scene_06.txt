@@ -1,0 +1,5 @@
+A point-source operator creates a localized excitation. It overlaps with the ground state, the first excited state, and the entire tower of radial excitations.
+
+Replace it with a smeared operator. Gaussian quark sources of spatial extent comparable to a real hadron, built with gauge-covariant smearing to preserve gauge invariance.
+
+Ground-state overlap goes up. Excited-state contamination goes down. The plateau appears earlier in t. APE and HYP smearing clean up the gauge links similarly.

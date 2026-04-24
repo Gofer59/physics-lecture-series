@@ -1,0 +1,7 @@
+QCD allows a term in its Lagrangian that would produce CP violation in strong interactions. The coefficient is a free parameter called theta.
+
+Experiments bound theta to be smaller than ten to the minus ten. There is no symmetry principle forcing it to zero.
+
+Either nature is absurdly fine-tuned, or there is new physics we have not yet seen. The axion is the leading candidate.
+
+Ten orders of magnitude of fine-tuning is what physicists call suspicious.

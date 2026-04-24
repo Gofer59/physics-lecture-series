@@ -1,0 +1,5 @@
+The first classic loop in QED is the photon self-energy, also called vacuum polarization. A photon briefly disappears into a virtual electron-positron pair, then reassembles itself.
+
+The amplitude is a function of the photon's momentum squared. The Ward identity forces it to be proportional to q squared times g-mu-nu minus q-mu q-nu.
+
+The coefficient has a one-over-epsilon pole — a UV divergence. We absorb it into the electric charge.

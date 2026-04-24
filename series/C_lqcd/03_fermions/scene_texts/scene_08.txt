@@ -1,0 +1,3 @@
+In 1982, Ginsparg and Wilson proposed a modified anticommutator. D gamma-five plus gamma-five D equals a times D gamma-five D. The right-hand side vanishes as a goes to zero, recovering the continuum chiral condition.
+
+At finite a it is a local contact term. The insight was forgotten for fifteen years, until the late nineties, when it was realized this equation allows a form of exact lattice chiral symmetry. Nielsen–Ninomiya gets relaxed, not violated.

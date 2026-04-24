@@ -1,0 +1,5 @@
+A proton is not a simple object. It is a seething pile of quarks and gluons, each carrying a fraction of the proton's momentum.
+
+The probability distributions are called parton distribution functions. They evolve with energy, according to the DGLAP equations — a set of integro-differential equations derived from gluon emission.
+
+Without parton distributions, there are no LHC predictions at all.

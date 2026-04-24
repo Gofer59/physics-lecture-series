@@ -1,0 +1,3 @@
+Throw points uniformly into a unit square. The fraction that land inside the inscribed circle, times four, estimates pi. With ten thousand samples you get roughly three point one four, plus or minus a percent.
+
+It is not the best way to compute pi. But it is the clearest demonstration of the three-step Monte Carlo recipe. Rewrite as expectation. Build the sample average. Attach the central limit error bar.

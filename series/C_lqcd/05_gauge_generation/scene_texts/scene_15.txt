@@ -1,0 +1,5 @@
+A decade ago, simulating at the physical pion mass of one hundred thirty-five MeV was a heroic accomplishment. Today it is the baseline.
+
+Better algorithms, better solvers, and faster hardware have pushed the chiral extrapolation out of the picture for many observables. You just simulate at the physical point.
+
+This is one of the quiet revolutions of the field. Nearly invisible from outside, transformative inside.

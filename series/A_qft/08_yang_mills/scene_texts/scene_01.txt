@@ -1,0 +1,5 @@
+QED gets one thing right that forces everything else. The photon has no charge, so it cannot interact with itself. Photon lines are straight and quiet.
+
+But the forces inside the nucleus do not behave that way. Their carriers are coloured, charged, and tangled with one another. To describe them we need a gauge theory whose bosons talk to themselves.
+
+In QED, photons are like physicists at a party. In Yang-Mills, they actually talk to each other.

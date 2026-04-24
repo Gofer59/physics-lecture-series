@@ -1,0 +1,5 @@
+For a quadratic fermion action, psi-bar A psi, the Gaussian Grassmann integral gives the determinant of A. Not its inverse, as for bosons.
+
+This single sign flip — determinant in the numerator for fermions, determinant to the minus one-half in the denominator for bosons — is where every fermion loop picks up its factor of minus one.
+
+It is how the spin-statistics theorem embeds itself directly into the path integral.

@@ -1,0 +1,3 @@
+In Minkowski signature the path integral weighs histories by e to the i S — an oscillating phase that no Monte Carlo method can sample. Rotate time into the imaginary axis, and e to the i S becomes e to the minus S sub E, a positive Boltzmann weight.
+
+The Osterwalder–Schrader theorem guarantees we can rotate back. We Euclideans solved the sign problem by not having one.

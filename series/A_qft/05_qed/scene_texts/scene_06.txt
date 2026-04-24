@@ -1,0 +1,3 @@
+The simplest nontrivial QED process. An electron and positron annihilate into a photon, which pair-creates a muon and anti-muon. One diagram only, in the s-channel.
+
+Writing down the amplitude using the Feynman rules takes one line. Squaring and averaging over spins reduces, via trace technology, to a clean closed form. The differential cross section is alpha squared, over four E-cm squared, times one plus cosine-squared theta. The total integrates to four pi alpha squared, over three s.

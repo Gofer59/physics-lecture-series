@@ -1,0 +1,7 @@
+Despite decades of work, the finite-density sign problem remains unsolved for QCD.
+
+Lefschetz thimbles, complex Langevin, machine-learning-aided reweighting — each works in controlled regimes. None covers the full phase diagram.
+
+The critical endpoint, if it exists, sits firmly in the sign-problem region. Progress here would transform our understanding of dense QCD matter and, by extension, neutron-star physics. Unsolved, and important.
+
+If you solve the sign problem, a lot of us will be very happy and very busy.

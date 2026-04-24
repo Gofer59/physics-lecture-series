@@ -1,0 +1,3 @@
+The smallest nontrivial closed loop on a hypercubic lattice is the plaquette — four links around a unit square in a given plane. Its trace is gauge-invariant.
+
+For small lattice spacing, the plaquette expands to one minus a to the fourth over two times the field strength squared, plus higher-order corrections. The plaquette is the discrete echo of F squared.

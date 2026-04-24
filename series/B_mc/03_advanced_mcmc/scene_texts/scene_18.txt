@@ -1,0 +1,3 @@
+If your physics conserves total magnetisation, say a binary alloy with fixed composition, you cannot flip single spins. Instead, exchange a pair of unlike neighbouring spins with a Metropolis ratio.
+
+This is Kawasaki dynamics. It models phase separation correctly, but suffers badly near the critical point. Non-local exchanges and continuous-time variants are common remedies.

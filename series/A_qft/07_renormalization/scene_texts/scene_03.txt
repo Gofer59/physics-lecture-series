@@ -1,0 +1,5 @@
+Before absorbing divergences, we have to make them mathematically manageable. That is regularization.
+
+Several schemes exist. A hard cutoff at momentum Lambda is simple but breaks symmetries. Pauli-Villars subtracts heavy fictitious particles. Dimensional regularization computes in d equal to four minus two epsilon dimensions, replacing infinities with poles in epsilon.
+
+Dim reg is the industry standard. It preserves Lorentz invariance and gauge invariance automatically, and that matters.

@@ -1,0 +1,5 @@
+Not every theory is renormalizable. A simple dimensional rule tells you in advance.
+
+If every coupling in the Lagrangian has mass dimension greater than or equal to zero, only finitely many types of divergence appear, and a finite number of counterterms absorbs them all. If any coupling has negative mass dimension, new counterterms appear at every order.
+
+QED, QCD, and phi-to-the-fourth are renormalizable. The Fermi theory of weak interactions, and general relativity, are not.

@@ -1,0 +1,5 @@
+We solve Hamilton's equations by leapfrog. Half-step the momenta, full-step the links, half-step the momenta again. It is symplectic, preserving phase-space volume, and time-reversible.
+
+The Hamiltonian error per step is order epsilon squared. Higher-order integrators like Omelyan reach order epsilon to the fourth, at the cost of more force evaluations per step.
+
+The whole of HMC rests on the integrator being time-reversible and symplectic. Drop either one and detailed balance fails.

@@ -1,0 +1,3 @@
+You often cannot sample from the distribution you want. Rewrite the expectation under a distribution you can sample from, called g, and weight each sample by the density ratio f over g. The estimator is still unbiased.
+
+Choose g wisely, and variance plummets. Choose g poorly, and you are worse off than before. Importance sampling is both variance reduction and a workaround for intractable targets.

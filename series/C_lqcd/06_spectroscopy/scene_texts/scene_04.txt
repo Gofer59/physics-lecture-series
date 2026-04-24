@@ -1,0 +1,5 @@
+Define the effective mass: log of C of t divided by C of t plus one. For a pure single exponential this is simply m sub H — a constant.
+
+In practice, at small t the excited states contaminate. At large t the signal-to-noise ratio collapses. In between lies the plateau.
+
+Plot effective mass against t, find the flat region, and fit a constant. Every lattice paper contains some version of this plot. It is the visual core of spectroscopy.

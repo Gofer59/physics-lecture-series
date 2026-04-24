@@ -1,0 +1,5 @@
+Loops are divergent. Regularization makes them tractable, and dimensional regularization does so without violating symmetries.
+
+Counterterms absorb the divergences. The Ward identity constrains them in QED. Running couplings come from the beta function. QED screens, QCD is asymptotically free. Power counting distinguishes renormalizable theories from effective ones.
+
+Wilson reinterpreted the entire framework as integrating out high-energy modes, and put scale at the centre of modern physics.

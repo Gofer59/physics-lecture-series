@@ -1,0 +1,3 @@
+Wilson fermions have errors of order a. Sheikholeslami and Wohlert showed these can be cancelled by adding a single operator — c-SW times sigma-mu-nu times F-hat-mu-nu — where F-hat is a clover-shaped sum of four plaquettes.
+
+Tune c-SW, either perturbatively or non-perturbatively, and on-shell quantities become order a squared improved. Clover-Wilson fermions are the standard workhorse of many modern collaborations. It is called clover because it looks like one. Lattice physicists are a literal people.

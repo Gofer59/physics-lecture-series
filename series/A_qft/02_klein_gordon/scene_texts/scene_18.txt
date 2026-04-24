@@ -1,0 +1,3 @@
+Why go through this whole construction? Because every scattering cross section, every decay rate, every high-precision QED prediction reduces to products of Feynman propagators, tied together at interaction vertices.
+
+The free Klein-Gordon theory is trivial. Nothing scatters off anything. But it supplies the vocabulary: propagators, creation and annihilation, Fock space. Add interactions, and the rest of QFT is just an expansion built on top of this machinery.

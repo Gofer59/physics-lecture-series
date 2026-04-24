@@ -1,0 +1,3 @@
+For fixed chain length N and autocorrelation tau, both methods give the right answer in expectation. But Gamma's systematic error decays exponentially in the window, while binning's decays only as tau over block size.
+
+At realistic ratios of N to tau, Gamma is more reliable. It is the standard in lattice QCD precisely for this reason. Binning is simpler, more transparent, and still the right tool for most MCMC work outside lattice gauge theory.

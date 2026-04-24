@@ -1,0 +1,5 @@
+At high energies, the strong force is weak. Feynman diagrams converge beautifully. Drop down to the hadronic regime, and the coupling explodes. The series you were expanding in becomes larger than one.
+
+Protons, pions, confinement — the actual content of QCD lives precisely where our main calculational tool dies. Perturbation theory: the physicist's favorite tool, right up until it isn't.
+
+We need a definition of QCD that does not start by assuming the coupling is small.

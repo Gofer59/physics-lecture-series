@@ -1,0 +1,3 @@
+Gibbs. Stochastic, exact, expensive. CAVI. Deterministic, biased, cheap. Both update one coordinate at a time. Gibbs draws from the conditional. CAVI finds the best variational factor under the expected log-conditional.
+
+They are duals. Sampling versus optimisation on the same coordinate structure. In practice, use CAVI to initialise Gibbs, or Gibbs to polish CAVI. Neither dominates the other uniformly.

@@ -1,0 +1,3 @@
+In 1981, Nielsen and Ninomiya proved the bad news is unavoidable. Any lattice Dirac operator that is local, translation-invariant, has the right continuum limit, and anticommutes with gamma-five, must produce equal numbers of left- and right-handed species.
+
+You cannot write a single chiral fermion on a lattice without sacrificing one of those assumptions. The theorem has a topological proof. Nielsen and Ninomiya: when a no-go theorem has your name on it, you are officially a problem in someone's thesis.

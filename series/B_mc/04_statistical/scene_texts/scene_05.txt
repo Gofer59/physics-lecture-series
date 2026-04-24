@@ -1,0 +1,3 @@
+Some observables are not simple means. Think ratios, susceptibilities, eigenvalues of a correlator matrix. Bootstrap is the answer.
+
+Resample your chain, or blocks of it, with replacement. Recompute the estimator. Repeat a thousand times. The scatter of the bootstrap estimates gives you a confidence interval without any distributional assumption. Resample blocks, not individual samples, to respect correlation.

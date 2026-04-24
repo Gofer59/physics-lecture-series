@@ -1,0 +1,5 @@
+Lattice perturbation theory converges badly. Link fluctuations generate large "tadpole" contributions. Parisi's trick, formalized by Lepage and Mackenzie, is to divide each link by its mean-field value u-zero — the fourth root of the real plaquette expectation.
+
+This absorbs the dominant tadpoles into a rescaling. Tree-level perturbation theory with tadpole improvement often beats unimproved one-loop results. At typical couplings u-zero is about zero point eight seven.
+
+Lattice perturbation theory behaves badly. Tadpole improvement: the ibuprofen of the field.

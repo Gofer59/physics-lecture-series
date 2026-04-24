@@ -1,0 +1,3 @@
+In 1982, in a paper that was immediately forgotten, Ginsparg and Wilson proposed a modified anticommutator. D gamma-five plus gamma-five D equals a times D gamma-five D. The right-hand side is local, and vanishes as a goes to zero.
+
+It is broken at finite a, but in a precisely controlled way — a contact term that affects only coincident points, not the propagator at separation. The physical chiral Ward identities would still hold. Fifteen years is roughly the half-life of a good idea that arrives too early.

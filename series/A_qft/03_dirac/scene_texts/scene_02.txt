@@ -1,0 +1,3 @@
+Before constructing the equation, we need to know how fields with several components can transform under Lorentz boosts and rotations. A single complex number is a scalar. Four numbers with vector indices is a vector.
+
+But there is a whole family of other representations, labelled by pairs of half-integers. The smallest non-trivial ones are two-component spinors. They rotate in a funny way. A full 360-degree rotation returns a spinor to minus itself. Only a 720-degree rotation brings it back.

@@ -1,0 +1,5 @@
+We built QED on a U(1) gauge symmetry. The Standard Model uses bigger groups. SU(3) for colour, and SU(2) times U(1) for the electroweak sector.
+
+The resulting Yang-Mills theories have gauge bosons that carry charge and self-interact. Next episode generalizes gauge invariance to non-abelian groups.
+
+We introduce ghost fields and BRST symmetry, explain asymptotic freedom from the structure-constant signs, and show how spontaneous symmetry breaking gives mass to the W and Z bosons via the Higgs mechanism.

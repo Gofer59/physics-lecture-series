@@ -1,0 +1,3 @@
+Coming up next: we built the machinery. Next we use it. Continuum chiral symmetry, its spontaneous breaking, Goldstone bosons and the pion. The Ginsparg–Wilson relation and Luscher's exact lattice chiral symmetry in full detail.
+
+The spectrum of the Dirac operator — zero modes, the index theorem, the axial anomaly, the Banks–Casher relation. And what it means for chiral symmetry to be restored at high temperature. Chiral symmetry on the lattice: a journey from impossible to exact, in twenty years of hard work.

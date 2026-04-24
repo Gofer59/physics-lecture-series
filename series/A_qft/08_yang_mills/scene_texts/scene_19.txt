@@ -1,0 +1,5 @@
+We took QED and generalized it. Non-abelian gauge groups give bosons that carry charge and self-interact. Quantizing them required ghosts and BRST symmetry.
+
+The resulting theory becomes free at high energy and confines at low energy. Spontaneous symmetry breaking, grafted on, turns some gauge bosons massive without breaking the gauge principle at any step.
+
+We built the theory on commutators and broken symmetries. Somehow the universe agreed.

@@ -1,0 +1,3 @@
+The trick of Kogut and Susskind was to diagonalize the Dirac structure by a site-dependent phase transformation. Gamma matrices turn into sign factors eta-mu of n. Keep one component of the Dirac spinor per site.
+
+The sixteen original species become four tastes, spread over the corners of a unit hypercube. Staggered fermions are cheaper than Wilson, and they retain a remnant U(1) chiral symmetry — a real Goldstone boson survives.

@@ -1,0 +1,5 @@
+Lattice results depend on two unphysical parameters: the spacing a, which should be zero, and the quark mass m sub q, often heavier than physical.
+
+Simulate at several a and extrapolate to zero. Wilson fermions have leading errors order a or a squared. Staggered has order a squared plus alpha-s a squared.
+
+Simulate at several quark masses and use chiral perturbation theory to extrapolate to the physical pion. Modern calculations often bypass chiral extrapolation entirely by simulating at the physical point, leaving only the continuum limit.

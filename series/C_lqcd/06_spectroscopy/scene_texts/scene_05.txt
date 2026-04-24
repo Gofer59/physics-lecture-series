@@ -1,0 +1,7 @@
+Baryon correlators decay like e to the minus m sub B times t. Their variance decays only like e to the minus three m-pi times t.
+
+The noise wins exponentially, at a rate m sub B minus three-halves m-pi. For the proton at the physical pion mass this is catastrophic. Useful signal lasts only a handful of time slices.
+
+Meson correlators are better, but not immune. Signal-to-noise is a constant design pressure in lattice spectroscopy.
+
+The lattice will measure anything. It will just scream louder at you the further out you ask.

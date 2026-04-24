@@ -1,0 +1,7 @@
+You spent millions of core-hours generating gauge configurations. What do you do with them?
+
+The flagship output of lattice QCD is the hadron spectrum. Masses of pions, kaons, protons, neutrons, Delta baryons, glueballs — all computed from first principles, with no free parameters beyond the quark masses and an overall scale.
+
+In 2008 the BMW collaboration published the light hadron spectrum agreeing with experiment to within a few percent.
+
+The spectrum of hadrons, from first principles, to percent accuracy. This is what QCD looks like when it works.

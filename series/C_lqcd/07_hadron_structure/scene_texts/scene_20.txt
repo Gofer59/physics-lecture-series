@@ -1,0 +1,5 @@
+One lecture left. Everything we have built comes together — including the problem we still cannot solve.
+
+Next, we heat up QCD. The deconfinement crossover at one hundred fifty-five MeV. The equation of state for heavy-ion collisions. The Columbia plot of phase structure.
+
+Then we try to add chemical potential and meet the sign problem, the reason the finite-density QCD phase diagram remains largely unknown. Then a survey of lattice studies beyond QCD, and a reflection on what the three series together have built.

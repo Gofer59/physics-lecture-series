@@ -1,0 +1,5 @@
+Because bare parameters are fictional and physical couplings depend on the renormalization scale mu, we can ask how the coupling evolves as we change mu.
+
+The answer is the beta function. Mu times the derivative of g with respect to mu equals beta of g.
+
+In QED, beta is positive and alpha grows with energy. In QCD, beta is negative and the coupling shrinks with energy. That single sign difference is the most consequential fact in the Standard Model.

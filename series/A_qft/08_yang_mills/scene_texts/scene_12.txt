@@ -1,0 +1,5 @@
+To define gauge-invariant non-local observables, we integrate the gauge field along a path. The result is a path-ordered exponential, called a Wilson line.
+
+Close the path into a loop and take its expectation value. For a large closed loop, the expectation value decays exponentially with the enclosed area.
+
+That area law is the mathematical fingerprint of confinement. It is the central object of lattice gauge theory.

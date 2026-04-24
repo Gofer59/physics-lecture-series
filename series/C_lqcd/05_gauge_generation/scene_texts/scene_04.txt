@@ -1,0 +1,5 @@
+Heat bath goes further. It replaces a link with a sample drawn directly from its conditional distribution given the neighbors. No rejection, full thermalization at each link. For SU(2) there are exact methods; for SU(3) we embed three SU(2) subgroups, the Cabibbo–Marinari trick.
+
+Overrelaxation makes a deterministic move that preserves the action. It explores the constant-action surface without changing the weight.
+
+Mix three to five overrelaxations per heat bath step. Autocorrelations drop dramatically.

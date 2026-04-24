@@ -1,0 +1,7 @@
+Push toward zero lattice spacing and the topological charge Q-top gets stuck. Monte Carlo sweeps can no longer tunnel between topological sectors. The barriers between them grow as a shrinks.
+
+For lattice spacings below about zero point zero five femtometers, topology freezes on simulation timescales.
+
+Workarounds include open boundary conditions in time, tempered boundary conditions, and machine-learning-assisted sampling. This is an active research area, not a solved one.
+
+The lattice, having discovered topology, refuses to change its mind.

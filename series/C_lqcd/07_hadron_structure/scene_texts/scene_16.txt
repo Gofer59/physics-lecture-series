@@ -1,0 +1,5 @@
+On the lattice you have a choice. Use a point-split conserved current — exactly conserved but non-local. Or use a local current, which requires a renormalization factor Z sub V.
+
+Ward identities relate different renormalization constants and provide non-trivial consistency checks. Partial conservation of the axial current holds on the lattice up to order-a corrections in the massless limit.
+
+These identities constrain the systematic errors in precision matrix elements.

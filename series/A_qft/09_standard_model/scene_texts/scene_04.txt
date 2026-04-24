@@ -1,0 +1,5 @@
+The quarks that couple to the W boson are not the same as the quarks of definite mass. The mismatch is captured by a three-by-three unitary matrix — the CKM matrix.
+
+It has three mixing angles and one complex phase. That phase is the only source of CP violation in the quark sector.
+
+And it is one reason the early universe did not exactly annihilate itself into radiation.

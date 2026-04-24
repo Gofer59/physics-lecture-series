@@ -1,0 +1,5 @@
+You now know how to generate samples. But what do the samples mean?
+
+Correlated MCMC data needs honest error bars, autocorrelation estimation, jackknife and bootstrap for nonlinear functionals, histogram reweighting to interpolate across temperatures, and finite-size scaling to extract critical exponents. The next video is about turning raw chains into trustworthy physics numbers.
+
+A Monte Carlo simulation without an error bar is a rumour.

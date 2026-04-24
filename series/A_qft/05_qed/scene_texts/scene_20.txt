@@ -1,0 +1,3 @@
+We have built QFT by canonical quantization. There is another formulation, due to Feynman himself, that is often more powerful. The path integral.
+
+It makes symmetries manifest. It handles gauge theories with grace, once you add Faddeev-Popov ghosts. And it generalizes to the non-perturbative regime, where diagrams fail. Coming up next: we reformulate everything we have learned in terms of integrals over field configurations — the language of every modern QFT textbook.

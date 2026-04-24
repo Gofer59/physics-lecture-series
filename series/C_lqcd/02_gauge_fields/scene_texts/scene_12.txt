@@ -1,0 +1,3 @@
+Numerical lattice data give a potential of the form V of R equals V-naught minus alpha over R plus sigma times R. The Coulomb-like piece dominates at short distance, from perturbative one-gluon exchange. The linear piece dominates at long distance — confinement.
+
+The string tension sigma is roughly 440 MeV squared. Above about 1.2 femtometers, in full QCD with dynamical quarks, the string breaks by creating a quark–antiquark pair from the vacuum. The string breaks. Your worldview bends.

@@ -1,0 +1,7 @@
+Three series. Twenty-three videos. One argument: quantum field theory is not just a framework of equations. It is a functioning computational science.
+
+You have seen the Lagrangian give rise to the path integral. The path integral Wick-rotated to statistical mechanics. Statistical mechanics sampled by Monte Carlo. Monte Carlo applied to a non-Abelian gauge theory on a lattice. And that lattice producing the proton, the pion, the equation of state of the early universe, and bounds on the Higgs.
+
+What began as blackboard physics is now exascale computational physics. That is where the story ends, and where the next one begins.
+
+The physicists of 1974 had a theory they could not solve. The physicists of today have one they can. Slowly, expensively, at sub-percent precision. It turns out that is enough.

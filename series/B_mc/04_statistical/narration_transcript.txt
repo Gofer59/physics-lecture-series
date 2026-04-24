@@ -1,65 +1,129 @@
-# MC-V04 Narration — Statistical Analysis of MC Data
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_B_mc/mc_v04_slides.md -->
+# MC-V04 — Statistical Analysis of MC Data | Narration Transcript
 
 ## Scene 01
-TODO
+
+You ran your MCMC chain. Averaged your observable. Divided sigma by the square root of N. The number you report is wrong. By a factor of the square root of two tau-int, which can be ten, or fifty, or a thousand.
+
+MCMC samples are correlated, and the naive independent-sample error formula silently treats them as independent. Nearly every quantitative MC paper lives or dies by how honestly it handles this.
+
+If your error bar looks too good, it is too good. Fix that.
 
 ## Scene 02
-TODO
+
+For correlated data, the variance of the sample mean is sigma squared over N, times one plus two times the sum of lagged autocorrelations. That sum, packaged as the integrated autocorrelation time tau-int, captures everything about how much your correlations inflate the error.
+
+Without it, you don't know what you computed. With it, you do.
 
 ## Scene 03
-TODO
+
+Partition your chain into non-overlapping blocks of size b. Compute the average within each block. Then take the variance of the block averages.
+
+When b exceeds the autocorrelation time, those block averages behave like independent samples, and the variance estimator is honest. Plot estimated sigma-b versus b. The plateau tells you the right error bar.
 
 ## Scene 04
-TODO
+
+Too small a block. Blocks still correlated, error underestimated. Too large a block. Too few blocks, noisy estimate. The plateau, where the curve flattens for b well above tau-int, is the honest answer.
+
+No plateau means your simulation is too short. Run more. The ratio of the plateau value to the naive value gives you tau-int as a bonus.
+
+If you don't see a plateau, you haven't actually finished your simulation. Sorry.
 
 ## Scene 05
-TODO
+
+Some observables are not simple means. Think ratios, susceptibilities, eigenvalues of a correlator matrix. Bootstrap is the answer.
+
+Resample your chain, or blocks of it, with replacement. Recompute the estimator. Repeat a thousand times. The scatter of the bootstrap estimates gives you a confidence interval without any distributional assumption. Resample blocks, not individual samples, to respect correlation.
 
 ## Scene 06
-TODO
+
+Jackknife. Leave out one block at a time. Compute the estimator on the rest. Repeat. A clever prefactor, the number of blocks minus one over the number of blocks, converts the variance across leave-one-out estimates into the correct error bar.
+
+Jackknife handles nonlinear estimators, estimates bias, and propagates errors cleanly through covariance-matrix fits. In lattice QCD it is the default analysis tool.
 
 ## Scene 07
-TODO
+
+To compute tau-int, you estimate the autocorrelation function and sum it. But at large lag, estimates are dominated by noise. You must truncate.
+
+Common rules. Cut when the autocorrelation estimate turns negative. Or at a window roughly six times the emerging tau-int, self-consistently. Or fit an exponential at intermediate lags. Either way, truncation is a bias-variance trade, and you don't get tau-int for free.
 
 ## Scene 08
-TODO
+
+Wolff's Gamma method is the principled version. Define projected autocorrelation functions for derived observables using a gradient projection. The integrated autocorrelation for a derived function is an honest tau-int that depends on the specific observable.
+
+Combined with automatic differentiation for the gradients, you get error bars for arbitrarily complex combinations of primary measurements.
 
 ## Scene 09
-TODO
+
+Choose the summation window automatically. Too small. Truncation bias decays as the exponential of minus the window over tau. Too large. Statistical noise grows as the square root of twice the window plus one, over N.
+
+Wolff's criterion finds the crossover. A bias-correction factor completes the recipe. All of this is what pyerrors automates under the hood.
 
 ## Scene 10
-TODO
+
+For fixed chain length N and autocorrelation tau, both methods give the right answer in expectation. But Gamma's systematic error decays exponentially in the window, while binning's decays only as tau over block size.
+
+At realistic ratios of N to tau, Gamma is more reliable. It is the standard in lattice QCD precisely for this reason. Binning is simpler, more transparent, and still the right tool for most MCMC work outside lattice gauge theory.
 
 ## Scene 11
-TODO
+
+Your error bar is itself an estimate, with its own error. Relative uncertainty on sigma scales as the square root of twice the window plus one over N, roughly the square root of four tau-int over N.
+
+Rule of thumb. N at least one hundred times tau-int for a ten-percent error on the error. A two-and-a-half-sigma discrepancy means nothing if sigma itself is off by a factor of two. Always quote tau-int alongside your main number.
 
 ## Scene 12
-TODO
+
+pyerrors wraps these ideas in Python. The Obs class carries not just a number, but its full fluctuation history across ensembles. Arithmetic between Obs objects propagates errors exactly via automatic differentiation.
+
+The Corr class handles correlator matrices for lattice QCD, including generalised-eigenvalue problems. FFT-based autocorrelations run in N log N. It is what honest error analysis looks like at scale.
 
 ## Scene 13
-TODO
+
+When fitting a model to correlated data, correlator time slices in lattice QCD for example, you cannot use the diagonal chi-squared. The covariance matrix from jackknife has off-diagonal entries, and inverting a near-singular covariance needs care. Singular value decomposition truncation, or shrinkage toward the diagonal.
+
+Neglect these correlations, and chi-squared per degree of freedom becomes meaningless. Fit parameter errors become optimistic.
 
 ## Scene 14
-TODO
+
+You simulated at one inverse temperature and actually want results at another. If they are close, don't re-run. Reweight.
+
+The histogram of energies from the original run, multiplied by the exponential of minus delta-beta times E, gives the histogram at the new temperature. This works as long as the energy distributions at the two temperatures overlap. A beautiful trick for locating the critical temperature precisely with one long run.
+
+Running one simulation and pretending you ran twelve. The honest kind.
 
 ## Scene 15
-TODO
+
+Single-histogram fails when you need to span a wide temperature range. Multiple-histogram reweighting combines several simulations, each at its own temperature, into one self-consistent estimate of the density of states.
+
+The free energies at each temperature are solved iteratively, so the overlapping histograms agree. Result. One smooth estimate of any observable across the whole temperature range.
 
 ## Scene 16
-TODO
+
+Phase transitions live in the thermodynamic limit. Your lattice is finite. Singularities are rounded into smooth peaks whose height scales with system size.
+
+The finite-size scaling hypothesis relates an observable on a lattice of side L to a universal function of reduced temperature times L to the one over nu. Collapse curves from different L, and the exponents are in the collapse.
 
 ## Scene 17
-TODO
+
+At the critical temperature, finite-size scaling simplifies to clean power laws in L. Magnetisation scales as L to the negative beta over nu. Susceptibility as L to the gamma over nu. Specific heat as L to the alpha over nu. Log-log plots give the exponents as slopes.
+
+The Binder cumulant, a dimensionless combination of moments, is scale-invariant at the critical temperature. Curves for different L cross at the critical point, pinning it with no exponent assumption.
 
 ## Scene 18
-TODO
+
+Simulate three to five system sizes spanning a decade. Near the critical temperature, use histogram reweighting to get smooth curves at any temperature.
+
+Vary trial values of the critical temperature and the exponents until the rescaled curves collapse. The quality of the collapse quantifies the fit. Corrections to scaling, governed by a subleading exponent, account for deviations at small L.
 
 ## Scene 19
-TODO
+
+Raw MCMC output becomes physics through a disciplined pipeline. Binning or Gamma-method for honest error bars. Jackknife or bootstrap for nonlinear functionals. pyerrors for book-keeping at scale. Correlated chi-squared for fits. Histogram reweighting for interpolation. Finite-size scaling for critical points and exponents.
+
+Skip any step, and your paper has a footnote it doesn't know about.
 
 ## Scene 20
-TODO
+
+Next video. What to do when MCMC mixes poorly from the start. Simulated annealing for optimisation. Simulated tempering and parallel tempering to cross barriers. Sequential Monte Carlo for filtering and rare events.
+
+Variational inference as a deterministic, biased, often dramatically faster alternative. Plus expectation-maximisation, the optimisation sibling of VI.
+
+Sometimes the right answer isn't a better chain. It's a different algorithm entirely.

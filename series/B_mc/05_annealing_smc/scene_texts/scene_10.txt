@@ -1,0 +1,3 @@
+A small but powerful variant for linear-Gaussian observation models. Bayes-update first, propagate afterward. Apply the observation likelihood to the predictive distribution, then propagate from the Kalman-updated posterior.
+
+Variance of the weights is much smaller. You avoid proposing particles that have no chance of surviving the observation. Limited to tractable observation models, but a big win when you can use it.

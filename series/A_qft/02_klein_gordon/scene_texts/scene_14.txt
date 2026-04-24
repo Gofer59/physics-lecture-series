@@ -1,0 +1,3 @@
+There is a cleaner way to see what we just did. Think of the classical field as a function on space. Its Fourier modes are labelled by momentum. Quantize each mode as an independent harmonic oscillator.
+
+The n-th excited state of the mode with momentum p means, simply, n particles of that momentum. Fock space is not something mystical. It is the tensor product of infinitely many quantum oscillators. This viewpoint is called second quantization — though nothing has been quantized twice.

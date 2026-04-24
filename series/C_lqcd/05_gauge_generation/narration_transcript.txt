@@ -1,65 +1,167 @@
-# LQCD-V05 Narration — Numerical Gauge Generation and Dynamical Fermions
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_C_lqcd/lqcd_v05_slides.md -->
+# LQCD-V05 — Numerical Gauge Generation and Dynamical Fermions | Narration Transcript
 
 ## Scene 01
-TODO
+
+A realistic lattice has on the order of ten million link variables. Each is a three by three SU(3) matrix. The partition function is an integral over all of them, weighted by e to the minus S.
+
+Ten million links. Direct integration would finish approximately after the heat death of the universe.
+
+So we do not integrate. We sample. Generate a Markov chain of configurations distributed according to e to the minus S over Z, then average observables over the chain. Monte Carlo turns an impossible integral into a tractable simulation.
 
 ## Scene 02
-TODO
+
+A Markov chain proposes a new configuration U prime from the current U with some transition probability. Detailed balance requires the forward step times the equilibrium weight of U to equal the reverse step times the weight of U prime.
+
+Ergodicity requires every configuration to be eventually reachable. Together the two conditions guarantee that the chain samples the correct distribution.
+
+Every lattice algorithm you will ever meet is just some clever way of satisfying these two rules.
 
 ## Scene 03
-TODO
+
+For pure gauge theory the Metropolis algorithm is very direct. Pick a link. Propose a multiplicative update — U goes to X times U, with X near the identity. Compute the change in action. Only the four staples touching that link contribute, so it is cheap.
+
+Accept with probability minimum of one and e to the minus delta S. Reject means you leave U alone. Sweep through every link, then repeat.
+
+Simple, exact, and fully local. This is how lattice simulations started in 1980.
 
 ## Scene 04
-TODO
+
+Heat bath goes further. It replaces a link with a sample drawn directly from its conditional distribution given the neighbors. No rejection, full thermalization at each link. For SU(2) there are exact methods; for SU(3) we embed three SU(2) subgroups, the Cabibbo–Marinari trick.
+
+Overrelaxation makes a deterministic move that preserves the action. It explores the constant-action surface without changing the weight.
+
+Mix three to five overrelaxations per heat bath step. Autocorrelations drop dramatically.
 
 ## Scene 05
-TODO
+
+Start from a cold lattice, with all links equal to the identity, or from a hot one with random SU(3) matrices. The first few thousand sweeps are thermalization. Throw them away.
+
+Once equilibrated, successive configurations are still correlated. The integrated autocorrelation time, tau-int, tells you how many sweeps separate effectively independent samples. Good observables have tau-int around ten. Some, like the topological charge at fine lattice spacing, have tau-int of thousands.
+
+Topological freezing: when your Monte Carlo chain would really just prefer not to.
 
 ## Scene 06
-TODO
+
+Naive error bars on correlated samples are wrong. They understate the uncertainty by a factor of square root of two tau-int. That is not a rounding issue.
+
+The standard fix is binning — average over bin sizes much larger than tau-int until the error stabilizes. Jackknife leaves one out at a time. Bootstrap resamples with replacement.
+
+Every modern lattice paper reports one of these with explicit autocorrelation correction. Getting the error bar right matters as much as getting the mean.
 
 ## Scene 07
-TODO
+
+Now add quarks. The partition function picks up a factor of determinant of D of U to the N sub f. This determinant is a functional of the gauge field. Every gauge update changes it.
+
+Direct computation scales like the volume cubed. For a realistic lattice that is completely impossible.
+
+For years the workaround was the quenched approximation: set the determinant to a constant. It costs about ten percent accuracy.
+
+Quenched QCD: a perfectly good approximation, if you are willing to delete the sea quarks from reality.
 
 ## Scene 08
-TODO
+
+The trick is to write determinant of D-dagger D as a Gaussian integral over an auxiliary bosonic field phi. The integrand becomes e to the minus phi-dagger times the inverse of D-dagger D times phi.
+
+The fermionic degrees of freedom are gone. The path integral is now purely bosonic, with an effective action we can sample.
+
+For two degenerate flavors this gives the determinant squared exactly. For one flavor, or for rooted staggered fermions, we reach for a rational approximation. The determinant never appears directly. Only solver calls do.
 
 ## Scene 09
-TODO
+
+Hybrid Monte Carlo — Duane, Kennedy, Pendleton, and Roweth, 1987. Give every link a fictitious momentum, drawn from a Gaussian. Evolve the links and momenta together under Hamilton's equations for a molecular dynamics trajectory.
+
+At the end of the trajectory, do a Metropolis accept or reject on the total fictitious energy, delta H.
+
+If the integrator were perfect, acceptance would be one hundred percent. Because it is discrete there are small delta H fluctuations, and Metropolis corrects them exactly. A global update that changes the whole lattice at once.
 
 ## Scene 10
-TODO
+
+We solve Hamilton's equations by leapfrog. Half-step the momenta, full-step the links, half-step the momenta again. It is symplectic, preserving phase-space volume, and time-reversible.
+
+The Hamiltonian error per step is order epsilon squared. Higher-order integrators like Omelyan reach order epsilon to the fourth, at the cost of more force evaluations per step.
+
+The whole of HMC rests on the integrator being time-reversible and symplectic. Drop either one and detailed balance fails.
 
 ## Scene 11
-TODO
+
+The molecular dynamics force has two pieces. The gauge force is cheap — a sum of staples, directly computable. The fermion force is not.
+
+To evaluate the fermion force you must solve D-dagger D chi equals phi for the pseudofermion field. That is a Krylov solver call, every single force evaluation.
+
+At light quark masses the solver becomes expensive. Its cost scales like one over the quark mass squared. Solver time dominates the simulation budget.
 
 ## Scene 12
-TODO
+
+For an odd number of flavors, or for rooted staggered simulations, we need determinant of D-dagger D raised to a fractional power. Rational Hybrid Monte Carlo handles this.
+
+Factor the fractional power into a sum of partial fractions. Each one becomes a separate pseudofermion with a shifted inverse. The Remez algorithm tunes the coefficients to machine precision.
+
+RHMC is exact up to the quality of the rational approximation. MILC, HPQCD, and several others use it routinely.
 
 ## Scene 13
-TODO
+
+A handful of algorithmic tricks turn impossible simulations into routine ones. Multiple time scales, from Sexton and Weingarten — finer steps for the expensive fermion force, coarser for the cheap gauge force.
+
+Mass preconditioning, due to Hasenbusch, splits the determinant into products indexed by heavier auxiliary masses, smoothing the spectrum. Even-odd preconditioning exploits a checkerboard structure and halves the linear system.
+
+Together these give an order-of-magnitude speedup. They are the difference between "cannot simulate the physical pion" and "done routinely."
 
 ## Scene 14
-TODO
+
+The innermost loop is always a Krylov solver for D x equals b. Conjugate gradient applies to D-dagger D, where gamma-five hermiticity helps. BiCGStab and GMRES handle non-Hermitian D directly.
+
+For near-chiral quark masses, multigrid solvers give ten to a hundred times speedups by mixing length scales. Domain-decomposition preconditioners accelerate things further.
+
+The solver determines the wall-clock cost of everything. Lattice QCD is secretly just ten years of solver engineering with some physics layered on top.
 
 ## Scene 15
-TODO
+
+A decade ago, simulating at the physical pion mass of one hundred thirty-five MeV was a heroic accomplishment. Today it is the baseline.
+
+Better algorithms, better solvers, and faster hardware have pushed the chiral extrapolation out of the picture for many observables. You just simulate at the physical point.
+
+This is one of the quiet revolutions of the field. Nearly invisible from outside, transformative inside.
 
 ## Scene 16
-TODO
+
+Push toward zero lattice spacing and the topological charge Q-top gets stuck. Monte Carlo sweeps can no longer tunnel between topological sectors. The barriers between them grow as a shrinks.
+
+For lattice spacings below about zero point zero five femtometers, topology freezes on simulation timescales.
+
+Workarounds include open boundary conditions in time, tempered boundary conditions, and machine-learning-assisted sampling. This is an active research area, not a solved one.
+
+The lattice, having discovered topology, refuses to change its mind.
 
 ## Scene 17
-TODO
+
+A typical modern ensemble: a sixty-four cubed by one hundred twenty-eight lattice, physical pion mass, domain-wall or clover fermions, several thousand configurations.
+
+Cost: roughly ten million core-hours. Storage: terabytes. One ensemble is a piece of infrastructure.
+
+Ensembles are shared across collaborations. One group generates, many measure. International consortia like CLS and MILC produce libraries that dozens of physics projects rely on.
 
 ## Scene 18
-TODO
+
+Modern efforts apply normalizing flows, score-based models, and neural-network proposals to help HMC sample more efficiently. The targets are topological freezing and near-chiral simulations.
+
+Most methods are still in proof-of-concept for full QCD. For toy models like the Schwinger model or phi to the fourth, they already beat traditional sampling.
+
+Machine learning for lattice QCD is a rapidly moving frontier.
+
+The lattice, meet the neural network. Be nice to each other.
 
 ## Scene 19
-TODO
+
+Lattice gauge configurations are generated by Markov chain Monte Carlo. For pure gauge theory we use Metropolis, heat bath, and overrelaxation.
+
+For dynamical fermions, the pseudofermion trick converts the determinant into a bosonic action. Hybrid Monte Carlo evolves that action by molecular dynamics plus a Metropolis accept-reject.
+
+Modern tricks — multi-step integration, mass preconditioning, multigrid solvers — make physical pion mass simulations routine. Autocorrelation and topological freezing remain the open problems.
 
 ## Scene 20
-TODO
+
+We can generate configurations. Now we need to decide what to measure.
+
+Next time: two-point correlators, the effective mass plateau, smearing to improve signal, the variational method for excited states, and correlated multi-state fits.
+
+Then scale setting via the Sommer parameter or Wilson flow, and the continuum and chiral extrapolations that turn dimensionless lattice numbers into physical predictions in MeV.

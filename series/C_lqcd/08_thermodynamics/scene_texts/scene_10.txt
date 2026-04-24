@@ -1,0 +1,7 @@
+Couple the Higgs to a heavy fermion — a Yukawa interaction. The Higgs quartic coupling runs under the renormalization group, and at high scales it can drive the effective potential unstable, threatening the vacuum.
+
+Lattice simulations of Yukawa models probe this non-perturbatively and give lower bounds on the Higgs mass.
+
+With the top quark mass close to its measured value and the Higgs at one hundred twenty-five GeV, the vacuum is metastable — stable on cosmological timescales, but not forever.
+
+Our vacuum has a shelf life. It is very long, but it is not infinite. Lattice QCD gave us a receipt.

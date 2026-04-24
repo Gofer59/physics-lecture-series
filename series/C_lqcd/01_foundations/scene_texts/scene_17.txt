@@ -1,0 +1,3 @@
+On a finite lattice, e to the minus S sub E divided by Z is a genuine probability distribution over field configurations. We cannot enumerate them, but we can sample them.
+
+Draw N configurations, compute the observable on each, average. The statistical error falls like one over the square root of N. This is the operational promise of lattice field theory.

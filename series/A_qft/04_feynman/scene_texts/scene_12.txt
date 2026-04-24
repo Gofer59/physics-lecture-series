@@ -1,0 +1,3 @@
+Correlation functions are not quite S-matrix elements. The Lehmann-Symanzik-Zimmermann reduction formula, or LSZ, is how you connect them.
+
+In practice: compute the n-point correlation function. Strip off — amputate — the external propagators, by multiplying by their inverse. For scalars, that amounts to the Klein-Gordon operator. For fermions, the Dirac operator. Then evaluate on-shell. The resulting amputated amplitude is what you plug into cross-section formulas.

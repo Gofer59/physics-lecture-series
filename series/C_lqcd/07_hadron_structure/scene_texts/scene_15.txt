@@ -1,0 +1,5 @@
+A resonance like the rho meson is a short-lived unstable state — not available as an asymptotic state on a lattice.
+
+But through the Luscher method, you can extract the pi-pi scattering phase shift, identify where it passes through pi over two, and read off the rho mass and width.
+
+Modern extensions handle multiple channels — the sigma, the K-star, the f-zero — moving frames for more kinematic points, and coupled channels like pi-pi mixing with K K-bar. Resonance spectroscopy is now routine lattice physics.

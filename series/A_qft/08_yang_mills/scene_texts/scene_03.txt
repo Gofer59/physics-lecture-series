@@ -1,0 +1,5 @@
+Every continuous symmetry has infinitesimal generators. For SU(N) there are N squared minus one of them, and they do not commute.
+
+The commutator of two generators produces a third generator, weighted by the structure constants. Those constants encode the entire algebraic skeleton of the theory.
+
+For SU(2) there are three generators — the Pauli matrices. For SU(3) there are eight — the Gell-Mann matrices.

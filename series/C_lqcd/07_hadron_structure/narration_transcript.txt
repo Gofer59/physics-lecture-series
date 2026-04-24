@@ -1,65 +1,169 @@
-# LQCD-V07 Narration — Hadron Structure and Finite Volume Effects
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_C_lqcd/lqcd_v07_slides.md -->
+# LQCD-V07 — Hadron Structure and Finite Volume Effects | Narration Transcript
 
 ## Scene 01
-TODO
+
+Two-point functions give hadron masses. For precision flavor physics — CKM elements, B-meson mixing, meson decays — we need matrix elements of operators between hadron states. That requires three-point functions.
+
+For internal structure — how a proton's momentum and spin are shared between quarks and gluons — we need parton distributions.
+
+Lattice QCD goes beyond the spectrum when it starts answering the real question: what is a proton made of?
+
+Masses were the easy part. Now we ask the proton to open up and talk about its feelings.
 
 ## Scene 02
-TODO
+
+A three-point function has three insertions. Create a hadron at time zero. Insert a current J at time t. Annihilate the hadron at time t sub s.
+
+At large source-sink separation, the ground state dominates on both sides. The three-point function factorizes: mod Z zero squared times e to the minus m sub H times t sub s, multiplied by the matrix element of the current between ground-state hadrons.
+
+Divide by the two-point function and the exponential prefactors cancel. The desired matrix element pops out.
 
 ## Scene 03
-TODO
+
+The pion decay constant f-pi is defined by the matrix element of the axial current between the pion and the vacuum. The vacuum-to-pion amplitude is i f-pi times the pion momentum.
+
+On the lattice, extract f-pi from a two-point function of axial currents.
+
+Similarly, f-K fixes the ratio V-us over V-ud. The B-meson decay constants, f sub B and f sub B s, control B-meson mixing and the extraction of V-ub and V-td. Modern lattice calculations quote these at sub-percent precision.
 
 ## Scene 04
-TODO
+
+For a decay like B to pi ell nu, the hadronic matrix element factorizes into vector and scalar form factors, f-plus and f-zero of q squared.
+
+The decay rate equals mod V-ub squared times an integral of mod f-plus squared. The lattice computes the form factors; experiment measures the rate. Combining them gives the CKM element.
+
+Lattice QCD is the single dominant source of hadronic uncertainty in most CKM extractions. A tension currently exists between inclusive and exclusive V-cb — the lattice is central to resolving it.
 
 ## Scene 05
-TODO
+
+Neutral kaon mixing is governed by a four-quark operator with delta-S equals two. The bag parameter B sub K parametrizes its matrix element between K-bar and K.
+
+B sub K enters the epsilon-K constraint in the unitarity triangle.
+
+Computing it requires non-perturbative renormalization of a four-quark operator — a demanding technical problem. The FLAG world average, B-K-hat equals zero point seven six two five with an error of ninety-seven in the last digits, is a flagship lattice result.
 
 ## Scene 06
-TODO
+
+Parton distribution functions are defined through matrix elements of field operators separated along the light cone. The light cone is a feature of Minkowski spacetime. On a Euclidean lattice, the light cone collapses to a point.
+
+You cannot directly compute a PDF on a Euclidean lattice. This is not a technical inconvenience. It is a structural feature of the formalism.
+
+For decades the lattice could compute only the lowest few Mellin moments, and only up to the third moment before hypercubic-group operator mixing became uncontrollable.
+
+The lattice's oldest unspoken problem: we went Euclidean for the path integral, and the light cone refused to come with us.
 
 ## Scene 07
-TODO
+
+In 2013 Ji proposed the large-momentum effective theory. Compute matrix elements with purely spatial operator separations on a nucleon boosted to large momentum along z, then match perturbatively to the light-cone PDF.
+
+In 2017 Radyushkin refined the idea into the pseudo-distribution approach, using the Ioffe time, nu equals p times z, as the natural variable.
+
+Both methods finally give the lattice access to x-dependent parton distributions. The old inverse problem of reconstructing PDFs from discrete moments is replaced by a direct calculation.
 
 ## Scene 08
-TODO
+
+The reduced pseudo-Ioffe-time distribution M of nu and z-squared, computed on the lattice, is matched to the MS-bar light-cone PDF through a kernel. Schematically: M equals the integral of K against Q, plus corrections of order z-squared times Lambda-QCD squared.
+
+The kernel is known in perturbation theory and includes the Altarelli–Parisi splitting functions at next-to-leading order.
+
+Lattice results for the nucleon isovector momentum fraction agree with phenomenological fits from CT18 and NNPDF, within uncertainties.
 
 ## Scene 09
-TODO
+
+Generalized parton distributions extend PDFs to include momentum transfer between initial and final states. They depend on three variables: x, the longitudinal momentum fraction; xi, the skewness; and t, the total momentum transfer squared.
+
+At xi equals zero the Fourier transform in t gives a two-dimensional impact-parameter density. That is literally the quark distribution projected onto the transverse plane.
+
+GPDs are nucleon tomography.
 
 ## Scene 10
-TODO
+
+Ji's sum rule says that twice the total angular momentum carried by quarks of flavor q equals the integral over x of x times H-q plus E-q, evaluated at zero skewness and zero t.
+
+Sum over flavors, add the gluons, and you must recover one-half.
+
+This is a direct route to the proton spin puzzle. The first moment of H is the momentum fraction; the integral involving E gives orbital angular momentum. The lattice can compute all ingredients.
+
+The proton spin: thirty percent quarks, some gluons, a surprising amount of orbital angular momentum, and an ongoing disagreement about the remaining percent.
 
 ## Scene 11
-TODO
+
+Three-point functions are dominated by excited-state contamination much more severely than two-point functions. At the physical pion mass, the nucleon's first excited state contaminates down to very late source-sink separations.
+
+Strategies: compute at several sink times and extrapolate to infinity. Perform explicit two-state fits. Or use the summation method, which sums the ratio over the insertion time and extracts the matrix element from the slope.
+
+This is typically the dominant systematic in nucleon structure calculations.
 
 ## Scene 12
-TODO
+
+Your simulation lives in a box — L cubed times T. Pions, the lightest hadrons, feel the box most strongly. Their Compton wavelength is the largest.
+
+The rule of thumb: keep m-pi times L above four, and finite-volume corrections stay below about one percent.
+
+Chiral perturbation theory predicts the leading correction falls like e to the minus m-pi L, divided by m-pi L to the three-halves. Smaller boxes can be pushed into the chiral regime, where finite volume is a feature, not a bug.
 
 ## Scene 13
-TODO
+
+Push the box small enough that m-pi L is of order one. Now zero modes of the Dirac operator dominate the path integral. The theory reduces to a chiral random matrix theory, in which low-energy constants become measurable directly.
+
+The Banks–Casher relation holds volume by volume.
+
+The epsilon regime is a controlled corner of QCD, where finite-volume physics is calculable in closed form. It is a probe, not a problem.
 
 ## Scene 14
-TODO
+
+Two interacting particles in a finite box do not have free momenta. Their interaction modifies the allowed energy levels.
+
+Luscher, in 1986, showed exactly how. The finite-volume spectrum determines the infinite-volume scattering phase shift through a condition: delta-zero of k plus phi of q equals n times pi. The variable q is k L over two pi, and phi is a known geometric function.
+
+The box is no longer a contaminant. It is an interferometer. Extracting scattering phase shifts becomes a lattice calculation.
+
+Finite volume: the bug that became the feature.
 
 ## Scene 15
-TODO
+
+A resonance like the rho meson is a short-lived unstable state — not available as an asymptotic state on a lattice.
+
+But through the Luscher method, you can extract the pi-pi scattering phase shift, identify where it passes through pi over two, and read off the rho mass and width.
+
+Modern extensions handle multiple channels — the sigma, the K-star, the f-zero — moving frames for more kinematic points, and coupled channels like pi-pi mixing with K K-bar. Resonance spectroscopy is now routine lattice physics.
 
 ## Scene 16
-TODO
+
+On the lattice you have a choice. Use a point-split conserved current — exactly conserved but non-local. Or use a local current, which requires a renormalization factor Z sub V.
+
+Ward identities relate different renormalization constants and provide non-trivial consistency checks. Partial conservation of the axial current holds on the lattice up to order-a corrections in the massless limit.
+
+These identities constrain the systematic errors in precision matrix elements.
 
 ## Scene 17
-TODO
+
+The precision deliverables of modern lattice QCD: quark masses for u, d, s, c, and b at sub-percent errors. Decay constants — f-pi, f-K, f-B, f-Bs — at sub-percent. Form factors f-plus for K to pi and B to pi at a few percent. Bag parameters B-K and B-B at a few percent.
+
+These numbers feed into every Standard Model test — CKM unitarity, K and B mixing, rare meson decays, direct CP violation.
+
+Lattice QCD is, quietly, a pillar of beyond-Standard-Model searches.
 
 ## Scene 18
-TODO
+
+Not everything is solved. Isospin-breaking effects and electromagnetic corrections require dynamical QED — now being simulated but expensive.
+
+Long-distance contributions to K to pi pi require handling multi-hadron final states through Luscher methods. Gluon PDFs are notoriously hard because of operator mixing.
+
+The strong CP problem and theta-vacuum physics need better control of topological sampling. Transverse-momentum-dependent PDFs are a frontier. The Electron-Ion Collider era will demand more.
 
 ## Scene 19
-TODO
+
+Three-point functions give matrix elements, decay constants, form factors, and CKM elements.
+
+The light-cone obstruction blocks direct PDFs on Euclidean lattices. Quasi-PDFs and pseudo-distributions solve this through perturbative matching.
+
+Generalized parton distributions encode nucleon tomography through the Ji sum rule. Excited-state contamination is the dominant systematic in hadron structure. Finite-volume corrections are exponentially small for m-pi L above four. And the Luscher method turns finite volume into a tool for scattering and resonances.
 
 ## Scene 20
-TODO
+
+One lecture left. Everything we have built comes together — including the problem we still cannot solve.
+
+Next, we heat up QCD. The deconfinement crossover at one hundred fifty-five MeV. The equation of state for heavy-ion collisions. The Columbia plot of phase structure.
+
+Then we try to add chemical potential and meet the sign problem, the reason the finite-density QCD phase diagram remains largely unknown. Then a survey of lattice studies beyond QCD, and a reflection on what the three series together have built.

@@ -1,0 +1,5 @@
+Hybrid Monte Carlo — Duane, Kennedy, Pendleton, and Roweth, 1987. Give every link a fictitious momentum, drawn from a Gaussian. Evolve the links and momenta together under Hamilton's equations for a molecular dynamics trajectory.
+
+At the end of the trajectory, do a Metropolis accept or reject on the total fictitious energy, delta H.
+
+If the integrator were perfect, acceptance would be one hundred percent. Because it is discrete there are small delta H fluctuations, and Metropolis corrects them exactly. A global update that changes the whole lattice at once.

@@ -1,0 +1,3 @@
+The Feynman propagator is a Green's function of the Klein-Gordon operator. Apply the Klein-Gordon operator to D-F, and you get a four-dimensional delta function, up to a factor of i.
+
+Physically, D-F is what you get when you inject a point disturbance into a free field, and ask how it propagates. On every internal line of every Feynman diagram, we are summing over all the ways a field ripple can travel between two events, weighted by this Green's function.

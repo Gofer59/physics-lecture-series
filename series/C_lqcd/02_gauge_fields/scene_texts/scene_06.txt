@@ -1,0 +1,3 @@
+To do the path integral we must integrate over every link variable. SU(3) is a compact group, so there is a unique invariant measure on it — the Haar measure — normalized to one.
+
+It is left- and right-invariant, which means the measure itself is gauge-invariant. No gauge fixing is required. Perturbation theory needs ghosts to exorcise its gauge redundancy. The lattice just integrates.

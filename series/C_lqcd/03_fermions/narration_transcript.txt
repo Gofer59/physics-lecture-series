@@ -1,65 +1,121 @@
-# LQCD-V03 Narration — Fermions on the Lattice
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_C_lqcd/lqcd_v03_slides.md -->
+# LQCD-V03 — Fermions on the Lattice | Narration Transcript
 
 ## Scene 01
-TODO
+
+Take the free Dirac action, replace the derivative by a symmetric finite difference, and insert link variables for gauge invariance. This is the naive lattice Dirac operator. It looks like a perfectly reasonable one-line modification.
+
+It is wrong. The propagator develops sixteen poles in four dimensions — fifteen unwanted fermion species appear for free, at the corners of the Brillouin zone. The naive Dirac equation: a seventeen-for-the-price-of-one special.
 
 ## Scene 02
-TODO
+
+Fermion fields anticommute, so their path integral uses Grassmann variables. The fundamental identity of Matthews and Salam: integrating a Grassmann Gaussian with kernel M produces the determinant of M itself — not one over the square root.
+
+So the fermion path integral gives det of D plus m as a weight. This determinant is a functional of the gauge field, and computing it is the central computational challenge of dynamical lattice QCD.
 
 ## Scene 03
-TODO
+
+Expand the naive Dirac operator in Fourier space. It contains sine of p-mu times a, which vanishes at both p-mu equals zero and p-mu equals pi over a. Two zeros per direction.
+
+In four dimensions, two to the fourth is sixteen — sixteen massless fermion species. This is not a trivial bug. It is a structural consequence of using a symmetric discretization on a compact momentum lattice. The lattice insists on pairing particles with doublers.
 
 ## Scene 04
-TODO
+
+In 1981, Nielsen and Ninomiya proved the bad news is unavoidable. Any lattice Dirac operator that is local, translation-invariant, has the right continuum limit, and anticommutes with gamma-five, must produce equal numbers of left- and right-handed species.
+
+You cannot write a single chiral fermion on a lattice without sacrificing one of those assumptions. The theorem has a topological proof. Nielsen and Ninomiya: when a no-go theorem has your name on it, you are officially a problem in someone's thesis.
 
 ## Scene 05
-TODO
+
+Wilson's answer was to sacrifice chiral symmetry. Add a discretized Laplacian — the Wilson term — that leaves the physical pole at the origin untouched, but gives the fifteen doublers an extra mass of order one over a.
+
+As a goes to zero, the doublers decouple. The single physical species survives. The price is steep. Chiral symmetry is explicitly broken, the quark mass gets an additive renormalization, and operators mix in complicated ways.
 
 ## Scene 06
-TODO
+
+The trick of Kogut and Susskind was to diagonalize the Dirac structure by a site-dependent phase transformation. Gamma matrices turn into sign factors eta-mu of n. Keep one component of the Dirac spinor per site.
+
+The sixteen original species become four tastes, spread over the corners of a unit hypercube. Staggered fermions are cheaper than Wilson, and they retain a remnant U(1) chiral symmetry — a real Goldstone boson survives.
 
 ## Scene 07
-TODO
+
+Staggered fermions come in multiples of four. To get two light quarks and one strange quark, you must take a square root and a fourth root of the staggered determinant.
+
+This rooting is mathematically uncontrolled at finite a — it is not obviously a local operation. But extensive numerical evidence suggests it recovers the correct continuum theory. The lattice community has made peace with a fourth root that may or may not be local. Ask again in ten years.
 
 ## Scene 08
-TODO
+
+In 1982, Ginsparg and Wilson proposed a modified anticommutator. D gamma-five plus gamma-five D equals a times D gamma-five D. The right-hand side vanishes as a goes to zero, recovering the continuum chiral condition.
+
+At finite a it is a local contact term. The insight was forgotten for fifteen years, until the late nineties, when it was realized this equation allows a form of exact lattice chiral symmetry. Nielsen–Ninomiya gets relaxed, not violated.
 
 ## Scene 09
-TODO
+
+In 1998, Luscher showed that the Ginsparg–Wilson relation implies an exact symmetry of the massless lattice action. A modified chiral rotation, where gamma-five gets replaced by gamma-five-hat — gamma-five times one minus a D.
+
+This symmetry reduces to the continuum rotation as a goes to zero. Every Ward identity that follows from chiral symmetry holds exactly on the lattice. The no-go theorem was outflanked by redefining what chiral means.
 
 ## Scene 10
-TODO
+
+Neuberger's 1998 construction. The overlap Dirac operator equals one over a, times one plus gamma-five times the sign function of the Wilson kernel. It satisfies the Ginsparg–Wilson relation exactly.
+
+No doublers. Exact chiral symmetry. Exact zero modes with definite chirality. It is the most conceptually satisfying lattice fermion we know. And it is roughly fifty to a hundred times more expensive than Wilson. Exact chiral symmetry on the lattice. Now available for the low, low cost of all your compute time.
 
 ## Scene 11
-TODO
+
+Kaplan's idea, refined by Shamir: work in five dimensions, with a Wilson-like action. Left-handed chiral modes live on one four-dimensional boundary, right-handed modes on the other.
+
+The chiralities are spatially separated, so their mixing is exponentially suppressed in the fifth-dimensional extent. Take the fifth extent large enough, and you recover overlap-like chiral symmetry. In practice, sixteen to thirty-two layers. Cost scales linearly with that number.
 
 ## Scene 12
-TODO
+
+A chirally twisted mass term — add an i mu-q gamma-five tau-three to the Wilson operator — introduces a flavor-off-diagonal term in the two-flavor sector. At maximal twist, the physical quark mass equals mu-q, and the order-a discretization errors cancel automatically.
+
+The determinant is manifestly positive. The European ETMC collaboration has made this their workhorse. It is a clever workaround for improvement without clover tuning.
 
 ## Scene 13
-TODO
+
+Wilson fermions have errors of order a. Sheikholeslami and Wohlert showed these can be cancelled by adding a single operator — c-SW times sigma-mu-nu times F-hat-mu-nu — where F-hat is a clover-shaped sum of four plaquettes.
+
+Tune c-SW, either perturbatively or non-perturbatively, and on-shell quantities become order a squared improved. Clover-Wilson fermions are the standard workhorse of many modern collaborations. It is called clover because it looks like one. Lattice physicists are a literal people.
 
 ## Scene 14
-TODO
+
+Charm and bottom quarks have masses comparable to one over a on typical lattices. A small-ma expansion fails. Three strategies. The Fermilab action adds mass-dependent counterterms. Lattice NRQCD uses a non-relativistic expansion. Lattice HQET starts from the static limit and adds one-over-mass corrections.
+
+For very fine lattices, below about 0.05 femtometers, a fully relativistic action works. Which to use depends on the physics goal.
 
 ## Scene 15
-TODO
+
+To compute any hadron correlator, you need the quark propagator — the inverse of the Dirac operator in a given gauge background. D is a sparse matrix of dimension twelve times the lattice volume.
+
+You do not invert it explicitly. You use iterative Krylov solvers — conjugate gradient, BiCGStab, GMRES. Cost scales like one over the quark mass squared near the chiral limit. Solvers are where most of the wall-clock time goes.
 
 ## Scene 16
-TODO
+
+Directly evaluating det of D is a nonstarter — the matrix is too big. The pseudofermion trick: represent det of D-dagger D as a bosonic Gaussian integral over a pseudofermion field phi, with weight e to the minus phi-dagger times the inverse of D-dagger D times phi.
+
+Now the determinant becomes an action — a function of phi and the gauge field — that can be fed to Hybrid Monte Carlo. The determinant never appears explicitly.
 
 ## Scene 17
-TODO
+
+Wilson-type Dirac operators satisfy a useful relation: D-dagger equals gamma-five D gamma-five. This gamma-five hermiticity forces the determinant to be real, and eigenvalues to come in complex-conjugate pairs.
+
+For two degenerate flavors, the determinant is therefore positive, and usable as a Monte Carlo weight. For odd flavors — like a single strange quark — we need rational approximations. The RHMC algorithm. That is a story for the next lecture.
 
 ## Scene 18
-TODO
+
+A comparison of the zoo. Wilson: cheap, order-a errors, no chiral symmetry. Clover: same as Wilson, with c-SW tuned, order a-squared errors. Staggered: cheapest, four tastes, remnant U(1), root problem.
+
+Domain wall: good chiral symmetry, cost N-five times Wilson. Overlap: exact chiral symmetry, fifty to a hundred times Wilson. Twisted mass: automatic order-a improvement, positive determinant. Every formulation trades chirality against cost against complexity.
 
 ## Scene 19
-TODO
+
+A summary. The naive lattice Dirac operator produces sixteen species — the doubling problem. Nielsen–Ninomiya proves this is unavoidable without sacrificing one pillar.
+
+Wilson breaks chiral symmetry to remove doublers. Staggered reduces sixteen to four tastes and keeps a remnant U(1). The Ginsparg–Wilson relation enables exact lattice chiral symmetry, realized in overlap and domain wall at high cost. Twisted mass gives automatic improvement. Choosing a fermion action is a physics-first design decision.
 
 ## Scene 20
-TODO
+
+Coming up next: we built the machinery. Next we use it. Continuum chiral symmetry, its spontaneous breaking, Goldstone bosons and the pion. The Ginsparg–Wilson relation and Luscher's exact lattice chiral symmetry in full detail.
+
+The spectrum of the Dirac operator — zero modes, the index theorem, the axial anomaly, the Banks–Casher relation. And what it means for chiral symmetry to be restored at high temperature. Chiral symmetry on the lattice: a journey from impossible to exact, in twenty years of hard work.

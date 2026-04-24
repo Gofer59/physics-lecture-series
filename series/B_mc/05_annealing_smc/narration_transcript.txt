@@ -1,65 +1,127 @@
-# MC-V05 Narration — Simulated Annealing, SMC and Variational Inference
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_B_mc/mc_v05_slides.md -->
+# MC-V05 — Simulated Annealing, SMC and Variational Inference | Narration Transcript
 
 ## Scene 01
-TODO
+
+Sometimes you don't want a distribution. You want its mode. Sometimes your target is so rugged that a single chain can't cross the barriers between modes. Sometimes the data is streaming in one observation at a time. And sometimes you'd rather have a fast approximation than an exact but slow Monte Carlo estimate.
+
+This video is a tour of the algorithms for those cases. Annealing, tempering, sequential Monte Carlo, and variational inference.
 
 ## Scene 02
-TODO
+
+Treat optimisation as sampling from a temperature-dependent Boltzmann distribution. Raise f to an inverse temperature. As that inverse temperature goes to infinity, the distribution concentrates on the minima of V.
+
+Run MCMC with a schedule that slowly cools. No gradients required. Works on discrete configurations, combinatorial problems, travelling salesman, everything that is otherwise intractable.
 
 ## Scene 03
-TODO
+
+The schedule is everything. Hajek's theorem guarantees convergence for a logarithmic schedule. Provably correct, but so slow that the universe ends first.
+
+In practice, everyone uses geometric cooling. Inverse temperature times alpha slightly above one. It may get stuck in a local minimum, but usually converges fast enough. Tune alpha empirically. The theory is beautiful. The practice is black magic.
+
+Logarithmic cooling converges to the global optimum. And also heat-death-of-the-universe. Pick your problem.
 
 ## Scene 04
-TODO
+
+For sampling rather than optimisation, augment the state with a temperature index. A ladder of temperatures, from hot to cold. The chain alternates between updating the state and changing temperature.
+
+At high temperatures, barriers are low, so the chain crosses multimodal structure. At low temperatures, it samples the actual target. The catch. You need the partition function ratios, which must be estimated beforehand.
 
 ## Scene 05
-TODO
+
+Run K chains simultaneously at different temperatures. Each chain does ordinary MCMC. Occasionally propose swapping configurations between adjacent-temperature chains. Accept with a ratio of Boltzmann weights. No partition function ratios required. They cancel.
+
+Geometric temperature spacing is often optimal. Trivially parallel across processors. A Monte Carlo practitioner's favourite barrier-crossing tool.
 
 ## Scene 06
-TODO
+
+Weight each state by one over the density of states. The resulting probability distribution over energies is flat. You visit all energies equally.
+
+Once the density of states is known, observables at any temperature follow by trivial reweighting. The catch is that the density of states is unknown a priori. You must estimate it iteratively. Wang-Landau solves this elegantly. It is the same idea reborn.
 
 ## Scene 07
-TODO
+
+Sequential Monte Carlo approximates a sequence of target distributions, not one target. Three ingredients. A propagation kernel that moves samples forward. An importance reweighting step. And a resampling step that replaces low-weight samples with copies of high-weight ones.
+
+Originally Bayesian filtering for hidden Markov models. Also used for rare events and slow tempering sequences.
 
 ## Scene 08
-TODO
+
+You have a hidden state evolving in time, dynamics plus noise, and noisy observations of it. The filtering distribution is the conditional on observations up to the current time. It evolves by two steps.
+
+Prediction. Propagate through the dynamics. The distribution broadens. Analysis. Multiply by the observation likelihood. The distribution sharpens. A particle filter implements this as Monte Carlo.
 
 ## Scene 09
-TODO
+
+The simplest sequential Monte Carlo for filtering. Propagate each particle through the dynamics. Sample from the transition kernel. Weight by the observation likelihood. Normalise weights. Resample.
+
+Convergence bound. Total variation distance between the particle approximation and the true filter is bounded by a constant over the square root of N. But that constant can grow exponentially if weight variance is unchecked.
 
 ## Scene 10
-TODO
+
+A small but powerful variant for linear-Gaussian observation models. Bayes-update first, propagate afterward. Apply the observation likelihood to the predictive distribution, then propagate from the Kalman-updated posterior.
+
+Variance of the weights is much smaller. You avoid proposing particles that have no chance of surviving the observation. Limited to tractable observation models, but a big win when you can use it.
 
 ## Scene 11
-TODO
+
+MCMC gives unbiased samples, but costs CPU. Variational inference trades bias for speed. Find the member of a tractable family that is closest to your target f in Kullback-Leibler divergence.
+
+The fit is approximate. The family never contains f exactly. But the optimisation is deterministic, often convex enough, and scales to datasets where MCMC crawls. Pick the tool by your constraint. Statistical honesty, or wall-clock time.
+
+Statisticians love MCMC. Engineers love VI. Both of them secretly wish the other was wrong.
 
 ## Scene 12
-TODO
+
+The KL divergence from g to f is the expectation under g of the log of g over f. Minimise it to find the best approximation.
+
+Because f is only known up to a constant, rewrite. KL equals the negative of the evidence lower bound plus the log partition function. The ELBO is computable without the partition function. So maximising ELBO is equivalent to minimising KL, and neither needs the partition function.
 
 ## Scene 13
-TODO
+
+The simplest variational family. Fully factorised. The approximation is the product of independent factors. This sacrifices all correlations. Accuracy for every marginal, none for joint structure.
+
+Marginal variances can be wrong even when marginal means are right. Roots in statistical physics, where mean-field theory replaces fluctuating neighbours with their average.
 
 ## Scene 14
-TODO
+
+Coordinate-Ascent Variational Inference optimises each factor in turn, keeping the others fixed. The update for each factor is proportional to the exponential of the expected log joint under the remaining factors.
+
+For exponential-family models it has closed form. Each step increases the ELBO monotonically. Analogous to Gibbs sampling. But deterministic, and biased.
 
 ## Scene 15
-TODO
+
+Gibbs. Stochastic, exact, expensive. CAVI. Deterministic, biased, cheap. Both update one coordinate at a time. Gibbs draws from the conditional. CAVI finds the best variational factor under the expected log-conditional.
+
+They are duals. Sampling versus optimisation on the same coordinate structure. In practice, use CAVI to initialise Gibbs, or Gibbs to polish CAVI. Neither dominates the other uniformly.
 
 ## Scene 16
-TODO
+
+Expectation-Maximisation. Given observed data y and latent z, find the parameter theta that maximises the marginal likelihood. E-step. Compute the expected log-joint under the current posterior over z. M-step. Maximise in theta. Iterate.
+
+The likelihood rises monotonically. Convergence to a local max. For exponential families, the M-step is closed form. EM is the ELBO-maximisation sibling of VI.
 
 ## Scene 17
-TODO
+
+EM's M-step is closed-form only for nice models. When the E-step integral is intractable, as in messy Bayesian models, approximate it by Monte Carlo.
+
+Monte Carlo EM samples latent variables given current parameters, averages the log-joint over those samples, and maximises. Trades the clean monotonicity of EM for much broader applicability. Saddle points and local maxima remain a hazard.
 
 ## Scene 18
-TODO
+
+Bootstrap particle filter error is a constant over the square root of N, just like classical Monte Carlo, but with a subtle constant. Proof via Lax equivalence. The exact filtering operator is a contraction. Errors in prediction shrink. And the sampling step adds order one over the square root of N noise at each time step.
+
+The constant can grow exponentially with time if weight variance is unchecked. Which is why resampling exists.
 
 ## Scene 19
-TODO
+
+Simulated annealing turns optimisation into cooling. Parallel tempering crosses modes by swapping replicas. Sequential Monte Carlo handles sequential and high-variance targets via particle clouds and resampling. Variational inference trades exactness for scalability via ELBO optimisation. Expectation-maximisation handles latent-variable maximum likelihood with monotone guarantees.
+
+Each is a targeted answer to a specific place where vanilla MCMC hurts.
 
 ## Scene 20
-TODO
+
+Final video of the series. The nuts and bolts. Lattice representations in one-dimensional arrays with neighbour tables. Data structures matched to update patterns. Parallelisation via trivially parallel replicas, checkerboard decomposition, and parallel cluster algorithms.
+
+Multispin coding to pack sixty-four simulations into one machine word. Random-number generation, the unglamorous foundation that silently breaks everything when it's wrong.
+
+The theory is beautiful. The implementation is where your paper actually lives or dies.

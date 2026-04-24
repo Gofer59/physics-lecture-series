@@ -1,0 +1,3 @@
+The naive move — store the gluon field A sub mu at each lattice site — destroys gauge invariance. A local gauge rotation at each site scrambles a site-valued field. There is no way to compare color at neighboring sites without a rule for parallel transport.
+
+Gauge theory on a lattice requires a completely different data structure. The continuum got away with storing gauge fields at points. The lattice knows better. The right object lives on links, not sites.

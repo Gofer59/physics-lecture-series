@@ -1,0 +1,3 @@
+The Dirac equation follows from a Lagrangian involving psi-bar — which is psi-dagger times gamma-zero — sandwiching i gamma-mu d-mu minus m. The U(1) symmetry, psi goes to e to the i-alpha psi, gives a Noether current: j-mu equals psi-bar gamma-mu psi.
+
+That current is conserved, and its time component is a positive probability density — unlike naive attempts with Klein-Gordon. The Dirac Lagrangian is how relativistic quantum mechanics finally gets a sensible probability interpretation.

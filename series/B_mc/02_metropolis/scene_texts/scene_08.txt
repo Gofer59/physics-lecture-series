@@ -1,0 +1,3 @@
+A two-dimensional grid of spins, each plus or minus one. Energy equals negative coupling times the sum over nearest-neighbour products, minus field times total magnetisation. The Boltzmann distribution over spin configurations is the canonical MCMC playground.
+
+Single-spin-flip Metropolis is the starter algorithm. Flip one spin. Compute the local energy change. Accept with the exponential of minus beta times delta-E.

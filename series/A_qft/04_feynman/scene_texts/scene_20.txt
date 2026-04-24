@@ -1,0 +1,3 @@
+With the machinery of Feynman diagrams and perturbation theory in hand, we can finally do the crown jewel. Quantum Electrodynamics.
+
+Coming up next: we derive the QED Feynman rules from the gauge-invariant Lagrangian. Compute electron-positron annihilating to muon pairs. Tackle Compton scattering. And introduce the Ward identity — the first example of a symmetry principle protecting the theory from otherwise-fatal infinities.

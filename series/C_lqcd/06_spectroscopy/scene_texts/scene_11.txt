@@ -1,0 +1,5 @@
+Every lattice discretization has errors scaling as powers of the lattice spacing. Symanzik's effective theory expresses them as a power series in a, with coefficients that are continuum operators of the right dimension.
+
+Cancel the order-a term by adding one higher-dimension operator. Cancel order-a-squared by adding more. Repeat.
+
+The practical payoff is enormous: the same precision on a coarser lattice. The Luscher–Weisz gauge actions and clover fermions are the workhorses.

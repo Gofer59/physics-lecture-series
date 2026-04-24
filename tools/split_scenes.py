@@ -22,7 +22,9 @@ def main():
     for i in range(1, len(parts), 2):
         scene_num = parts[i].zfill(2)
         text = parts[i + 1].strip()
-        body = '\n'.join(text.split('\n')[1:]).strip()
+        # If first line is a title (starts with "—"), skip it; otherwise keep all.
+        lines = text.split('\n')
+        body = '\n'.join(lines[1:]).strip() if lines[0].startswith('—') else text
         out_path = os.path.join(out_dir, f"scene_{scene_num}.txt")
         with open(out_path, 'w') as f:
             f.write(body)

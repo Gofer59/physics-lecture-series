@@ -1,0 +1,5 @@
+The Budapest–Marseille–Wuppertal collaboration, in a 2008 Science paper, computed the light hadron spectrum to within a few percent of experiment. They used only three input parameters: the bare gauge coupling and two quark masses, fixed to reproduce m-pi and m-K.
+
+Every other mass — the nucleon, the Omega, all of them — came out as predictions.
+
+This was the moment QCD stopped being an unsolved theory. QCD: solved, as much as any theory ever gets solved, in 2008. The particle physicists took their time celebrating.

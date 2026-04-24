@@ -1,0 +1,5 @@
+Wolff grows one cluster. Swendsen-Wang builds all clusters simultaneously. Place bonds on aligned neighbour pairs with the same probability, one minus the exponential of minus two beta J. Identify connected components using union-find, Hoshen-Kopelman. Flip each cluster's spins independently with probability one half.
+
+Simultaneously updates the whole lattice. Dynamic exponent is about zero point three five for two-dimensional Ising. The generalisation to q-state Potts is immediate.
+
+Hoshen-Kopelman is the world's most exciting union-find implementation.

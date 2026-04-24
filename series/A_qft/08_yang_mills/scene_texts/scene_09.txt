@@ -1,0 +1,5 @@
+Every non-abelian Feynman diagram carries a factor from the group structure. Two numbers dominate.
+
+C-F, the Casimir for matter in the fundamental representation. And C-A, the Casimir for the gauge fields themselves. For SU(3), C-F equals four-thirds and C-A equals three.
+
+These numbers govern how coupling strengths run, and how diagrams add up. They appear in every QCD calculation anyone has ever done.

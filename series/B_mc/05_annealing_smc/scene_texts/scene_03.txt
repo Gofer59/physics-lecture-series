@@ -1,0 +1,5 @@
+The schedule is everything. Hajek's theorem guarantees convergence for a logarithmic schedule. Provably correct, but so slow that the universe ends first.
+
+In practice, everyone uses geometric cooling. Inverse temperature times alpha slightly above one. It may get stuck in a local minimum, but usually converges fast enough. Tune alpha empirically. The theory is beautiful. The practice is black magic.
+
+Logarithmic cooling converges to the global optimum. And also heat-death-of-the-universe. Pick your problem.

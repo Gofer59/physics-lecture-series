@@ -1,0 +1,5 @@
+Quantizing a gauge theory means fixing the gauge. That introduces a determinant that cannot be absorbed away.
+
+Faddeev and Popov showed the determinant is equivalent to adding new anticommuting scalar fields. They are called ghosts. Ghosts never appear as external particles.
+
+Their only job is to appear inside loops, with the right sign, and cancel the unphysical polarizations of the gauge bosons. That cancellation is what preserves unitarity.

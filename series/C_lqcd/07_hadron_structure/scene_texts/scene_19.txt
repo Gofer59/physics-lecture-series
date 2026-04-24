@@ -1,0 +1,5 @@
+Three-point functions give matrix elements, decay constants, form factors, and CKM elements.
+
+The light-cone obstruction blocks direct PDFs on Euclidean lattices. Quasi-PDFs and pseudo-distributions solve this through perturbative matching.
+
+Generalized parton distributions encode nucleon tomography through the Ji sum rule. Excited-state contamination is the dominant systematic in hadron structure. Finite-volume corrections are exponentially small for m-pi L above four. And the Luscher method turns finite volume into a tool for scattering and resonances.

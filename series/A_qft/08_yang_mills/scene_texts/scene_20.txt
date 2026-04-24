@@ -1,0 +1,3 @@
+Yang-Mills gives the dynamics. The Higgs gives the masses. Put them together with three generations of fermions, a CKM matrix, anomaly cancellation, and QCD phenomenology, and you have the Standard Model.
+
+Next video, we assemble it piece by piece. We examine what it predicts, where it has been tested, and we stare at what it still cannot explain.

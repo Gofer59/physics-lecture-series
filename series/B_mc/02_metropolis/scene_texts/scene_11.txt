@@ -1,0 +1,3 @@
+Near a phase transition, correlated domains span the whole lattice. Single-spin flips can only change the domain boundary one step at a time. The autocorrelation time blows up as lattice size to a power. The dynamic critical exponent z, which for two-dimensional Ising with Metropolis is about two point one seven.
+
+Cost per independent sample scales as L to the d plus z. The algorithm is fighting the physics.

@@ -1,0 +1,3 @@
+When we actually compute amplitudes, we need the time-ordered product of two fields — the Feynman propagator. In momentum space it is i, divided by p-squared minus m-squared, plus a tiny positive imaginary number. The famous i-epsilon.
+
+That small imaginary shift pushes the poles off the real axis, and selects the right boundary conditions. Particles travel forward in time, antiparticles backward. This single object appears on every internal line of every diagram for the rest of the series.

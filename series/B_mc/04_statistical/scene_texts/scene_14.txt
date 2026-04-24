@@ -1,0 +1,5 @@
+You simulated at one inverse temperature and actually want results at another. If they are close, don't re-run. Reweight.
+
+The histogram of energies from the original run, multiplied by the exponential of minus delta-beta times E, gives the histogram at the new temperature. This works as long as the energy distributions at the two temperatures overlap. A beautiful trick for locating the critical temperature precisely with one long run.
+
+Running one simulation and pretending you ran twelve. The honest kind.

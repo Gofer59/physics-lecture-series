@@ -1,0 +1,5 @@
+The precision deliverables of modern lattice QCD: quark masses for u, d, s, c, and b at sub-percent errors. Decay constants — f-pi, f-K, f-B, f-Bs — at sub-percent. Form factors f-plus for K to pi and B to pi at a few percent. Bag parameters B-K and B-B at a few percent.
+
+These numbers feed into every Standard Model test — CKM unitarity, K and B mixing, rare meson decays, direct CP violation.
+
+Lattice QCD is, quietly, a pillar of beyond-Standard-Model searches.

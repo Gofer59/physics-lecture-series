@@ -1,0 +1,3 @@
+Choose the summation window automatically. Too small. Truncation bias decays as the exponential of minus the window over tau. Too large. Statistical noise grows as the square root of twice the window plus one, over N.
+
+Wolff's criterion finds the crossover. A bias-correction factor completes the recipe. All of this is what pyerrors automates under the hood.

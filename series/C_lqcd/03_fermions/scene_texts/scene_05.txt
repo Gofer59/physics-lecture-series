@@ -1,0 +1,3 @@
+Wilson's answer was to sacrifice chiral symmetry. Add a discretized Laplacian — the Wilson term — that leaves the physical pole at the origin untouched, but gives the fifteen doublers an extra mass of order one over a.
+
+As a goes to zero, the doublers decouple. The single physical species survives. The price is steep. Chiral symmetry is explicitly broken, the quark mass gets an additive renormalization, and operators mix in complicated ways.

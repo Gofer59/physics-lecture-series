@@ -1,0 +1,3 @@
+Ginsparg–Wilson fermions — overlap or domain wall — cost ten to a hundred times Wilson per Dirac inversion. That cost buys you exact chiral symmetry, integer topological charge, direct access to the condensate, and controllable chiral extrapolations.
+
+For most precision physics, this is worth it. For others, improved Wilson or staggered at cheap cost is good enough. Every collaboration picks a spot on the trade-off curve. Chiral symmetry: the fermion feature that costs roughly as much as a new supercomputer.

@@ -1,0 +1,5 @@
+Pack sixty-four Ising spins, one per bit, into a single sixty-four-bit machine word. Bitwise AND, OR, and XOR update all sixty-four spins in one instruction. Speedup of up to sixty-four.
+
+The acceptance rule becomes Boolean algebra encoded by truth tables and Karnaugh maps. Generate random bits in bulk. Apply them as masks. It is how the fastest Ising simulators in the world actually work.
+
+Sixty-four-bit machines. Sixty-four spins per word. We've been sleeping on this for decades.

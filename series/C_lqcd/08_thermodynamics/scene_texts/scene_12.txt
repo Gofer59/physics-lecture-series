@@ -1,0 +1,5 @@
+Lattice QCD has entered the exascale era. Simulations at physical pion mass, with multiple lattice spacings and volumes, are routine.
+
+Flagship calculations aim at sub-percent precision on CKM elements, on the muon anomalous magnetic moment, and on nucleon structure.
+
+The computational demand is relentless — a single modern ensemble costs tens of millions of core-hours. Hardware co-design — GPUs, custom accelerators — and algorithmic innovation — multigrid solvers, machine-learning samplers — are perpetual frontiers.

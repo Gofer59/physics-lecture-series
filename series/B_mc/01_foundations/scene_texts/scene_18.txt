@@ -1,0 +1,3 @@
+Sometimes you have a simulator but no likelihood. You can generate fake data from parameters, but you cannot evaluate the probability of observed data.
+
+Approximate Bayesian computation solves this. Sample parameters from the prior. Simulate. Accept when the simulated data is within epsilon of the observed data. The result is an approximation to the posterior, with epsilon trading bias against acceptance rate. Likelihood-free inference in one paragraph.

@@ -1,0 +1,3 @@
+Jackknife. Leave out one block at a time. Compute the estimator on the rest. Repeat. A clever prefactor, the number of blocks minus one over the number of blocks, converts the variance across leave-one-out estimates into the correct error bar.
+
+Jackknife handles nonlinear estimators, estimates bias, and propagates errors cleanly through covariance-matrix fits. In lattice QCD it is the default analysis tool.

@@ -1,0 +1,5 @@
+Lattice QCD has become a precision field. Modern flagship calculations — hadron masses, decay constants, form factors, quark masses — quote sub-percent uncertainties.
+
+The error budget has many entries: statistical, continuum extrapolation, chiral extrapolation, finite volume, scale setting, renormalization matching.
+
+FLAG, the Flavor Lattice Averaging Group, compiles and averages results across collaborations, weighting by quality criteria. Disagreements between methods are how progress happens.

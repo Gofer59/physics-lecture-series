@@ -1,0 +1,5 @@
+Introduce momentum. Extend the state from position q to q and p, with Hamiltonian equal to the potential V of q plus the kinetic K of p. Sample from the joint Boltzmann of this Hamiltonian. Marginalise out p, and you recover f.
+
+The gain. Hamiltonian dynamics conserves energy, so the trajectory can travel long distances at nearly constant H. Distant proposals with high acceptance.
+
+If the history of MCMC is a history of tricks to propose distant moves, Hamilton's equations are the ultimate trick.

@@ -1,0 +1,5 @@
+MCMC gives unbiased samples, but costs CPU. Variational inference trades bias for speed. Find the member of a tractable family that is closest to your target f in Kullback-Leibler divergence.
+
+The fit is approximate. The family never contains f exactly. But the optimisation is deterministic, often convex enough, and scales to datasets where MCMC crawls. Pick the tool by your constraint. Statistical honesty, or wall-clock time.
+
+Statisticians love MCMC. Engineers love VI. Both of them secretly wish the other was wrong.

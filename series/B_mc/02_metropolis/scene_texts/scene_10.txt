@@ -1,0 +1,5 @@
+Start the chain in a bad place, and the first thousand samples are biased. Throw them out. That is burn-in.
+
+Now comes the harder problem. The remaining samples are positively correlated. Two neighbouring samples in a Markov chain are not two independent draws. The autocorrelation function decays exponentially, and the effective number of independent samples is N divided by roughly two times the integrated autocorrelation time.
+
+One thousand MCMC samples might be worth ten independent ones. You decide which number to brag about in the paper.

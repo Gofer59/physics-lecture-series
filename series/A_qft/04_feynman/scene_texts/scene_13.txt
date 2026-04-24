@@ -1,0 +1,3 @@
+Once we have M, extracting a cross section is bookkeeping. The differential cross section is the squared magnitude of M, times the Lorentz-invariant phase-space measure, divided by an incident flux.
+
+The phase-space measure collects a four-momentum-conserving delta function, with d-cubed-p over two E factors, for every outgoing particle. Summed or averaged over spins as appropriate, this gives a number the experimentalist can measure.

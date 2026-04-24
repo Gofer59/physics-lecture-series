@@ -1,0 +1,5 @@
+The Polyakov loop winds once around the periodic time direction. Its expectation value is the exponential of minus the free energy of a single static quark, divided by T.
+
+In the confined phase that free energy is infinite, and the loop vanishes. In the deconfined phase it is finite, and the loop is nonzero.
+
+For pure SU(3) gauge theory this is a first-order phase transition at a temperature around two hundred seventy MeV. With dynamical quarks it is a crossover at around one hundred fifty-five MeV — no sharp transition, but a well-defined inflection.

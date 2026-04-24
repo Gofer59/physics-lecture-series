@@ -1,0 +1,5 @@
+Apply the same trick with a symmetry transformation instead of a shift. If the path-integral measure is invariant under, say, a global U(1) rotation, an identity drops out: the Ward-Takahashi identity.
+
+It relates the divergence of the current to a sum of contact terms. In QED this is the same Ward identity we saw from canonical reasoning, now derived in two lines from symmetry of the measure.
+
+Every continuous symmetry generates an analogous identity. These are what tie the whole theory together.

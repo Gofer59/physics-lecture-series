@@ -1,0 +1,3 @@
+Push the lattice into a corner of parameter space where the pion Compton wavelength is larger than the box. Pion mass times L less than one. In this epsilon regime, zero modes of the Dirac operator dominate the path integral, and the theory reduces to a chiral random matrix model.
+
+It sounds exotic, but it is a controlled tool for extracting the chiral condensate and low-energy constants from a regime where the physics is genuinely different.

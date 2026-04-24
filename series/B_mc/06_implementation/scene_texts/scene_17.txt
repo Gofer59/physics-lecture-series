@@ -1,0 +1,3 @@
+Lattice as one-dimensional array with pre-computed neighbour tables. Arrays for random access, linked lists for active sets, heaps for priority, circular buffers for streaming.
+
+Parallelism from trivially parallel replicas up to checkerboard decomposition and parallel cluster algorithms. Multispin coding for sixty-fourfold Ising speedup. Lagged-Fibonacci or combined generators, always validated. Non-uniform deviates via transformation, Box-Muller, rejection, and cheap random bits.

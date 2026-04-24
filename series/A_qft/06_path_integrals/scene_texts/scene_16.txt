@@ -1,0 +1,5 @@
+Feynman diagrams are a Taylor series of the path integral around a classical vacuum. But not every phenomenon is close to that vacuum.
+
+Instantons are finite-action classical solutions in Euclidean time. They contribute non-perturbative effects invisible to any diagram. Solitons, vacuum tunneling, theta vacua in QCD — all of these live outside perturbation theory.
+
+The path integral sees them naturally. It is the more general framework.

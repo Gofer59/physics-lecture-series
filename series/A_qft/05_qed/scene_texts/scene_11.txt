@@ -1,0 +1,3 @@
+Electron-positron elastic scattering. Two diagrams contribute. S-channel annihilation plus recreation. And t-channel photon exchange.
+
+They interfere. The squared amplitude contains two moduli, plus a genuine interference term. Because fermions are being exchanged, the two diagrams have an explicit relative minus sign. A direct consequence of the anticommutation quantization from the Dirac lecture.

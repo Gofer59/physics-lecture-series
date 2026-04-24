@@ -1,0 +1,3 @@
+A chirally twisted mass term — add an i mu-q gamma-five tau-three to the Wilson operator — introduces a flavor-off-diagonal term in the two-flavor sector. At maximal twist, the physical quark mass equals mu-q, and the order-a discretization errors cancel automatically.
+
+The determinant is manifestly positive. The European ETMC collaboration has made this their workhorse. It is a clever workaround for improvement without clover tuning.

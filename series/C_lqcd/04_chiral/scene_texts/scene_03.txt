@@ -1,0 +1,3 @@
+The QCD vacuum is a condensate. The expectation value of psi-bar psi is nonzero, around minus 250 MeV cubed. This order parameter transforms nontrivially under axial rotations, so the vacuum does not respect chiral symmetry — even though the Lagrangian does.
+
+The consequence: for two flavors, three Goldstone bosons — the three pions. Their masses vanish in the chiral limit. The Gell-Mann–Oakes–Renner formula gives pion mass squared proportional to quark mass.

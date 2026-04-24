@@ -1,0 +1,5 @@
+We split the Lagrangian into two pieces. A renormalized part, plus a counterterm part. The counterterms have exactly the structure needed to cancel divergences order by order in perturbation theory.
+
+In QED there are only three of them. Delta-two for the electron field, delta-three for the photon, and delta-one for the vertex. The Ward identity forces delta-one equal to delta-two.
+
+That is a massive simplification. It is why QED renormalizes at all.

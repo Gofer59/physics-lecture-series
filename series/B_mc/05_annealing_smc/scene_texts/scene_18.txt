@@ -1,0 +1,3 @@
+Bootstrap particle filter error is a constant over the square root of N, just like classical Monte Carlo, but with a subtle constant. Proof via Lax equivalence. The exact filtering operator is a contraction. Errors in prediction shrink. And the sampling step adds order one over the square root of N noise at each time step.
+
+The constant can grow exponentially with time if weight variance is unchecked. Which is why resampling exists.

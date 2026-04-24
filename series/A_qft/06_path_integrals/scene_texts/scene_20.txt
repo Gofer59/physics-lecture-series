@@ -1,0 +1,5 @@
+Loop integrals diverge at high energy. The path integral has this problem, and so does the Feynman-diagram approach. Next episode we confront the ultraviolet.
+
+Regularization, dimensional regularization, counterterms, the running of couplings, and Wilson's picture of integrating out high-energy modes. After that lecture, QED predictions will go from three decimal places to twelve.
+
+And the concept of a theory will quietly shift. Not one immutable Lagrangian, but a family of Lagrangians that live at different energy scales.

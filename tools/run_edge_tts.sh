@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
+# run_edge_tts.sh — Synthesize per-scene narration with Edge TTS (Emma voice)
+#
+# Usage: ./run_edge_tts.sh <scene_texts_dir> <audio_out_dir>
+#
+# Requires: edge-tts (pip install edge-tts), ffprobe (ffmpeg)
 set -euo pipefail
 
-PIPELINE_DIR="/home/gofer/Documents_organise/references/video_project/qft01_v2_voice_pipeline"
-TEXT_DIR="$PIPELINE_DIR/scene_texts_short"
-AUDIO_DIR="$PIPELINE_DIR/audio_short"
-LOG="$PIPELINE_DIR/edge_tts_short.log"
+TEXT_DIR="${1:?Usage: $0 <scene_texts_dir> <audio_out_dir>}"
+AUDIO_DIR="${2:?Usage: $0 <scene_texts_dir> <audio_out_dir>}"
+LOG="$AUDIO_DIR/edge_tts.log"
 
 mkdir -p "$AUDIO_DIR"
 : > "$LOG"
@@ -26,4 +30,4 @@ for txt in "$TEXT_DIR"/scene_*.txt; do
     sleep 1
 done
 
-echo "[$(date +%H:%M:%S)] All done." | tee -a "$LOG"
+echo "[$(date +%H:%M:%S)] Done." | tee -a "$LOG"

@@ -1,0 +1,3 @@
+Draw N independent samples from the target, average the observable, done. The estimator is unbiased. Its variance is the target variance divided by N.
+
+The central limit theorem gives you a Gaussian confidence interval that shrinks like one over the square root of N. Dimension-free, but brutally slow. One hundred times more samples buys a ten-fold tighter error bar. That is the deal.

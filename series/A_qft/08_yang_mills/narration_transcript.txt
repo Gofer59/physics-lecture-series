@@ -1,65 +1,161 @@
-# QFT-V08 Narration — Yang-Mills Theory and Spontaneous Symmetry Breaking
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_A_qft/qft_v08_slides.md -->
+# QFT-V08 — Yang-Mills Theory and Spontaneous Symmetry Breaking | Narration Transcript
 
 ## Scene 01
-TODO
+
+QED gets one thing right that forces everything else. The photon has no charge, so it cannot interact with itself. Photon lines are straight and quiet.
+
+But the forces inside the nucleus do not behave that way. Their carriers are coloured, charged, and tangled with one another. To describe them we need a gauge theory whose bosons talk to themselves.
+
+In QED, photons are like physicists at a party. In Yang-Mills, they actually talk to each other.
 
 ## Scene 02
-TODO
+
+The gauge group of QED is U(1) — a single circle of phases that all commute. QCD is built on SU(3). The weak sector is built on SU(2) times U(1).
+
+These groups do not commute. And that single fact is what makes the gauge bosons carry charge.
+
+Yang and Mills wrote this theory down in 1954, decades before anyone knew it actually described nature.
 
 ## Scene 03
-TODO
+
+Every continuous symmetry has infinitesimal generators. For SU(N) there are N squared minus one of them, and they do not commute.
+
+The commutator of two generators produces a third generator, weighted by the structure constants. Those constants encode the entire algebraic skeleton of the theory.
+
+For SU(2) there are three generators — the Pauli matrices. For SU(3) there are eight — the Gell-Mann matrices.
 
 ## Scene 04
-TODO
+
+To make the theory work under local rotations of the internal group, the ordinary derivative is not enough. It picks up unwanted terms whenever the rotation depends on position.
+
+We add a gauge field whose transformation precisely cancels the mess. Ordinary derivative plus gauge field gives the covariant derivative.
+
+Its transformation rule is the definition of gauge symmetry. Everything else in Yang-Mills theory is built on top of it.
 
 ## Scene 05
-TODO
+
+In QED, the field strength is the curl of the potential. In Yang-Mills, there is an extra piece — a commutator of the gauge field with itself, weighted by the structure constants.
+
+This extra term has no analog in electromagnetism. It is the reason gluons self-interact.
+
+The abelian theory is a theory about photons. The non-abelian theory is a theory about photons that bite.
 
 ## Scene 06
-TODO
+
+The Lagrangian is minus one-quarter of the field strength squared, plus a Dirac term for matter. Write it out and expand.
+
+Because the field strength itself contains a commutator, squaring it produces cubic and quartic pieces. You get three-gluon vertices and four-gluon vertices automatically.
+
+These interactions exist purely because of the group structure. No matter required. The gauge bosons interact with each other just by virtue of living in a non-abelian theory.
 
 ## Scene 07
-TODO
+
+Quantizing a gauge theory means fixing the gauge. That introduces a determinant that cannot be absorbed away.
+
+Faddeev and Popov showed the determinant is equivalent to adding new anticommuting scalar fields. They are called ghosts. Ghosts never appear as external particles.
+
+Their only job is to appear inside loops, with the right sign, and cancel the unphysical polarizations of the gauge bosons. That cancellation is what preserves unitarity.
 
 ## Scene 08
-TODO
+
+Gauge invariance dies once we fix a gauge. What replaces it is BRST symmetry — a nilpotent transformation mixing gauge fields and ghosts, whose square is exactly zero.
+
+Physical states are those annihilated by the BRST charge.
+
+This is the quantum-consistent replacement for gauge invariance. It is what guarantees the theory still makes sense after we have fixed the gauge and introduced ghosts.
 
 ## Scene 09
-TODO
+
+Every non-abelian Feynman diagram carries a factor from the group structure. Two numbers dominate.
+
+C-F, the Casimir for matter in the fundamental representation. And C-A, the Casimir for the gauge fields themselves. For SU(3), C-F equals four-thirds and C-A equals three.
+
+These numbers govern how coupling strengths run, and how diagrams add up. They appear in every QCD calculation anyone has ever done.
 
 ## Scene 10
-TODO
+
+When you compute how the coupling changes with energy, the gauge bosons' self-interactions contribute with the opposite sign to matter.
+
+For SU(3) with six quark flavours, the gauge term wins. The coupling gets weaker at higher energies. At asymptotic energies, quarks behave as free particles. This is asymptotic freedom. Gross, Politzer, and Wilczek won the 2004 Nobel Prize for it.
+
+Most theories blow up at high energy. QCD quietly goes to sleep.
 
 ## Scene 11
-TODO
+
+The flip side of asymptotic freedom is low energy. There, the coupling grows, perturbation theory collapses, and quarks cannot be pulled apart.
+
+A linear rising potential traps them. Pull two quarks apart and the energy between them grows like a stretched string, with a tension of roughly 440 MeV squared. Stretch it far enough and it snaps. But instead of free quarks, a new quark-antiquark pair pops out.
+
+Free quarks are not a thing.
 
 ## Scene 12
-TODO
+
+To define gauge-invariant non-local observables, we integrate the gauge field along a path. The result is a path-ordered exponential, called a Wilson line.
+
+Close the path into a loop and take its expectation value. For a large closed loop, the expectation value decays exponentially with the enclosed area.
+
+That area law is the mathematical fingerprint of confinement. It is the central object of lattice gauge theory.
 
 ## Scene 13
-TODO
+
+A Lagrangian can respect a symmetry while the ground state does not. Below its Curie temperature, a ferromagnet picks a direction, even though the underlying physics has none.
+
+The symmetry is not destroyed. It is hidden.
+
+The order parameter is a field whose vacuum expectation value is nonzero. The classic picture is a Mexican-hat potential — rotationally symmetric, but the ball rolls into one valley, and the chosen direction is visible.
 
 ## Scene 14
-TODO
+
+When a continuous global symmetry is spontaneously broken, there must be a massless particle for every broken generator. These are the Goldstone bosons.
+
+They correspond to flat directions along the bottom of the potential. Radial excitations have a restoring force and a mass. Angular excitations cost no energy and stay massless.
+
+The pions of QCD are approximate Goldstone bosons of broken chiral symmetry.
+
+Every broken symmetry comes with a massless ghost of its former self. Physicists call this Tuesday.
 
 ## Scene 15
-TODO
+
+If the broken symmetry is local rather than global, something different happens. The would-be Goldstone bosons do not remain as independent particles.
+
+They are absorbed as the longitudinal polarizations of the gauge bosons. The gauge bosons thereby become massive.
+
+Gauge invariance is preserved. The Goldstones are eaten. No massless particles. Just massive vector bosons with three polarizations instead of two. That is the Higgs mechanism.
 
 ## Scene 16
-TODO
+
+The electroweak group is SU(2)-left times U(1)-hypercharge. Four gauge bosons, all massless at the Lagrangian level.
+
+A scalar doublet, the Higgs, acquires a vacuum expectation value of 246 GeV. Three of its four components are eaten by the W-plus, the W-minus, and the Z, which become massive.
+
+The remaining component is a physical scalar particle with a mass of 125 GeV. It was discovered at the LHC in 2012.
 
 ## Scene 17
-TODO
+
+The W mass is the coupling g times v over two, coming in at about 80.4 GeV. The Z mass involves a combination of g and the hypercharge coupling, and it comes out to 91.2 GeV.
+
+The photon remains massless, because one generator of the original group is left unbroken. The ratio of W and Z masses defines the Weinberg angle.
+
+Its measured value and its predicted value agree at the per-mille level. Not a fit. A check.
 
 ## Scene 18
-TODO
+
+Fermion masses cannot come from a simple mass term. The left-handed and right-handed chiralities transform differently under the weak group.
+
+Instead, masses come from Yukawa couplings to the Higgs. Mass equals Yukawa times v over root two.
+
+The top quark has a Yukawa near one. The electron has one near two parts per million. No one knows why.
 
 ## Scene 19
-TODO
+
+We took QED and generalized it. Non-abelian gauge groups give bosons that carry charge and self-interact. Quantizing them required ghosts and BRST symmetry.
+
+The resulting theory becomes free at high energy and confines at low energy. Spontaneous symmetry breaking, grafted on, turns some gauge bosons massive without breaking the gauge principle at any step.
+
+We built the theory on commutators and broken symmetries. Somehow the universe agreed.
 
 ## Scene 20
-TODO
+
+Yang-Mills gives the dynamics. The Higgs gives the masses. Put them together with three generations of fermions, a CKM matrix, anomaly cancellation, and QCD phenomenology, and you have the Standard Model.
+
+Next video, we assemble it piece by piece. We examine what it predicts, where it has been tested, and we stare at what it still cannot explain.

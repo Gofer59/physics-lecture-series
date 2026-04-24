@@ -1,0 +1,3 @@
+Real MCMC lives on a pile of small tricks. Tune the proposal width to target roughly fifty percent acceptance in low dimension, twenty-three percent in high dimension. Measure observables every couple of autocorrelation times to avoid redundancy.
+
+Pre-compute exponential Boltzmann factors into a lookup table so you never call an exponential inside the hot loop. Run blocking to get honest error bars. Craft, not just math.

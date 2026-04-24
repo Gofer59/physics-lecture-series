@@ -1,0 +1,5 @@
+The factor of i in the exponential makes the path integral oscillatory and formally ill-defined. Rotate time to imaginary values — t goes to minus i tau — and the exponential becomes e to the minus Euclidean action. Real, convergent, well-behaved.
+
+That is exactly the Boltzmann weight of statistical mechanics, with the action playing the role of energy. Zero-temperature quantum field theory in d dimensions is the same mathematical object as statistical mechanics in d plus one.
+
+Wick rotation is the trick by which physicists pretend quantum field theory is just a very elaborate statistical-mechanics problem. The pretence works well enough to simulate QCD on supercomputers.

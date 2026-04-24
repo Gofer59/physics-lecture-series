@@ -1,0 +1,5 @@
+Step back. Series A built quantum field theory from Lagrangians and path integrals to renormalization. Series B built Monte Carlo from Ising models through Markov chains to cluster algorithms.
+
+Series C combined them into lattice QCD — the only first-principles tool for strong-interaction physics in its non-perturbative regime.
+
+These three series are not independent courses. They are one integrated framework for computational quantum field theory. The hadron spectrum, the Higgs bound, the equation of state of the early universe — all built from the same stack.

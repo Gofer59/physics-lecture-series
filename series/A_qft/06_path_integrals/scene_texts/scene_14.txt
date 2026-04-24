@@ -1,0 +1,5 @@
+Sometimes a classical symmetry fails to be a symmetry of the quantum measure. The mismatch has a name: an anomaly. And it has physical consequences.
+
+The axial current in QED picks up a nonzero divergence at one loop — the chiral anomaly — and that correctly predicts the rate of neutral pion decay into two photons. In the Standard Model, anomaly cancellation across all fermions is a nontrivial constraint on particle content.
+
+The word "anomaly" sounds like a bug. It is a feature. Some of the most important numbers in particle physics come from the measure being quietly non-invariant.

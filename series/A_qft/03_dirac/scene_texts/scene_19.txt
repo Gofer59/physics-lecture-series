@@ -1,0 +1,5 @@
+Starting from the Clifford algebra and demanding Lorentz invariance, we built the Dirac equation. Its solutions are four-component spinors, splitting into left- and right-handed Weyl pieces.
+
+Quantization requires anticommutators, which gives us Pauli exclusion and fermionic statistics. The spin sums collapse cleanly. The Feynman propagator generalizes Klein-Gordon, with an extra p-slash plus m in the numerator.
+
+Parity, charge conjugation, and time reversal are probed individually. But CPT is sacred. Matter has a mathematical reason to look the way it does.

@@ -1,0 +1,3 @@
+Starting from "quantize a relativistic field", we obtained a particle interpretation automatically. Bose statistics automatically. Antiparticles automatically. Charge conservation automatically. Causality automatically.
+
+None of these were postulates of ordinary quantum mechanics. They emerge as consequences of demanding relativity and quantum mechanics simultaneously. This is the deep payoff of QFT. And we have not even added interactions yet.

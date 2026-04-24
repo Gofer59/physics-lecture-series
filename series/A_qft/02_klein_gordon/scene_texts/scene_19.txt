@@ -1,0 +1,5 @@
+We quantized a relativistic scalar field by imposing canonical commutators on phi and pi. Each momentum mode became a harmonic oscillator. Fock space gave us particles, and automatic Bose statistics.
+
+Causality forced the existence of antiparticles and a charge conservation law. The Feynman propagator, with its i-epsilon prescription, emerged as the Green's function of the free theory. It will be the basic building block of every calculation to come.
+
+All this, and the particles still do not interact with anything. That part starts next episode.

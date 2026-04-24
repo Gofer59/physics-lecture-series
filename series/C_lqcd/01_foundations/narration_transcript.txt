@@ -1,65 +1,123 @@
-# LQCD-V01 Narration — Lattice Foundations
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_C_lqcd/lqcd_v01_slides.md -->
+# LQCD-V01 — Lattice Foundations | Narration Transcript
 
 ## Scene 01
-TODO
+
+At high energies, the strong force is weak. Feynman diagrams converge beautifully. Drop down to the hadronic regime, and the coupling explodes. The series you were expanding in becomes larger than one.
+
+Protons, pions, confinement — the actual content of QCD lives precisely where our main calculational tool dies. Perturbation theory: the physicist's favorite tool, right up until it isn't.
+
+We need a definition of QCD that does not start by assuming the coupling is small.
 
 ## Scene 02
-TODO
+
+Wilson's answer, in 1974, was to replace continuous spacetime with a hypercubic lattice of spacing a. The lattice kills the ultraviolet — no momentum can exceed pi over a — and turns the path integral into a finite-dimensional ordinary integral.
+
+Suddenly a computer can handle it. And this is not a trick. It is a rigorous, non-perturbative definition of quantum field theory.
 
 ## Scene 03
-TODO
+
+In Minkowski signature the path integral weighs histories by e to the i S — an oscillating phase that no Monte Carlo method can sample. Rotate time into the imaginary axis, and e to the i S becomes e to the minus S sub E, a positive Boltzmann weight.
+
+The Osterwalder–Schrader theorem guarantees we can rotate back. We Euclideans solved the sign problem by not having one.
 
 ## Scene 04
-TODO
+
+After the Wick rotation, a quantum field theory looks exactly like classical statistical mechanics in four dimensions. Field configurations play the role of spin configurations. The Boltzmann weight e to the minus S sub E tells you which ones matter.
+
+Importance sampling — the Metropolis algorithm — can now visit the configurations that dominate the partition function. Two fields, one framework.
 
 ## Scene 05
-TODO
+
+The object we actually measure is a Euclidean correlator. Insert a field at one point, another at a later time, and average. At large time separations, the correlator decays exponentially.
+
+The decay rate is the energy of the lowest state with matching quantum numbers. The spectrum of the theory is literally the slope of a log-linear plot.
 
 ## Scene 06
-TODO
+
+As a warm-up before QCD, put a single scalar field on the lattice. Replace derivatives by symmetric finite differences, with errors of order a squared. Replace the integral over spacetime by a sum over sites. Keep the mass term and the phi-to-the-fourth interaction.
+
+The result is a well-defined, finite-dimensional Euclidean action — our first real lattice field theory.
 
 ## Scene 07
-TODO
+
+Fourier-transform the free lattice theory. The propagator becomes one over p-hat squared plus m squared, where the lattice momentum p-hat is two over a times sine of p a over two.
+
+At small momenta this reproduces the continuum. At the edge of the Brillouin zone it bends over. The lattice gives you a UV cutoff at pi over a, and a finite box gives you an IR cutoff as well.
 
 ## Scene 08
-TODO
+
+A Euclidean path integral with N time slices equals the trace of T-hat to the N, where T-hat is the transfer matrix — the operator that propagates by one time step.
+
+Its eigenvalues are e to the minus a E sub n. So diagonalizing it recovers the Hamiltonian and the physical Hilbert space. This is how an integral over classical fields becomes quantum mechanics.
 
 ## Scene 09
-TODO
+
+Not every lattice action defines a real quantum theory. Reflection positivity — a condition on how observables behave under time reversal — guarantees that the transfer matrix has non-negative eigenvalues.
+
+That in turn guarantees a unitary Hilbert space in the continuum limit. Wilson's action satisfies it. Some improved actions do not. Some lattice actions claim to be quantum mechanical. Reflection positivity is how we audit their tax returns.
 
 ## Scene 10
-TODO
+
+The two-point correlator at large Euclidean time falls like e to the minus m t, where m is the lightest particle mass with those quantum numbers. This defines the correlation length, which is one over m.
+
+Measure the slope, get the physical spectrum. One observable, one number, one particle mass. This is the lattice's most fundamental output.
 
 ## Scene 11
-TODO
+
+To recover continuous spacetime we need a to go to zero while keeping physical masses fixed. In lattice units, that means the correlation length must diverge.
+
+The system must sit at a second-order phase transition. Continuum quantum field theory is, in Wilson's words, a critical phenomenon. Universality then guarantees the limit depends only on symmetries — not on lattice details.
 
 ## Scene 12
-TODO
+
+For QCD, the required critical point sits at zero bare coupling, because the theory is asymptotically free. Increasing the inverse coupling beta makes the lattice spacing exponentially smaller.
+
+This is not a coincidence. It is precisely why the lattice works for QCD and gets stuck for theories like QED. Asymptotic freedom: the rare case where the universe does exactly what we would like.
 
 ## Scene 13
-TODO
+
+Coarse-graining — averaging fields over blocks — sends one lattice theory to another with doubled spacing. Fixed points of this flow are the continuum limits.
+
+Couplings come in three flavors. Relevant ones you must tune. Irrelevant ones die automatically, leaving discretization artifacts. Marginal ones — like the QCD gauge coupling — drift logarithmically. This is the operational meaning of renormalization.
 
 ## Scene 14
-TODO
+
+The naive Wilson action has discretization errors of order a squared. Symanzik's insight: add carefully chosen higher-dimension operators to cancel the leading artifact, pushing errors down to order a to the fourth.
+
+The cost is a more complicated action. The reward is much coarser lattices achieving the same precision. Luscher–Weisz gauge actions and clover fermions are the workhorses built this way.
 
 ## Scene 15
-TODO
+
+A real simulation lives in a finite box, L cubed times T. Bosons get periodic boundary conditions. Fermions get antiperiodic in the time direction, which automatically implements finite temperature.
+
+Finite-size effects on pion masses scale like e to the minus m pi L. The standard rule — m pi L greater than four — keeps them under a percent. Your lattice is a tiny universe with a wraparound edge.
 
 ## Scene 16
-TODO
+
+Everything we will do reduces to two identities. First: the trace of an operator equals the path integral with the Boltzmann weight. Second: operator expectation values in the quantum theory equal classical averages over lattice fields weighted by e to the minus S sub E.
+
+These two equations are the bridge from Hilbert space to a Monte Carlo program.
 
 ## Scene 17
-TODO
+
+On a finite lattice, e to the minus S sub E divided by Z is a genuine probability distribution over field configurations. We cannot enumerate them, but we can sample them.
+
+Draw N configurations, compute the observable on each, average. The statistical error falls like one over the square root of N. This is the operational promise of lattice field theory.
 
 ## Scene 18
-TODO
+
+Sometimes we want a finer temporal lattice than spatial — to resolve fast-decaying correlators, or to probe finite temperature with good resolution. Allow two spacings, a-spatial and a-temporal, with the temporal one smaller.
+
+The anisotropy is a design knob. It breaks hypercubic symmetry, but buys you control over the direction where it matters most.
 
 ## Scene 19
-TODO
+
+Let us collect what we built. The Euclidean path integral on a lattice is a non-perturbative definition of quantum field theory. It is simultaneously a UV and an IR regulator.
+
+Euclidean correlators encode the energy spectrum. The transfer matrix guarantees a quantum interpretation. Statistical mechanics provides the computational engine. The continuum limit lives at a critical point, reached for QCD by asymptotic freedom. And Symanzik improvement keeps errors small.
 
 ## Scene 20
-TODO
+
+Coming up next: a scalar field on a lattice was the easy part. QCD is a non-Abelian gauge theory. Writing gauge fields on a lattice requires a genuinely new idea.
+
+We will not store the gluon field at sites. We will store SU(3) transporters on links. Next time we build Wilson's gauge action, define the Wilson loop, and extract the static quark potential. Scalar fields were the easy part. Now we put a Lie group on every edge.

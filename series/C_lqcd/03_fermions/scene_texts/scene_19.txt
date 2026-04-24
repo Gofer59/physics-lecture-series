@@ -1,0 +1,3 @@
+A summary. The naive lattice Dirac operator produces sixteen species — the doubling problem. Nielsen–Ninomiya proves this is unavoidable without sacrificing one pillar.
+
+Wilson breaks chiral symmetry to remove doublers. Staggered reduces sixteen to four tastes and keeps a remnant U(1). The Ginsparg–Wilson relation enables exact lattice chiral symmetry, realized in overlap and domain wall at high cost. Twisted mass gives automatic improvement. Choosing a fermion action is a physics-first design decision.

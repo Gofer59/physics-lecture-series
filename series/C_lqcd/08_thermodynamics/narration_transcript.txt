@@ -1,65 +1,175 @@
-# LQCD-V08 Narration — Thermodynamics and the Higgs-Yukawa Model
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_C_lqcd/lqcd_v08_slides.md -->
+# LQCD-V08 — Thermodynamics and the Higgs-Yukawa Model | Narration Transcript
 
 ## Scene 01
-TODO
+
+A microsecond after the Big Bang, the universe was hotter than ten to the twelfth kelvin. No protons, no neutrons, no bound hadrons — just deconfined color charges in a hot soup. A quark–gluon plasma.
+
+Today, heavy-ion colliders at RHIC and the LHC briefly recreate it.
+
+To interpret what they measure — flow, viscosity, screening, equation of state — we need first-principles QCD at finite temperature. This is the lattice's other flagship application.
+
+Your morning coffee is roughly ten to the minus nine times the temperature at which QCD deconfines. Drink it with appreciation.
 
 ## Scene 02
-TODO
+
+Statistical mechanics is quantum field theory in imaginary time, with the Euclidean time extent equal to one over T.
+
+On the lattice, the temporal size — N-tau times a — is the inverse temperature. High T means small N-tau. Low T means large N-tau.
+
+You can vary T by changing N-tau at fixed a, or by changing a at fixed N-tau. The lattice is already a finite-temperature machine. We just have to label the axes correctly. Bosonic fields are periodic in time; fermions pick up a minus sign around the wrap.
 
 ## Scene 03
-TODO
+
+The Polyakov loop winds once around the periodic time direction. Its expectation value is the exponential of minus the free energy of a single static quark, divided by T.
+
+In the confined phase that free energy is infinite, and the loop vanishes. In the deconfined phase it is finite, and the loop is nonzero.
+
+For pure SU(3) gauge theory this is a first-order phase transition at a temperature around two hundred seventy MeV. With dynamical quarks it is a crossover at around one hundred fifty-five MeV — no sharp transition, but a well-defined inflection.
 
 ## Scene 04
-TODO
+
+Sketch the phase diagram in temperature and baryon chemical potential.
+
+At zero chemical potential, the crossover sits near one hundred fifty-five MeV. Move to finite chemical potential and the crossover may sharpen into a genuine first-order line, ending at a critical endpoint.
+
+At low temperature and high chemical potential lies nuclear matter and, possibly, exotic color-superconducting phases. The phase diagram is being mapped experimentally by RHIC's beam-energy scan, and in the future by FAIR and NICA.
 
 ## Scene 05
-TODO
+
+Finite chemical potential replaces the fermion determinant with a complex-valued one. The Boltzmann weight is no longer positive. Monte Carlo importance sampling — the algorithmic engine of everything we have done — fails. There is no probability left to sample.
+
+This is the sign problem. It is why the interior of the QCD phase diagram remains substantially unmapped from first principles.
+
+Partial workarounds exist. Taylor expansion around zero chemical potential. Imaginary chemical potential and analytic continuation. Reweighting. Complex Langevin. Lefschetz thimbles. None is a complete solution.
+
+The sign problem: thirty years of clever ideas, most of which almost work.
 
 ## Scene 06
-TODO
+
+Lattice QCD produces the pressure, energy density, and entropy density as functions of temperature.
+
+The pressure is computed by integrating the plaquette expectation value with respect to the gauge coupling — the integral method. The energy density follows from thermodynamic identities.
+
+At temperatures well above the transition, these approach the Stefan–Boltzmann limit of a free quark–gluon gas, but with corrections from residual interactions. The equation of state is a direct input to the hydrodynamic models that describe heavy-ion collisions.
 
 ## Scene 07
-TODO
+
+Plot the order of the deconfinement transition as a function of the light and strange quark masses.
+
+At zero quark mass the transition is first-order — the three-flavor chiral corner. At infinite quark mass it is also first-order — pure gauge.
+
+In between lies a crossover region containing the physical point. The boundary lines between regions are second-order, in the Z-two universality class. The Columbia plot is the topological map of how quark masses determine the phase structure.
 
 ## Scene 08
-TODO
+
+At physical quark masses the chiral and deconfinement transitions are not genuine phase transitions. They are crossovers.
+
+The chiral condensate and the Polyakov loop change smoothly across a narrow temperature band around one hundred fifty-five MeV. The pseudocritical temperature is defined by the inflection point of some observable, not by a singularity.
+
+Only in the chiral limit, with the quark masses going to zero, is there a true second-order transition, expected in the O(4) universality class for two flavors.
 
 ## Scene 09
-TODO
+
+Lattice methods apply to any non-perturbative field theory. A famous application: the Higgs sector.
+
+Is phi to the fourth theory trivial — does its renormalized coupling vanish in the continuum limit? Luscher and Weisz proved yes.
+
+That means the Standard Model Higgs cannot be a truly fundamental theory. There must be new physics at some high scale. The lattice turns a mathematical question into a computational one and gives an upper bound on the Higgs mass consistent with Standard Model perturbativity, about seven to eight hundred GeV. The discovered Higgs at one hundred twenty-five GeV sits comfortably under that bound.
+
+phi to the fourth is trivial. Most physicists would prefer not to call their favorite theories that, but the lattice does not mince words.
 
 ## Scene 10
-TODO
+
+Couple the Higgs to a heavy fermion — a Yukawa interaction. The Higgs quartic coupling runs under the renormalization group, and at high scales it can drive the effective potential unstable, threatening the vacuum.
+
+Lattice simulations of Yukawa models probe this non-perturbatively and give lower bounds on the Higgs mass.
+
+With the top quark mass close to its measured value and the Higgs at one hundred twenty-five GeV, the vacuum is metastable — stable on cosmological timescales, but not forever.
+
+Our vacuum has a shelf life. It is very long, but it is not infinite. Lattice QCD gave us a receipt.
 
 ## Scene 11
-TODO
+
+Step back. Series A built quantum field theory from Lagrangians and path integrals to renormalization. Series B built Monte Carlo from Ising models through Markov chains to cluster algorithms.
+
+Series C combined them into lattice QCD — the only first-principles tool for strong-interaction physics in its non-perturbative regime.
+
+These three series are not independent courses. They are one integrated framework for computational quantum field theory. The hadron spectrum, the Higgs bound, the equation of state of the early universe — all built from the same stack.
 
 ## Scene 12
-TODO
+
+Lattice QCD has entered the exascale era. Simulations at physical pion mass, with multiple lattice spacings and volumes, are routine.
+
+Flagship calculations aim at sub-percent precision on CKM elements, on the muon anomalous magnetic moment, and on nucleon structure.
+
+The computational demand is relentless — a single modern ensemble costs tens of millions of core-hours. Hardware co-design — GPUs, custom accelerators — and algorithmic innovation — multigrid solvers, machine-learning samplers — are perpetual frontiers.
 
 ## Scene 13
-TODO
+
+Normalizing flows learn to generate gauge configurations directly, sidestepping Markov chain equilibration. Score-based models accelerate near-chiral sampling. Neural-network surrogates reconstruct x-dependent PDFs from noisy moments. Attention-based architectures extract features from correlators.
+
+Machine learning for lattice QCD is moving from toy-model demonstrations — the Schwinger model, phi to the fourth — toward production simulations.
+
+Twenty years ago, lattice papers had no neural networks. Twenty years from now, they may have nothing else.
 
 ## Scene 14
-TODO
+
+Euclidean time was the lattice's founding trick. But some questions — transport coefficients, spectral functions, thermalization of the quark–gluon plasma, scattering amplitudes at high energy — are intrinsically real-time.
+
+Euclidean lattice data encodes real-time information only indirectly, through an inverse Laplace transform that is mathematically ill-posed.
+
+Proposed solutions: quantum computing, tensor network methods — matrix product states in low dimensions, more general networks elsewhere — and dedicated inverse-problem algorithms. This is an open research frontier.
 
 ## Scene 15
-TODO
+
+Despite decades of work, the finite-density sign problem remains unsolved for QCD.
+
+Lefschetz thimbles, complex Langevin, machine-learning-aided reweighting — each works in controlled regimes. None covers the full phase diagram.
+
+The critical endpoint, if it exists, sits firmly in the sign-problem region. Progress here would transform our understanding of dense QCD matter and, by extension, neutron-star physics. Unsolved, and important.
+
+If you solve the sign problem, a lot of us will be very happy and very busy.
 
 ## Scene 16
-TODO
+
+The Electron-Ion Collider, coming online at Brookhaven in the 2030s, will probe the internal structure of the nucleon and of nuclei at unprecedented resolution. Gluon PDFs. Generalized parton distributions. Transverse-momentum-dependent PDFs. Exotic hadrons.
+
+Lattice QCD and the EIC are a natural partnership. The lattice predicts what the EIC should see. The EIC measures what the lattice must reproduce.
+
+Much of today's hadron structure lattice physics is explicitly targeted at this machine.
 
 ## Scene 17
-TODO
+
+The lattice is the only first-principles, controlled, non-perturbative tool for strong-interaction physics.
+
+It delivers hadron masses. Decay constants. Form factors. CKM elements. The hadronic contribution to the muon anomalous magnetic moment. The equation of state of the early universe. Bounds on the Higgs. An ever-increasing fraction of the inputs to Standard Model precision tests.
+
+When experiment finds a deviation, the lattice is the referee that decides whether QCD is to blame — or whether new physics is showing.
 
 ## Scene 18
-TODO
+
+Fifty years from Wilson's 1974 paper to the present. Every piece of the framework is hard-won.
+
+Euclidean path integral. Link variables. Wilson loops. The Nielsen–Ninomiya theorem. Ginsparg–Wilson fermions. Hybrid Monte Carlo. Multigrid solvers. Chiral perturbation theory for extrapolations. Non-perturbative renormalization. Finite-volume methods. The Luscher formalism. Quasi-PDFs and pseudo-distributions.
+
+Decades of work by thousands of physicists. Lattice QCD is arguably the largest collective theoretical project in particle physics.
+
+Fifty years of work, thousands of physicists, one functional non-perturbative tool. Not bad.
 
 ## Scene 19
-TODO
+
+Lattice QCD at finite temperature gives a deconfinement crossover at one hundred fifty-five MeV, an equation of state used by heavy-ion physics, and a Columbia plot mapping phase structure.
+
+Finite chemical potential is obstructed by the sign problem.
+
+Beyond QCD, the lattice establishes phi to the fourth triviality, bounds the Higgs mass, and probes vacuum stability through Yukawa models. The full edifice — Lagrangian, path integral, discretization, gauge invariance, fermion actions, Monte Carlo, improvement, renormalization, structure functions, thermodynamics — is one coherent framework.
 
 ## Scene 20
-TODO
+
+Three series. Twenty-three videos. One argument: quantum field theory is not just a framework of equations. It is a functioning computational science.
+
+You have seen the Lagrangian give rise to the path integral. The path integral Wick-rotated to statistical mechanics. Statistical mechanics sampled by Monte Carlo. Monte Carlo applied to a non-Abelian gauge theory on a lattice. And that lattice producing the proton, the pion, the equation of state of the early universe, and bounds on the Higgs.
+
+What began as blackboard physics is now exascale computational physics. That is where the story ends, and where the next one begins.
+
+The physicists of 1974 had a theory they could not solve. The physicists of today have one they can. Slowly, expensively, at sub-percent precision. It turns out that is enough.

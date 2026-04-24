@@ -1,0 +1,3 @@
+Wilson's answer, in 1974, was to replace continuous spacetime with a hypercubic lattice of spacing a. The lattice kills the ultraviolet — no momentum can exceed pi over a — and turns the path integral into a finite-dimensional ordinary integral.
+
+Suddenly a computer can handle it. And this is not a trick. It is a rigorous, non-perturbative definition of quantum field theory.

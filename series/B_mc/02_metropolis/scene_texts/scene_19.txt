@@ -1,0 +1,3 @@
+Metropolis-Hastings samples any target known up to a constant by running a reversible Markov chain. Detailed balance ensures correctness. Ergodicity ensures convergence.
+
+The price is correlated samples, problem-dependent tuning, and dynamic critical slowing that swallows local algorithms near phase transitions. Gibbs and heat bath handle conjugate and discrete cases cleanly. Diagnostics and blocking are non-negotiable.

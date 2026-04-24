@@ -1,0 +1,5 @@
+For a decay like B to pi ell nu, the hadronic matrix element factorizes into vector and scalar form factors, f-plus and f-zero of q squared.
+
+The decay rate equals mod V-ub squared times an integral of mod f-plus squared. The lattice computes the form factors; experiment measures the rate. Combining them gives the CKM element.
+
+Lattice QCD is the single dominant source of hadronic uncertainty in most CKM extractions. A tension currently exists between inclusive and exclusive V-cb — the lattice is central to resolving it.

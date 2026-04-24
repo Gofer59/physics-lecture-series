@@ -1,0 +1,5 @@
+We can generate configurations. Now we need to decide what to measure.
+
+Next time: two-point correlators, the effective mass plateau, smearing to improve signal, the variational method for excited states, and correlated multi-state fits.
+
+Then scale setting via the Sommer parameter or Wilson flow, and the continuum and chiral extrapolations that turn dimensionless lattice numbers into physical predictions in MeV.

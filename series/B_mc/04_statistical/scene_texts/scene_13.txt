@@ -1,0 +1,3 @@
+When fitting a model to correlated data, correlator time slices in lattice QCD for example, you cannot use the diagonal chi-squared. The covariance matrix from jackknife has off-diagonal entries, and inverting a near-singular covariance needs care. Singular value decomposition truncation, or shrinkage toward the diagonal.
+
+Neglect these correlations, and chi-squared per degree of freedom becomes meaningless. Fit parameter errors become optimistic.

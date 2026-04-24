@@ -1,65 +1,167 @@
-# QFT-V09 Narration — The Standard Model
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_A_qft/qft_v09_slides.md -->
+# QFT-V09 — The Standard Model | Narration Transcript
 
 ## Scene 01
-TODO
+
+Every experiment ever performed at a particle collider. Every nuclear decay. Every chemical reaction. All of it is described by a single Lagrangian that fits on one page.
+
+It has nineteen free parameters and one open question about its geometry. It is the most precisely tested theory in the history of science. And it is not the final answer.
+
+Fits on a coffee mug. Took a century.
 
 ## Scene 02
-TODO
+
+The Standard Model is a gauge theory with three factors. SU(3) for colour. SU(2) for weak isospin, acting only on left-handed fermions. And U(1) for hypercharge.
+
+Twelve gauge bosons in total. Eight gluons from the colour sector. Plus four from the electroweak sector, which rearrange after symmetry breaking into the W-plus, the W-minus, the Z, and the photon.
+
+Electric charge itself is a specific combination of isospin and hypercharge. It is not fundamental. It is a mixture.
 
 ## Scene 03
-TODO
+
+The fermion content comes in three identical copies. Up and down, charm and strange, top and bottom for the quarks. Electron, muon, and tau for the charged leptons. Three neutrinos to match.
+
+Left-handed fermions sit in doublets. Right-handed ones sit in singlets. Right-handed neutrinos are absent in the minimal theory.
+
+Their absence is a clue, not a feature.
 
 ## Scene 04
-TODO
+
+The quarks that couple to the W boson are not the same as the quarks of definite mass. The mismatch is captured by a three-by-three unitary matrix — the CKM matrix.
+
+It has three mixing angles and one complex phase. That phase is the only source of CP violation in the quark sector.
+
+And it is one reason the early universe did not exactly annihilate itself into radiation.
 
 ## Scene 05
-TODO
+
+Quantum effects can, in principle, destroy a classical gauge symmetry. That is an anomaly.
+
+For the Standard Model to be consistent, all gauge anomalies must cancel exactly. They do — but only when quarks come in three colours, and the leptons come along with them in exactly the right hypercharge pattern.
+
+The only reason atoms are neutral is that quantum anomalies cancel. No one ordered this.
 
 ## Scene 06
-TODO
+
+Quantum chromodynamics is the strong-force piece. Six quark flavours, eight gluons, one coupling that runs fast.
+
+At high energies, quarks scatter almost freely. That is asymptotic freedom. At low energies, they are confined into colourless hadrons.
+
+Both regimes live in the same Lagrangian. They look different only because the coupling is different.
 
 ## Scene 07
-TODO
+
+Collide an electron and a positron. At high energy they annihilate into a virtual photon, which decays to either a muon pair or a quark pair that becomes hadrons.
+
+The ratio of the two rates is the sum of quark charges squared, times three for colour.
+
+That ratio shows flat plateaus that step up every time you cross a new quark-pair threshold. Direct visual evidence that there are exactly three colours.
 
 ## Scene 08
-TODO
+
+A proton is not a simple object. It is a seething pile of quarks and gluons, each carrying a fraction of the proton's momentum.
+
+The probability distributions are called parton distribution functions. They evolve with energy, according to the DGLAP equations — a set of integro-differential equations derived from gluon emission.
+
+Without parton distributions, there are no LHC predictions at all.
 
 ## Scene 09
-TODO
+
+Quarks and gluons never appear alone. Produced in a collision, they immediately hadronize into collimated sprays of particles called jets.
+
+A three-jet event seen in 1979 was the direct discovery of the gluon. Modern jet algorithms, like anti-k-T, cluster particles into well-defined objects whose properties extract the strong coupling with percent-level precision.
+
+Quarks are shy. Jets are what you get when you point a detector at their general direction.
 
 ## Scene 10
-TODO
+
+The Standard Model is not just qualitatively right. It is quantitatively, obnoxiously right.
+
+Before the top quark and the Higgs were directly produced, precision measurements at LEP and SLD pinned down their masses through virtual loop corrections.
+
+When the real particles were found, they landed exactly where the precision fits said they should.
 
 ## Scene 11
-TODO
+
+Neutrinos have mass — we know this from oscillations — but the minimal Standard Model gives them none. Dark matter makes up about a quarter of the universe and has no Standard Model candidate.
+
+The Higgs mass is wildly unstable to quantum corrections without some new principle. Gravity does not appear anywhere. The matter-antimatter asymmetry of the universe is unexplained.
+
+The theory is complete in one sense, and radically incomplete in another.
 
 ## Scene 12
-TODO
+
+QCD allows a term in its Lagrangian that would produce CP violation in strong interactions. The coefficient is a free parameter called theta.
+
+Experiments bound theta to be smaller than ten to the minus ten. There is no symmetry principle forcing it to zero.
+
+Either nature is absurdly fine-tuned, or there is new physics we have not yet seen. The axion is the leading candidate.
+
+Ten orders of magnitude of fine-tuning is what physicists call suspicious.
 
 ## Scene 13
-TODO
+
+Neutrinos change flavour as they travel. The electron neutrino leaving the sun arrives at Earth partly as a muon or tau neutrino. This can only happen if they have mass.
+
+The mass eigenstates mix with the flavour eigenstates through a matrix analogous to CKM — called the PMNS matrix — with its own mixing angles and a potential CP phase.
+
+The masses themselves are tiny, sub-electronvolt, and their origin is unknown.
 
 ## Scene 14
-TODO
+
+Galaxies rotate too fast for their visible mass. Galaxy clusters bend light in patterns that demand more matter than we see. The cosmic microwave background shows the same conclusion at the largest scales.
+
+About twenty-seven percent of the universe is made of something that interacts gravitationally, but not electromagnetically.
+
+The Standard Model has no candidate for what that something is.
 
 ## Scene 15
-TODO
+
+The Higgs mass receives quantum corrections proportional to any heavy scale coupled to it. If the Standard Model is embedded in a larger theory with new physics at the Planck scale, the natural Higgs mass should be enormous.
+
+It is not. It is 125 GeV.
+
+Either there is an extraordinary cancellation of unrelated numbers, or a symmetry we have not yet found.
+
+This is what physicists mean when they say a theory is unnatural. The numbers are not unwilling to work. Merely embarrassed to.
 
 ## Scene 16
-TODO
+
+Perturbation theory fails at low energies, because the strong coupling is too strong. To compute things like the proton mass or the pion decay constant from first principles, we simulate QCD on a finite spacetime lattice and integrate numerically.
+
+Lattice QCD reproduces hadron masses to percent accuracy.
+
+It is the only known way to solve the strong-coupling regime of QCD without approximation.
 
 ## Scene 17
-TODO
+
+The lattice path integral has astronomical dimensionality. Millions of variables per configuration. No deterministic method can sum them.
+
+Monte Carlo sampling draws configurations with probability proportional to the Boltzmann weight. What would take longer than the age of the universe deterministically becomes tractable statistically.
+
+This is the bridge from quantum field theory to computation.
 
 ## Scene 18
-TODO
+
+The Standard Model has passed every direct test. It has also failed to explain several things we already know.
+
+The tension is productive. It is what drives particle physics, cosmology, and lattice computation forward. The search for physics beyond the Standard Model is not a search for a replacement.
+
+It is a search for the theory that contains it.
 
 ## Scene 19
-TODO
+
+We started with path integrals. We met propagators and Feynman rules. We renormalized divergences. We summed loop corrections. We built gauge theories. Yang-Mills gave us the structure of the strong and weak forces. Spontaneous symmetry breaking and the Higgs gave us masses.
+
+Today we assembled the full Standard Model. Its content, its successes, and its gaps.
+
+You now hold the best-tested theory humans have ever written, in its correct form.
+
+Nine lectures. A century of work. And we still do not know what most of the universe is made of.
 
 ## Scene 20
-TODO
+
+Perturbation theory is where quantum field theory began. Where it ends — in strong coupling, in critical phenomena, in lattice gauge theory, in cosmological sampling — it needs computation.
+
+The next series is Monte Carlo Methods. How we turn path integrals into random walks. How we turn random walks into measurements. How we turn measurements into physics we could not compute any other way.
+
+Series A closes. Series B begins.

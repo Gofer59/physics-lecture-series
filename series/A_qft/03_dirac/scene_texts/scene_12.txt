@@ -1,0 +1,5 @@
+If you tried to quantize the Dirac field with ordinary commutators, like we did for Klein-Gordon, the Hamiltonian would be unbounded below. You could keep making the vacuum more negative forever.
+
+The only fix is to impose anticommutation relations. The creation and annihilation operators anticommute instead of commute. Two consequences follow immediately. Acting twice with the same creation operator gives zero — Pauli exclusion. And all particles with half-integer spin are automatically fermions. This is the spin-statistics theorem.
+
+Fermions fundamentally do not want to share. This is why electrons stack into shells, and your chair holds you up.

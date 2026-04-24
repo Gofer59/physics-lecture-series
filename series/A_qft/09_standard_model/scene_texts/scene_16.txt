@@ -1,0 +1,5 @@
+Perturbation theory fails at low energies, because the strong coupling is too strong. To compute things like the proton mass or the pion decay constant from first principles, we simulate QCD on a finite spacetime lattice and integrate numerically.
+
+Lattice QCD reproduces hadron masses to percent accuracy.
+
+It is the only known way to solve the strong-coupling regime of QCD without approximation.

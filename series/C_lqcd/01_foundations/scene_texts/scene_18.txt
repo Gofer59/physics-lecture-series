@@ -1,0 +1,3 @@
+Sometimes we want a finer temporal lattice than spatial — to resolve fast-decaying correlators, or to probe finite temperature with good resolution. Allow two spacings, a-spatial and a-temporal, with the temporal one smaller.
+
+The anisotropy is a design knob. It breaks hypercubic symmetry, but buys you control over the direction where it matters most.

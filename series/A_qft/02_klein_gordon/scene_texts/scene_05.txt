@@ -1,0 +1,5 @@
+Express the Hamiltonian in terms of ladder operators, and something beautiful happens. It becomes an integral over momenta of omega-p times a-dagger times a. The total energy is the number of quanta at each momentum, weighted by their frequency.
+
+But naively, there is also an infinite zero-point energy — vacuum fluctuations from every mode. Normal ordering discards it by fiat. We declare the vacuum energy to be zero.
+
+The infinite zero-point energy has been annoying physicists since 1930. It re-emerges the moment gravity enters the room, which is one reason the cosmological constant is such a headache.

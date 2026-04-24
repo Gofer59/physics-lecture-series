@@ -1,0 +1,3 @@
+The conserved charge, written in ladder operators, is simply the number of particles, minus the number of antiparticles. It commutes with the Hamiltonian, so it is conserved in time. Every interaction preserves it.
+
+For the real Klein-Gordon field, with no separate b, the charge is identically zero. The particle is neutral, and is its own antiparticle. All of this machinery, built just to quantize a free scalar, already predicts that charge is conserved, and that antimatter exists.

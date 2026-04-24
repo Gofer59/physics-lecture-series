@@ -1,0 +1,3 @@
+The Klein-Gordon field describes spin-zero particles — the Higgs boson, for instance. But most of the matter around us is spin one-half. Electrons, quarks, neutrinos.
+
+To describe them, we need a first-order equation whose square is the Klein-Gordon equation, built from objects that anticommute. Coming up next: the Clifford algebra, Dirac spinors, and the equation that predicted antimatter before anyone had seen it.

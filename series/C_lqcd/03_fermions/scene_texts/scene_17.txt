@@ -1,0 +1,3 @@
+Wilson-type Dirac operators satisfy a useful relation: D-dagger equals gamma-five D gamma-five. This gamma-five hermiticity forces the determinant to be real, and eigenvalues to come in complex-conjugate pairs.
+
+For two degenerate flavors, the determinant is therefore positive, and usable as a Monte Carlo weight. For odd flavors — like a single strange quark — we need rational approximations. The RHMC algorithm. That is a story for the next lecture.

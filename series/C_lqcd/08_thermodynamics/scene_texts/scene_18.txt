@@ -1,0 +1,7 @@
+Fifty years from Wilson's 1974 paper to the present. Every piece of the framework is hard-won.
+
+Euclidean path integral. Link variables. Wilson loops. The Nielsen–Ninomiya theorem. Ginsparg–Wilson fermions. Hybrid Monte Carlo. Multigrid solvers. Chiral perturbation theory for extrapolations. Non-perturbative renormalization. Finite-volume methods. The Luscher formalism. Quasi-PDFs and pseudo-distributions.
+
+Decades of work by thousands of physicists. Lattice QCD is arguably the largest collective theoretical project in particle physics.
+
+Fifty years of work, thousands of physicists, one functional non-perturbative tool. Not bad.

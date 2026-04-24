@@ -1,0 +1,3 @@
+A photon scatters off an electron. Two tree-level diagrams contribute. The electron absorbs the photon and emits a new one, in the s-channel. Or it emits first, and absorbs later, in the u-channel.
+
+Both are required. Neither on its own is gauge invariant, and only the sum satisfies the Ward identity. This is the first place where the consistency of QED demands multiple diagrams. One is simply not enough.

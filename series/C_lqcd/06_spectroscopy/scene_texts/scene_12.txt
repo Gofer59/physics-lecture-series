@@ -1,0 +1,5 @@
+Wilson fermions have order-a errors. Sheikholeslami and Wohlert showed that these cancel when you add a single operator: c sub S W times sigma-mu-nu times F-hat-mu-nu. F-hat is a clover-shaped discretization of the field strength — four plaquettes meeting at a site.
+
+At tree level c sub S W is one. Non-perturbatively it is tuned to around one point five to two at typical couplings.
+
+With the correct c sub S W, all on-shell observables are order a squared.

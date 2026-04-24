@@ -1,0 +1,3 @@
+As a warm-up before QCD, put a single scalar field on the lattice. Replace derivatives by symmetric finite differences, with errors of order a squared. Replace the integral over spacetime by a sum over sites. Keep the mass term and the phi-to-the-fourth interaction.
+
+The result is a well-defined, finite-dimensional Euclidean action — our first real lattice field theory.

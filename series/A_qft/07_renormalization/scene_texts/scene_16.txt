@@ -1,0 +1,5 @@
+Scalar particles have no symmetry protecting their mass. The Higgs, at 125 GeV, receives quadratic corrections of order the cutoff squared.
+
+If the cutoff is the Planck scale, those corrections are thirty-four orders of magnitude larger than the physical Higgs mass. Only a cancellation fine-tuned to one part in ten to the thirty-four can save it. Fermion masses are safe — chiral symmetry protects them. The photon is protected by gauge invariance.
+
+The hierarchy problem is why physicists spent thirty years expecting to find supersymmetric particles at the LHC. So far, no such luck.

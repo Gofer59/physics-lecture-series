@@ -1,65 +1,163 @@
-# LQCD-V06 Narration — Hadron Spectroscopy and the Continuum Limit
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_C_lqcd/lqcd_v06_slides.md -->
+# LQCD-V06 — Hadron Spectroscopy and the Continuum Limit | Narration Transcript
 
 ## Scene 01
-TODO
+
+You spent millions of core-hours generating gauge configurations. What do you do with them?
+
+The flagship output of lattice QCD is the hadron spectrum. Masses of pions, kaons, protons, neutrons, Delta baryons, glueballs — all computed from first principles, with no free parameters beyond the quark masses and an overall scale.
+
+In 2008 the BMW collaboration published the light hadron spectrum agreeing with experiment to within a few percent.
+
+The spectrum of hadrons, from first principles, to percent accuracy. This is what QCD looks like when it works.
 
 ## Scene 02
-TODO
+
+Choose an operator O with the quantum numbers of the hadron you want. For the pion, d-bar gamma-five u.
+
+Measure the Euclidean correlator C of t — the sum over space of the expectation value of O at x,t times O-dagger at the origin. Average it across configurations.
+
+Its spectral decomposition is a sum over states of mod Z sub n squared times e to the minus E sub n times t. At large t the lowest state dominates. The correlator becomes mod Z zero squared times e to the minus m sub H times t. The mass is simply the slope on a log plot.
 
 ## Scene 03
-TODO
+
+For each hadron you build an interpolating operator with the right quantum numbers. Pion: d-bar gamma-five u. Rho: d-bar gamma-i u. Proton: epsilon a b c times u-a C gamma-five d-b times u-c. Delta: a similar color-epsilon structure with gamma-mu.
+
+The Dirac structure fixes the J-P-C quantum numbers. Using several operators with the same quantum numbers lets you separate ground and excited states via the variational method.
 
 ## Scene 04
-TODO
+
+Define the effective mass: log of C of t divided by C of t plus one. For a pure single exponential this is simply m sub H — a constant.
+
+In practice, at small t the excited states contaminate. At large t the signal-to-noise ratio collapses. In between lies the plateau.
+
+Plot effective mass against t, find the flat region, and fit a constant. Every lattice paper contains some version of this plot. It is the visual core of spectroscopy.
 
 ## Scene 05
-TODO
+
+Baryon correlators decay like e to the minus m sub B times t. Their variance decays only like e to the minus three m-pi times t.
+
+The noise wins exponentially, at a rate m sub B minus three-halves m-pi. For the proton at the physical pion mass this is catastrophic. Useful signal lasts only a handful of time slices.
+
+Meson correlators are better, but not immune. Signal-to-noise is a constant design pressure in lattice spectroscopy.
+
+The lattice will measure anything. It will just scream louder at you the further out you ask.
 
 ## Scene 06
-TODO
+
+A point-source operator creates a localized excitation. It overlaps with the ground state, the first excited state, and the entire tower of radial excitations.
+
+Replace it with a smeared operator. Gaussian quark sources of spatial extent comparable to a real hadron, built with gauge-covariant smearing to preserve gauge invariance.
+
+Ground-state overlap goes up. Excited-state contamination goes down. The plateau appears earlier in t. APE and HYP smearing clean up the gauge links similarly.
 
 ## Scene 07
-TODO
+
+Build a matrix of correlators C sub i j of t, using several operators with the same quantum numbers. Solve the generalized eigenvalue problem: C of t times v sub n equals lambda sub n times C of t-zero times v sub n.
+
+The eigenvalues lambda sub n decay like e to the minus E sub n times t. One calculation, a whole tower of energy levels. The eigenvectors build the optimal operator for each state.
+
+This is how modern calculations extract excited hadrons like the Roper resonance and exotic hybrids.
 
 ## Scene 08
-TODO
+
+Effective mass points at different t are highly correlated. They come from the same configurations. A naive uncorrelated fit gives a meaningless chi squared.
+
+Use the jackknife covariance matrix for a correlated chi squared. Multi-state fits include sub-leading exponentials to extend the usable range. Bayesian priors stabilize the fits.
+
+Periodic boundary conditions require cosh-shaped fit forms to handle wrap-around. Rigor in fitting is not optional.
 
 ## Scene 09
-TODO
+
+The lattice only gives you dimensionless ratios. To quote a mass in MeV you have to fix the lattice spacing.
+
+Compute a dimensional quantity on the lattice — the Omega baryon mass, the pion decay constant, the Sommer parameter r-zero, the Wilson flow scales t-zero or w-zero — and divide the measured lattice value by the known physical value.
+
+That gives you a in femtometers. Different choices give slightly different numbers. Tracking the difference is part of the error budget.
 
 ## Scene 10
-TODO
+
+Lattice results depend on two unphysical parameters: the spacing a, which should be zero, and the quark mass m sub q, often heavier than physical.
+
+Simulate at several a and extrapolate to zero. Wilson fermions have leading errors order a or a squared. Staggered has order a squared plus alpha-s a squared.
+
+Simulate at several quark masses and use chiral perturbation theory to extrapolate to the physical pion. Modern calculations often bypass chiral extrapolation entirely by simulating at the physical point, leaving only the continuum limit.
 
 ## Scene 11
-TODO
+
+Every lattice discretization has errors scaling as powers of the lattice spacing. Symanzik's effective theory expresses them as a power series in a, with coefficients that are continuum operators of the right dimension.
+
+Cancel the order-a term by adding one higher-dimension operator. Cancel order-a-squared by adding more. Repeat.
+
+The practical payoff is enormous: the same precision on a coarser lattice. The Luscher–Weisz gauge actions and clover fermions are the workhorses.
 
 ## Scene 12
-TODO
+
+Wilson fermions have order-a errors. Sheikholeslami and Wohlert showed that these cancel when you add a single operator: c sub S W times sigma-mu-nu times F-hat-mu-nu. F-hat is a clover-shaped discretization of the field strength — four plaquettes meeting at a site.
+
+At tree level c sub S W is one. Non-perturbatively it is tuned to around one point five to two at typical couplings.
+
+With the correct c sub S W, all on-shell observables are order a squared.
 
 ## Scene 13
-TODO
+
+Lattice perturbation theory converges badly. Link fluctuations generate large "tadpole" contributions. Parisi's trick, formalized by Lepage and Mackenzie, is to divide each link by its mean-field value u-zero — the fourth root of the real plaquette expectation.
+
+This absorbs the dominant tadpoles into a rescaling. Tree-level perturbation theory with tadpole improvement often beats unimproved one-loop results. At typical couplings u-zero is about zero point eight seven.
+
+Lattice perturbation theory behaves badly. Tadpole improvement: the ibuprofen of the field.
 
 ## Scene 14
-TODO
+
+Lattice operators are not normalized the same as continuum MS-bar operators. To compare to experiment you need renormalization constants, the Z factors.
+
+Non-perturbative schemes like RI-MOM impose renormalization conditions directly on lattice Green's functions at a scale mu, then convert to MS-bar through perturbative matching.
+
+The Schrodinger functional approach is an alternative that avoids Gribov copies. Both are standard for bilinear currents and four-quark operators.
 
 ## Scene 15
-TODO
+
+The Schrodinger functional coupling g-bar of L is defined non-perturbatively in a box of size L. Step-scaling computes the coupling at L and at two L, tracing the running across many scales — from the hadronic regime up to thousands of GeV.
+
+This delivers a purely non-perturbative determination of Lambda-QCD and of alpha-s at the Z mass.
+
+The current lattice world average is alpha-s at M-Z equals zero point one one eight four, with an error of eight in the last digit. Competitive with, or better than, the extraction from deep inelastic scattering.
 
 ## Scene 16
-TODO
+
+Lattice QCD has become a precision field. Modern flagship calculations — hadron masses, decay constants, form factors, quark masses — quote sub-percent uncertainties.
+
+The error budget has many entries: statistical, continuum extrapolation, chiral extrapolation, finite volume, scale setting, renormalization matching.
+
+FLAG, the Flavor Lattice Averaging Group, compiles and averages results across collaborations, weighting by quality criteria. Disagreements between methods are how progress happens.
 
 ## Scene 17
-TODO
+
+Beyond ground-state hadrons lies a rich spectrum. Radial excitations — pi, pi of thirteen hundred, pi of eighteen hundred. Exotic states — the X, Y, Z tetraquarks. Glueballs, predicted but elusive. Hybrid mesons with explicit gluonic content.
+
+The variational method plus smearing machinery extracts their masses.
+
+Lattice predictions for the glueball spectrum drive experimental searches. For candidates like the X of three eight seven two, the lattice tests molecular versus compact tetraquark interpretations.
 
 ## Scene 18
-TODO
+
+The Budapest–Marseille–Wuppertal collaboration, in a 2008 Science paper, computed the light hadron spectrum to within a few percent of experiment. They used only three input parameters: the bare gauge coupling and two quark masses, fixed to reproduce m-pi and m-K.
+
+Every other mass — the nucleon, the Omega, all of them — came out as predictions.
+
+This was the moment QCD stopped being an unsolved theory. QCD: solved, as much as any theory ever gets solved, in 2008. The particle physicists took their time celebrating.
 
 ## Scene 19
-TODO
+
+Hadron masses come from the large-time decay of two-point correlators. Smearing improves overlap with the ground state. The variational method extracts excited states.
+
+Correlated multi-state fits control systematics. Scale setting converts lattice units to MeV. Symanzik improvement and clover terms suppress discretization errors. Non-perturbative renormalization connects lattice operators to MS-bar.
+
+Step-scaling delivers alpha-s and Lambda-QCD. And the light hadron spectrum agrees with experiment to percent precision.
 
 ## Scene 20
-TODO
+
+Masses are just numbers. Next we go inside the hadron.
+
+Three-point functions. Form factors. Decay constants. CKM matrix elements. Parton distributions. Generalized parton distributions.
+
+And finite volume itself — a simulation lives in a finite box, and that box both contaminates results and, through the Luscher method, becomes a powerful tool for extracting scattering amplitudes and resonance properties.

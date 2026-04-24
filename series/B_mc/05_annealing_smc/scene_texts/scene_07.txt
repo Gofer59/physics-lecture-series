@@ -1,0 +1,3 @@
+Sequential Monte Carlo approximates a sequence of target distributions, not one target. Three ingredients. A propagation kernel that moves samples forward. An importance reweighting step. And a resampling step that replaces low-weight samples with copies of high-weight ones.
+
+Originally Bayesian filtering for hidden Markov models. Also used for rare events and slow tempering sequences.

@@ -1,0 +1,5 @@
+The path integral is invariant under shifts of its integration variable. Shift phi by an infinitesimal amount and out falls an exact equation relating correlators: the Schwinger-Dyson equation.
+
+Roughly, the classical equation of motion holds inside correlation functions, up to contact terms that appear when the field coincides with another insertion.
+
+This is the non-perturbative quantum generalization of the classical equations of motion. It holds to all orders, exactly.

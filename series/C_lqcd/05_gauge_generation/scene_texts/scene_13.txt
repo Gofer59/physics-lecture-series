@@ -1,0 +1,5 @@
+A handful of algorithmic tricks turn impossible simulations into routine ones. Multiple time scales, from Sexton and Weingarten — finer steps for the expensive fermion force, coarser for the cheap gauge force.
+
+Mass preconditioning, due to Hasenbusch, splits the determinant into products indexed by heavier auxiliary masses, smoothing the spectrum. Even-odd preconditioning exploits a checkerboard structure and halves the linear system.
+
+Together these give an order-of-magnitude speedup. They are the difference between "cannot simulate the physical pion" and "done routinely."

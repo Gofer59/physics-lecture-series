@@ -1,0 +1,3 @@
+EM's M-step is closed-form only for nice models. When the E-step integral is intractable, as in messy Bayesian models, approximate it by Monte Carlo.
+
+Monte Carlo EM samples latent variables given current parameters, averages the log-joint over those samples, and maximises. Trades the clean monotonicity of EM for much broader applicability. Saddle points and local maxima remain a hazard.

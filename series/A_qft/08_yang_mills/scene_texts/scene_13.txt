@@ -1,0 +1,5 @@
+A Lagrangian can respect a symmetry while the ground state does not. Below its Curie temperature, a ferromagnet picks a direction, even though the underlying physics has none.
+
+The symmetry is not destroyed. It is hidden.
+
+The order parameter is a field whose vacuum expectation value is nonzero. The classic picture is a Mexican-hat potential — rotationally symmetric, but the ball rolls into one valley, and the chosen direction is visible.

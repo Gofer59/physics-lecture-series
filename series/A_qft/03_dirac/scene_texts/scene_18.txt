@@ -1,0 +1,3 @@
+As with Klein-Gordon, we expand the Dirac field in a sum over momenta. But now each mode has a spin label, and each particle has a distinct antiparticle, unless we are in a Majorana theory.
+
+The expansion contains a-dagger for fermions, and b-dagger for antifermions, both with spin labels. The Hamiltonian and the charge come out positive definite. The number of particles minus antiparticles is conserved. And causality is restored, by the anticommutation of psi at spacelike separation.

@@ -1,0 +1,3 @@
+Simulated annealing turns optimisation into cooling. Parallel tempering crosses modes by swapping replicas. Sequential Monte Carlo handles sequential and high-variance targets via particle clouds and resampling. Variational inference trades exactness for scalability via ELBO optimisation. Expectation-maximisation handles latent-variable maximum likelihood with monotone guarantees.
+
+Each is a targeted answer to a specific place where vanilla MCMC hurts.

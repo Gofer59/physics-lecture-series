@@ -1,0 +1,5 @@
+Plot the order of the deconfinement transition as a function of the light and strange quark masses.
+
+At zero quark mass the transition is first-order — the three-flavor chiral corner. At infinite quark mass it is also first-order — pure gauge.
+
+In between lies a crossover region containing the physical point. The boundary lines between regions are second-order, in the Z-two universality class. The Columbia plot is the topological map of how quark masses determine the phase structure.

@@ -1,0 +1,5 @@
+Quantum effects can, in principle, destroy a classical gauge symmetry. That is an anomaly.
+
+For the Standard Model to be consistent, all gauge anomalies must cancel exactly. They do — but only when quarks come in three colours, and the leptons come along with them in exactly the right hypercharge pattern.
+
+The only reason atoms are neutral is that quantum anomalies cancel. No one ordered this.

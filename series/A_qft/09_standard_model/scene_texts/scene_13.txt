@@ -1,0 +1,5 @@
+Neutrinos change flavour as they travel. The electron neutrino leaving the sun arrives at Earth partly as a muon or tau neutrino. This can only happen if they have mass.
+
+The mass eigenstates mix with the flavour eigenstates through a matrix analogous to CKM — called the PMNS matrix — with its own mixing angles and a potential CP phase.
+
+The masses themselves are tiny, sub-electronvolt, and their origin is unknown.

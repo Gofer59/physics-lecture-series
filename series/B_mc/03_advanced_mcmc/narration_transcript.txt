@@ -1,65 +1,129 @@
-# MC-V03 Narration — Advanced MCMC Methods
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_B_mc/mc_v03_slides.md -->
+# MC-V03 — Advanced MCMC Methods | Narration Transcript
 
 ## Scene 01
-TODO
+
+Random-walk Metropolis knows nothing about the target it is sampling. In high dimensions or near criticality, it crawls.
+
+The whole zoo of advanced MCMC exists to inject information into the proposal. Gradients, conditional structure, cluster topology, Hamiltonian dynamics. We will tour Gibbs, Langevin, HMC, and cluster methods in under eight minutes. Each is an attack on a specific failure mode of the baseline.
 
 ## Scene 02
-TODO
+
+When you can sample from each conditional distribution in closed form, the distribution of one coordinate given all the others, Gibbs sampling is the natural algorithm.
+
+Cycle through coordinates. Replace each with a draw from its full conditional. Every update is accepted by construction. It is Metropolis-Hastings with acceptance identically one. Powerful for conjugate Bayesian models, essential for hierarchical structures.
 
 ## Scene 03
-TODO
+
+The full conditional is just the joint divided by the marginal. And that marginal, being a constant in the conditional direction, drops out. You only need f up to proportionality in each coordinate.
+
+For many structured models, Gaussians, exponential families, graphical models via Hammersley-Clifford, the conditional is a textbook distribution you can sample instantly.
 
 ## Scene 04
-TODO
+
+Gibbs fails when coordinates are strongly correlated. Axis-aligned moves can only crawl along the thin diagonal of a narrow correlation ridge.
+
+Convergence is governed by the spectral radius of the Gauss-Seidel companion matrix. When coordinates are nearly collinear, this radius approaches one, and the chain mixes glacially. Block the correlated coordinates together and sample them jointly. Or use a different algorithm entirely.
 
 ## Scene 05
-TODO
+
+A cute trick. Augment the state with a height variable u, so the joint distribution on x and u is uniform under the curve of f. The full conditionals are both uniform. Uniform over a horizontal slice of the density, and uniform vertically up to f of x.
+
+Gibbs on the augmented space gives exact samples from the marginal f without a normalising constant. In theory, no tuning. In practice, identifying the slice can be costly.
 
 ## Scene 06
-TODO
+
+Write the target as the exponential of minus V. Gradient descent on V finds the mode. One point.
+
+Langevin dynamics adds Gaussian noise to gradient descent, and instead of collapsing to a point, it samples from the exponential of minus V. The stochastic differential equation has f as its invariant distribution. Gradient information makes proposals smarter than a blind random walk.
+
+Gradient descent finds one point. Langevin dynamics finds an entire distribution. Same machinery, very different goals.
 
 ## Scene 07
-TODO
+
+Discretise the Langevin equation with Euler-Maruyama. Take a small step down the gradient and add a Gaussian kick. This is the unadjusted Langevin algorithm.
+
+It is biased. The stationary distribution is f-epsilon, not f, with bias of order epsilon. But it converges exponentially fast to f-epsilon. For moderate dimensions and log-concave targets, it is cheap, simple, and often good enough.
 
 ## Scene 08
-TODO
+
+Wrap the unadjusted Langevin in a Metropolis accept-reject step. The proposal is the biased Langevin move. The acceptance corrects for the bias. Result: exact samples from f, not f-epsilon.
+
+Scaling analysis gives optimal step size proportional to d to the minus one-third, convergence in d to the one-third steps, and an optimal acceptance rate of about zero point five seven four. Strictly better than random-walk Metropolis for log-concave targets.
 
 ## Scene 09
-TODO
+
+Introduce momentum. Extend the state from position q to q and p, with Hamiltonian equal to the potential V of q plus the kinetic K of p. Sample from the joint Boltzmann of this Hamiltonian. Marginalise out p, and you recover f.
+
+The gain. Hamiltonian dynamics conserves energy, so the trajectory can travel long distances at nearly constant H. Distant proposals with high acceptance.
+
+If the history of MCMC is a history of tricks to propose distant moves, Hamilton's equations are the ultimate trick.
 
 ## Scene 10
-TODO
+
+You cannot integrate Hamilton's equations exactly except in trivial cases. The leapfrog scheme does a half-step in momentum, a full step in position, and another half-step in momentum.
+
+It is exactly symplectic and exactly time-reversible, even though the energy is only approximately conserved. The energy error is second order in step size and bounded over long trajectories. Symplecticity is what makes leapfrog the right tool for HMC.
 
 ## Scene 11
-TODO
+
+The algorithm. Refresh momentum from a Gaussian. Run L leapfrog steps of size epsilon. Propose the final q and p. Accept with the Metropolis ratio based on energy difference. The correction compensates for leapfrog's energy drift.
+
+Scaling: optimal epsilon goes as d to the minus one-quarter. You need order d to the one-quarter steps for a given error. Optimal acceptance rate is about zero point six five one. For smooth, high-dimensional targets, HMC dominates.
 
 ## Scene 12
-TODO
+
+Back to the Ising model near the critical temperature. Single-spin flips have dynamic exponent about two point one seven. You cannot beat that with local updates, because the correlation length exceeds any local neighbourhood.
+
+The trick. Flip entire correlated clusters as a single move. The Fortuin-Kasteleyn representation encodes spin configurations as bond configurations, and the right bond probability makes whole-cluster flips leave the Boltzmann distribution invariant.
 
 ## Scene 13
-TODO
+
+Pick a random seed spin. For each aligned neighbour, add it to the cluster with probability one minus the exponential of minus two beta J. Recurse. Flip every spin in the cluster.
+
+The bond probability is precisely what detailed balance requires. Acceptance is always one. In two-dimensional Ising, the dynamic exponent drops from two point one seven to about zero point two five. Enormous near the critical point. A quiet algorithmic revolution.
 
 ## Scene 14
-TODO
+
+Wolff grows one cluster. Swendsen-Wang builds all clusters simultaneously. Place bonds on aligned neighbour pairs with the same probability, one minus the exponential of minus two beta J. Identify connected components using union-find, Hoshen-Kopelman. Flip each cluster's spins independently with probability one half.
+
+Simultaneously updates the whole lattice. Dynamic exponent is about zero point three five for two-dimensional Ising. The generalisation to q-state Potts is immediate.
+
+Hoshen-Kopelman is the world's most exciting union-find implementation.
 
 ## Scene 15
-TODO
+
+A small table settles the hierarchy. Two-dimensional Ising. Metropolis, two point one seven. Swendsen-Wang, zero point three five. Wolff, zero point two five. Three-dimensional Ising. Metropolis, two point zero two. Swendsen-Wang, zero point five four. Wolff, zero point three three.
+
+Cluster algorithms give order-of-magnitude speed-ups at criticality, most dramatically for discrete symmetries and second-order transitions. Away from the critical point, the advantage shrinks but rarely reverses.
 
 ## Scene 16
-TODO
+
+For continuous spins in O(n) models, overrelaxation reflects the spin about its local field direction. The energy is exactly preserved, so the move is always accepted.
+
+It is microcanonical and deterministic. But when mixed with heat-bath updates, it dramatically reduces autocorrelation for XY and Heisenberg models. No analogue for discrete spins.
 
 ## Scene 17
-TODO
+
+Some systems have hard constraints that single-spin flips violate. Ice models enforce the two-in-two-out rule at every vertex. Kawasaki dynamics conserves total magnetisation.
+
+The solution. Loop algorithms that build a closed path through the lattice and reverse orientations along it, preserving the constraint exactly. The same idea reappears in dimer models and in stochastic-series-expansion quantum Monte Carlo.
 
 ## Scene 18
-TODO
+
+If your physics conserves total magnetisation, say a binary alloy with fixed composition, you cannot flip single spins. Instead, exchange a pair of unlike neighbouring spins with a Metropolis ratio.
+
+This is Kawasaki dynamics. It models phase separation correctly, but suffers badly near the critical point. Non-local exchanges and continuous-time variants are common remedies.
 
 ## Scene 19
-TODO
+
+Gibbs handles conjugate models. Slice sampling handles multimodality without tuning. Unadjusted and adjusted Langevin exploit gradients for log-concave targets, scaling as d to the one-third. HMC uses Hamiltonian flow for d to the one-quarter and handles high dimensions best.
+
+Wolff and Swendsen-Wang break critical slowing down on lattice spin systems. Overrelaxation accelerates continuous spins. Loop and Kawasaki algorithms respect constraints. Choose your algorithm by failure mode.
 
 ## Scene 20
-TODO
+
+You now know how to generate samples. But what do the samples mean?
+
+Correlated MCMC data needs honest error bars, autocorrelation estimation, jackknife and bootstrap for nonlinear functionals, histogram reweighting to interpolate across temperatures, and finite-size scaling to extract critical exponents. The next video is about turning raw chains into trustworthy physics numbers.
+
+A Monte Carlo simulation without an error bar is a rumour.

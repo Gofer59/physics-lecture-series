@@ -1,0 +1,5 @@
+You ran your MCMC chain. Averaged your observable. Divided sigma by the square root of N. The number you report is wrong. By a factor of the square root of two tau-int, which can be ten, or fifty, or a thousand.
+
+MCMC samples are correlated, and the naive independent-sample error formula silently treats them as independent. Nearly every quantitative MC paper lives or dies by how honestly it handles this.
+
+If your error bar looks too good, it is too good. Fix that.

@@ -1,0 +1,5 @@
+After renormalization, the photon self-energy has a finite remainder that depends logarithmically on energy. Sum those corrections to all orders and the coupling runs.
+
+At very low energy — photons scattering off weak fields — alpha equals one over 137. At the Z-boson mass scale of 91 GeV, alpha has climbed to about one over 128.
+
+The coupling runs because virtual electron-positron pairs screen the bare charge. The closer you look, the more bare charge you see.

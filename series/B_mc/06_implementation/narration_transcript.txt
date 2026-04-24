@@ -1,65 +1,133 @@
-# MC-V06 Narration — Practical Implementation
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_B_mc/mc_v06_slides.md -->
+# MC-V06 — Practical Implementation | Narration Transcript
 
 ## Scene 01
-TODO
+
+Five videos of theory. None of it matters if your code runs a thousand times slower than it should, generates spin configurations with correlated random numbers, or silently allocates twenty gigabytes for a neighbour table that should fit in kilobytes.
+
+This final video is about the craft. Lattice representations, data structures, parallelism, multispin coding, and random-number generation. The unglamorous things that determine whether you finish your PhD.
+
+Theorists write pseudocode. Experimentalists write loops. The gap between them is the entire second half of your career.
 
 ## Scene 02
-TODO
+
+Store a d-dimensional cubic lattice of side L as a one-dimensional array of length L to the d. Index mapping. k equals i-one, plus i-two times L, plus i-three times L squared, and so on. Periodic boundary conditions via modular arithmetic.
+
+But modulo is slow. Pre-compute neighbour-index tables at the start and look them up at runtime. Memory versus speed, decided by cache size and lattice size.
 
 ## Scene 03
-TODO
+
+Not everything is a square lattice. Triangular, coordination six. Honeycomb, three, bipartite. Kagome, corner-sharing triangles, three per unit cell. Face-centred cubic, body-centred cubic, diamond.
+
+For anything beyond cubic, just give up on index formulas and build an explicit neighbour table. Memory cost, modest. Simplicity cost, saved.
 
 ## Scene 04
-TODO
+
+Pick the structure to match the access pattern. Arrays for constant-time random access. Spins, neighbour tables, Boltzmann factor lookups. Linked lists for constant-time insert and delete without random access. Active-site lists in event-driven simulations.
+
+Trees and heaps for logarithmic-time priority operations. Continuous-time Monte Carlo. Circular buffers for streaming autocorrelation. Each is a trade-off. No structure dominates.
 
 ## Scene 05
-TODO
+
+The easiest kind of parallelism. Run P independent replicas with different random seeds. Average at the end. Error drops by the square root of P. Zero inter-processor communication. Perfect scaling.
+
+Great for error estimation via many short runs. For averaging over quenched disorder. And as the communication substrate of parallel tempering. When it works, nothing beats it.
+
+The first rule of parallel Monte Carlo. If you can run independent copies, do that. Then have lunch.
 
 ## Scene 06
-TODO
+
+When sites interact only with nearest neighbours, colour them black and white. All black sites can be updated simultaneously. Their neighbours are white, which you do not touch. Then update all white.
+
+Two half-sweeps of embarrassingly parallel work per Monte Carlo sweep. In d dimensions, you need two to the d colours to enforce the independence. Works for Metropolis and heat-bath. Fundamental to GPU Ising codes.
 
 ## Scene 07
-TODO
+
+Cluster algorithms are intrinsically non-local, which fights parallelism. Bonds can be placed in parallel. The spins within each cluster can be flipped in parallel. The hard part is identifying which sites belong to which cluster. A global connectivity problem.
+
+Parallel union-find and label-propagation schemes solve it. Communication cost dominated by cross-boundary labelling. Efficient when the lattice is much bigger than the process grid.
 
 ## Scene 08
-TODO
+
+Pack sixty-four Ising spins, one per bit, into a single sixty-four-bit machine word. Bitwise AND, OR, and XOR update all sixty-four spins in one instruction. Speedup of up to sixty-four.
+
+The acceptance rule becomes Boolean algebra encoded by truth tables and Karnaugh maps. Generate random bits in bulk. Apply them as masks. It is how the fastest Ising simulators in the world actually work.
+
+Sixty-four-bit machines. Sixty-four spins per word. We've been sleeping on this for decades.
 
 ## Scene 09
-TODO
+
+In one-dimensional Ising, the acceptance of a single flip depends only on whether the two neighbours are aligned and whether the centre matches them. Three cases.
+
+Neighbours differ. Always accept. Neighbours aligned and centre matches, flip with probability p. Neighbours aligned and centre doesn't match, always flip. Encode each case as a Boolean of bit-vectors. All sixty-four systems evolve in constant wall-clock time per site.
 
 ## Scene 10
-TODO
+
+Monte Carlo consumes staggering quantities of random numbers. Billions per hour. True random from hardware is too slow. Pseudo-random is deterministic, fast, reproducible, with a long period.
+
+Three properties matter. Period, how long before repetition. Quality, do the numbers pass statistical tests. And speed. Always validate your generator against a known-answer problem before trusting it for production.
+
+Your random number generator is the only thing in your code that can corrupt every result without ever throwing an error. Test it.
 
 ## Scene 11
-TODO
+
+The simplest random number generator. x-n-plus-one equals a times x-n plus c, modulo m. Cheap, fast, common. Period at most m.
+
+The dark secret. d-tuples of consecutive outputs lie on at most m to the one-over-d hyperplanes in d-dimensional space. Marsaglia's theorem. For m equal to two to the thirty-one, that is bad in high dimensions. Never use a bare linear congruential generator for serious work. Shuffle it, or combine with something better.
 
 ## Scene 12
-TODO
+
+Better generators. Shift register. Bit n equals bit n minus p, XORed with bit n minus q. Period two to the p minus one. Lagged Fibonacci. x-n equals x-n-minus-p combined with x-n-minus-q, using plus, minus, or multiply.
+
+Much longer periods. Less high-dimensional correlation. Newman and Barkema recommend subtract-with-borrow lagged Fibonacci. Combine multiple generators with incommensurate periods for production use.
 
 ## Scene 13
-TODO
+
+Given a good uniform generator, everything else follows. For distributions with closed-form inverse CDFs, use the transformation method. X equals F-inverse of U.
+
+Exponential. Minus the logarithm of U, divided by lambda. Power law. x-min times one minus U, raised to the power minus one over n minus one. For more complex targets, rejection or specialised methods. Every library has these. Know what's inside.
 
 ## Scene 14
-TODO
+
+Two uniform numbers in, two standard normals out. The square root of minus two times the logarithm of U-one, times the cosine of two pi U-two. And the sine counterpart. Elegant and exact. Costs a logarithm and a trig call per pair.
+
+The polar variant avoids trig via rejection in a disc. For general mean and variance, shift and scale. Y equals mu plus sigma times X. Every Monte Carlo code uses this.
 
 ## Scene 15
-TODO
+
+When neither transformation nor Box-Muller applies, rejection returns. Draw x uniformly on the bounded domain. Draw u uniformly on the interval zero to M. Accept if u is below f of x. Acceptance rate equals the integral of f, over M times the domain length.
+
+Hybrid schemes decompose f into an easy piece, transform, plus a hard residual, reject. Essential for gamma, beta, and nonstandard custom densities.
 
 ## Scene 16
-TODO
+
+When you only need a yes-no coin flip, don't burn a whole double-precision float. Extract bits from a thirty-two-bit integer. You get thirty-two coin flips for the price of one.
+
+Fixed-probability acceptance, like the exponential of minus beta delta-E, can be pre-tabulated as a bit pattern. Combine with multispin coding, and you execute sixty-four Ising updates at the cost of a handful of bitwise operations. Maximum efficiency.
 
 ## Scene 17
-TODO
+
+Lattice as one-dimensional array with pre-computed neighbour tables. Arrays for random access, linked lists for active sets, heaps for priority, circular buffers for streaming.
+
+Parallelism from trivially parallel replicas up to checkerboard decomposition and parallel cluster algorithms. Multispin coding for sixty-fourfold Ising speedup. Lagged-Fibonacci or combined generators, always validated. Non-uniform deviates via transformation, Box-Muller, rejection, and cheap random bits.
 
 ## Scene 18
-TODO
+
+Six videos. We started with integrals as expectations, and the one-over-square-root-N miracle. Built MCMC from Markov chains and detailed balance. Conquered the Ising model with Metropolis, and then with Wolff cluster flips.
+
+Extracted honest physics numbers with binning, jackknife, pyerrors, and finite-size scaling. Escaped bad mixing with annealing, tempering, sequential Monte Carlo, and variational inference. Finally, the implementation craft that turns algorithm into code.
 
 ## Scene 19
-TODO
+
+Monte Carlo is not one algorithm. It is a discipline. The discipline of replacing intractable deterministic computation with controlled randomness, and treating the resulting errors with honesty.
+
+Every method in this series, from classical sample averages to Hamiltonian Monte Carlo to variational inference, is a specialisation of that principle. The hard parts are never the random numbers themselves. They are the estimators, the diagnostics, and the implementation that carry them.
+
+If you remember one thing. The error bar is not optional.
 
 ## Scene 20
-TODO
+
+The natural continuation of this series is lattice quantum chromodynamics. The most demanding application of Monte Carlo methods ever attempted.
+
+Quark and gluon fields on a spacetime grid. Hamiltonian Monte Carlo integrating through gauge symmetry. Correlated fits with pyerrors extracting hadron masses. Cluster-free critical slowing down battled with multigrid. Everything we've built is about to be stress-tested at the edge of what computation can do.
+
+Monte Carlo learned on spins. Grew up on QCD. See you there.

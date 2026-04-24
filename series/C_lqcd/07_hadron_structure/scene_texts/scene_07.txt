@@ -1,0 +1,5 @@
+In 2013 Ji proposed the large-momentum effective theory. Compute matrix elements with purely spatial operator separations on a nucleon boosted to large momentum along z, then match perturbatively to the light-cone PDF.
+
+In 2017 Radyushkin refined the idea into the pseudo-distribution approach, using the Ioffe time, nu equals p times z, as the natural variable.
+
+Both methods finally give the lattice access to x-dependent parton distributions. The old inverse problem of reconstructing PDFs from discrete moments is replaced by a direct calculation.

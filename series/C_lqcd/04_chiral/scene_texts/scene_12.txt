@@ -1,0 +1,3 @@
+The derivation sketch. The propagator sum over gamma-five-hermitian eigenvalue pairs gives psi-bar psi proportional to a sum of two m over m squared plus lambda-k squared. In the infinite-volume limit, replace the sum by an integral over rho of lambda.
+
+In the chiral limit, the Lorentzian becomes two pi times a delta function. The integral collapses to two pi times rho at zero. The order of limits matters: mass to zero before volume to infinity gives zero. Volume first gives the condensate. Order of limits: where entire physical phenomena hide.

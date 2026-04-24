@@ -1,0 +1,3 @@
+Instead of proposing a flip and accepting, compute the exact conditional probability that the spin is up given all its neighbours. Sample it directly. Acceptance is always one. No wasted proposals.
+
+It is the same as Gibbs sampling for a single coordinate. For the Ising model with only two states it is nearly identical to Metropolis. But for Potts models with many states, it dominates.

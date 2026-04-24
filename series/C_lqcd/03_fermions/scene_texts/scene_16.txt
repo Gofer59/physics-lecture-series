@@ -1,0 +1,3 @@
+Directly evaluating det of D is a nonstarter — the matrix is too big. The pseudofermion trick: represent det of D-dagger D as a bosonic Gaussian integral over a pseudofermion field phi, with weight e to the minus phi-dagger times the inverse of D-dagger D times phi.
+
+Now the determinant becomes an action — a function of phi and the gauge field — that can be fed to Hybrid Monte Carlo. The determinant never appears explicitly.

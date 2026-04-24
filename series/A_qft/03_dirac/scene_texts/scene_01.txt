@@ -1,0 +1,5 @@
+Dirac's question in 1928 was almost naive. Can we take the square root of the Klein-Gordon equation? A first-order wave equation that squares to second-order would fix the probability-density problem plaguing relativistic quantum mechanics.
+
+The catch: the square root only works if the coefficients anticommute. There are no numbers with that property. So Dirac invented matrices that do. The particle wavefunction becomes a multi-component object. Spin, antimatter, and the electron's magnetic moment all fall out as bonuses.
+
+Dirac arrived at this equation by essentially factoring a polynomial — and accidentally predicted the positron, which was found four years later. Factoring polynomials is underrated.

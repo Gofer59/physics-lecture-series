@@ -1,0 +1,3 @@
+Naive Monte Carlo runs into six walls. High dimension. Unavailable targets. Multi-modal landscapes. Rare events. Correlated variables. And the question of when to stop.
+
+Every technique in the next five videos is a targeted attack on one of these. Before reaching for a hammer, know which of the six nails you are hitting.

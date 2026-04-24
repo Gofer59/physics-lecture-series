@@ -1,0 +1,3 @@
+The cure is obvious in hindsight. Sample from the Boltzmann distribution itself. Every sample now carries equal weight. The observable is a simple average. The partition function never has to be computed, because it cancels.
+
+The only remaining question is how to actually draw from a distribution you cannot invert, cannot bound, and cannot evaluate pointwise in normalised form. That is the next video.

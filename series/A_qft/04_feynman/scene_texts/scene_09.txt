@@ -1,0 +1,5 @@
+Two diagrams that look the same up to relabelling should not be counted twice. Each diagram comes with a symmetry factor in its denominator — equal to the number of ways you can permute its internal lines and vertices without changing the graph.
+
+These factors are the single most common source of bookkeeping errors in QFT, which is why experienced physicists develop mild compulsive habits around them.
+
+An entire subfield of graduate-student anxiety is dedicated to the question: is that symmetry factor two, four, or eight?

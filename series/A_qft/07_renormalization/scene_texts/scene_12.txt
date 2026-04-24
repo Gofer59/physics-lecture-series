@@ -1,0 +1,5 @@
+Ultraviolet is not the only problem. Soft photon emission — an electron radiating a photon whose energy goes to zero — produces logarithmic divergences in amplitudes too.
+
+These are infrared divergences. They are physical, in a funny sense: no real detector has infinite energy resolution. The Bloch-Nordsieck theorem, and later KLN, say that summing virtual corrections with real soft emission gives an infrared-finite result.
+
+The detector forgets the soft photons. The amplitude forgets them too.

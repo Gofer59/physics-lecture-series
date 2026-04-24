@@ -1,0 +1,5 @@
+Path integrals won the modern quantum field theory textbook because they do the things canonical quantization does poorly.
+
+Gauge theories are natural. Symmetries are manifest. Non-perturbative effects are tractable. Statistical mechanics and lattice simulation are a Wick rotation away. The formalism even extends cleanly to gravity, and has generated every serious attempt at quantum gravity since the 1960s.
+
+Canonical quantization still has its place. But the path integral is the lingua franca.

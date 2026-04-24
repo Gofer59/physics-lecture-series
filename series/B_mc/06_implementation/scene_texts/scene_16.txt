@@ -1,0 +1,3 @@
+When you only need a yes-no coin flip, don't burn a whole double-precision float. Extract bits from a thirty-two-bit integer. You get thirty-two coin flips for the price of one.
+
+Fixed-probability acceptance, like the exponential of minus beta delta-E, can be pre-tabulated as a bit pattern. Combine with multispin coding, and you execute sixty-four Ising updates at the cost of a handful of bitwise operations. Maximum efficiency.

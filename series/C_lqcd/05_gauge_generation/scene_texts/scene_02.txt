@@ -1,0 +1,5 @@
+A Markov chain proposes a new configuration U prime from the current U with some transition probability. Detailed balance requires the forward step times the equilibrium weight of U to equal the reverse step times the weight of U prime.
+
+Ergodicity requires every configuration to be eventually reachable. Together the two conditions guarantee that the chain samples the correct distribution.
+
+Every lattice algorithm you will ever meet is just some clever way of satisfying these two rules.

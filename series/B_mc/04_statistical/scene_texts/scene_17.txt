@@ -1,0 +1,3 @@
+At the critical temperature, finite-size scaling simplifies to clean power laws in L. Magnetisation scales as L to the negative beta over nu. Susceptibility as L to the gamma over nu. Specific heat as L to the alpha over nu. Log-log plots give the exponents as slopes.
+
+The Binder cumulant, a dimensionless combination of moments, is scale-invariant at the critical temperature. Curves for different L cross at the critical point, pinning it with no exponent assumption.

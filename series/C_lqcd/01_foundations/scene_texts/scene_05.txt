@@ -1,0 +1,3 @@
+The object we actually measure is a Euclidean correlator. Insert a field at one point, another at a later time, and average. At large time separations, the correlator decays exponentially.
+
+The decay rate is the energy of the lowest state with matching quantum numbers. The spectrum of the theory is literally the slope of a log-linear plot.

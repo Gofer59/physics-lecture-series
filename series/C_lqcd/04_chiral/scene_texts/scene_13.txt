@@ -1,0 +1,3 @@
+Adding a mass the naive way — m times psi-bar psi — breaks the modified lattice chiral symmetry badly. The right construction is D plus m times one minus a D over two.
+
+The mass term comes with its own factor of one minus a D over two, so that it breaks chirality in exactly the same controlled way the continuum mass does. In the limit, both converge to the continuum Dirac operator plus mass. Even the mass term has to respect the modified symmetry.

@@ -1,0 +1,5 @@
+Lattice operators are not normalized the same as continuum MS-bar operators. To compare to experiment you need renormalization constants, the Z factors.
+
+Non-perturbative schemes like RI-MOM impose renormalization conditions directly on lattice Green's functions at a scale mu, then convert to MS-bar through perturbative matching.
+
+The Schrodinger functional approach is an alternative that avoids Gribov copies. Both are standard for bilinear currents and four-quark operators.

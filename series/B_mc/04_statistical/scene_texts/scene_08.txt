@@ -1,0 +1,3 @@
+Wolff's Gamma method is the principled version. Define projected autocorrelation functions for derived observables using a gradient projection. The integrated autocorrelation for a derived function is an honest tau-int that depends on the specific observable.
+
+Combined with automatic differentiation for the gradients, you get error bars for arbitrarily complex combinations of primary measurements.

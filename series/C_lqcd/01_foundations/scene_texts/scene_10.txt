@@ -1,0 +1,3 @@
+The two-point correlator at large Euclidean time falls like e to the minus m t, where m is the lightest particle mass with those quantum numbers. This defines the correlation length, which is one over m.
+
+Measure the slope, get the physical spectrum. One observable, one number, one particle mass. This is the lattice's most fundamental output.

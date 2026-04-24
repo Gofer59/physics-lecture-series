@@ -1,0 +1,5 @@
+The electron propagator also gets one-loop corrections. An electron emits and reabsorbs a photon. The resulting self-energy shifts the pole of the propagator.
+
+The bare mass is divergent. The residue of the pole is divergent. But they arrange themselves so that the physical mass, defined as the pole position, comes out finite. Observable amplitudes come out finite too.
+
+The pole of the dressed propagator is the physical mass. That is a renormalization condition.

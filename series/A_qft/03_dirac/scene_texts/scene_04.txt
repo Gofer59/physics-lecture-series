@@ -1,0 +1,3 @@
+There is more than one concrete realization of the gamma matrices, but they are all equivalent. The Weyl, or chiral, representation is the most illuminating.
+
+Gamma-zero is purely off-diagonal. The spatial gammas have Pauli matrices in their off-diagonal blocks. In this basis, a Dirac spinor splits cleanly into two two-component halves — one labelled left-handed, one right-handed. The Lorentz generators turn out to be block diagonal. Boosts and rotations do not mix the two halves.

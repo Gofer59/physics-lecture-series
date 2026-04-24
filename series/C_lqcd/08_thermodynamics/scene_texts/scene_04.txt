@@ -1,0 +1,5 @@
+Sketch the phase diagram in temperature and baryon chemical potential.
+
+At zero chemical potential, the crossover sits near one hundred fifty-five MeV. Move to finite chemical potential and the crossover may sharpen into a genuine first-order line, ending at a critical endpoint.
+
+At low temperature and high chemical potential lies nuclear matter and, possibly, exotic color-superconducting phases. The phase diagram is being mapped experimentally by RHIC's beam-energy scan, and in the future by FAIR and NICA.

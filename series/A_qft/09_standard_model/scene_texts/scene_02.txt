@@ -1,0 +1,5 @@
+The Standard Model is a gauge theory with three factors. SU(3) for colour. SU(2) for weak isospin, acting only on left-handed fermions. And U(1) for hypercharge.
+
+Twelve gauge bosons in total. Eight gluons from the colour sector. Plus four from the electroweak sector, which rearrange after symmetry breaking into the W-plus, the W-minus, the Z, and the photon.
+
+Electric charge itself is a specific combination of isospin and hypercharge. It is not fundamental. It is a mixture.

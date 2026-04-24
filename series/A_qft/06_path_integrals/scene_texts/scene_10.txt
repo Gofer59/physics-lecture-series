@@ -1,0 +1,5 @@
+Faddeev and Popov's solution is ingenious. Insert a gauge-fixing condition — say, partial-mu A-mu equals zero — together with a Jacobian determinant that compensates for the insertion.
+
+Rewrite that determinant as a Grassmann integral, and you pick up new anticommuting fields called ghosts. In QED the ghosts decouple from everything and can be quietly ignored.
+
+In non-abelian theories they are essential for unitarity, as we will see in Lecture 8.

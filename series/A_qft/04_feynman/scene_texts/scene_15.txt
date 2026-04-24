@@ -1,0 +1,3 @@
+For a particle of mass M decaying into n products, the differential decay rate has the same structure as a cross section — modulus M squared times phase space — but divided by two M, instead of an incoming flux.
+
+The total rate Gamma is the inverse of the particle's mean lifetime. Branching ratios are the fraction of decays into a particular channel. This is how the muon's lifetime, the pion's, and the Z boson's, are all computed.

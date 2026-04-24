@@ -1,0 +1,3 @@
+The Ginsparg–Wilson relation forces the eigenvalues of D to lie on a circle in the complex plane — centered at one over a, with radius one over a. Real eigenvalues sit at two points: exact zero modes on one side, doubler modes on the other.
+
+Complex eigenvalues come in conjugate pairs. As a goes to zero, the circle grows until it becomes the continuum imaginary axis. Chiral structure is literally drawn in the spectrum.

@@ -1,0 +1,5 @@
+The lattice is the only first-principles, controlled, non-perturbative tool for strong-interaction physics.
+
+It delivers hadron masses. Decay constants. Form factors. CKM elements. The hadronic contribution to the muon anomalous magnetic moment. The equation of state of the early universe. Bounds on the Higgs. An ever-increasing fraction of the inputs to Standard Model precision tests.
+
+When experiment finds a deviation, the lattice is the referee that decides whether QCD is to blame — or whether new physics is showing.

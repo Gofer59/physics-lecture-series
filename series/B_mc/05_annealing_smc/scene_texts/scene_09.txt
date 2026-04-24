@@ -1,0 +1,3 @@
+The simplest sequential Monte Carlo for filtering. Propagate each particle through the dynamics. Sample from the transition kernel. Weight by the observation likelihood. Normalise weights. Resample.
+
+Convergence bound. Total variation distance between the particle approximation and the true filter is bounded by a constant over the square root of N. But that constant can grow exponentially if weight variance is unchecked.

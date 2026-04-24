@@ -1,0 +1,5 @@
+The Schrodinger functional coupling g-bar of L is defined non-perturbatively in a box of size L. Step-scaling computes the coupling at L and at two L, tracing the running across many scales — from the hadronic regime up to thousands of GeV.
+
+This delivers a purely non-perturbative determination of Lambda-QCD and of alpha-s at the Z mass.
+
+The current lattice world average is alpha-s at M-Z equals zero point one one eight four, with an error of eight in the last digit. Competitive with, or better than, the extraction from deep inelastic scattering.

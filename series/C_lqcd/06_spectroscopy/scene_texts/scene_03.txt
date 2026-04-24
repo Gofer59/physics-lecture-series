@@ -1,0 +1,3 @@
+For each hadron you build an interpolating operator with the right quantum numbers. Pion: d-bar gamma-five u. Rho: d-bar gamma-i u. Proton: epsilon a b c times u-a C gamma-five d-b times u-c. Delta: a similar color-epsilon structure with gamma-mu.
+
+The Dirac structure fixes the J-P-C quantum numbers. Using several operators with the same quantum numbers lets you separate ground and excited states via the variational method.

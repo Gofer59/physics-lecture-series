@@ -1,0 +1,5 @@
+If the broken symmetry is local rather than global, something different happens. The would-be Goldstone bosons do not remain as independent particles.
+
+They are absorbed as the longitudinal polarizations of the gauge bosons. The gauge bosons thereby become massive.
+
+Gauge invariance is preserved. The Goldstones are eaten. No massless particles. Just massive vector bosons with three polarizations instead of two. That is the Higgs mechanism.

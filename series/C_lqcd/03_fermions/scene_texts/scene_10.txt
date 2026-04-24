@@ -1,0 +1,3 @@
+Neuberger's 1998 construction. The overlap Dirac operator equals one over a, times one plus gamma-five times the sign function of the Wilson kernel. It satisfies the Ginsparg–Wilson relation exactly.
+
+No doublers. Exact chiral symmetry. Exact zero modes with definite chirality. It is the most conceptually satisfying lattice fermion we know. And it is roughly fifty to a hundred times more expensive than Wilson. Exact chiral symmetry on the lattice. Now available for the low, low cost of all your compute time.

@@ -1,0 +1,3 @@
+Quantize the free Dirac field, compute the time-ordered vacuum expectation value of psi times psi-bar, and out pops the fermion propagator. In momentum space, it is i, times p-slash plus m, divided by p-squared minus m-squared plus i-epsilon.
+
+Compared to the scalar propagator, the numerator is now a matrix — it carries spin information. And time ordering for fermions includes a crucial minus sign for each interchange. This minus sign is where Pauli exclusion will come from.

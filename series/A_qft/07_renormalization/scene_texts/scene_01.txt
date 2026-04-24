@@ -1,0 +1,5 @@
+Compute one loop in QED and you get infinity. The integral over the momentum of a virtual particle diverges at high energy. For decades this looked like a fatal defect.
+
+The resolution, worked out in the late 1940s, is conceptually radical. The parameters in the Lagrangian are not the parameters you measure. The bare mass and charge are divergent. The physical mass and charge are finite. Renormalization is the process of trading one for the other.
+
+Dirac died hating renormalization. Feynman called it hocus-pocus. It works to twelve decimal places. Both things are true.

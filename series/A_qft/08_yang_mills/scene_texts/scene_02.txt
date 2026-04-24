@@ -1,0 +1,5 @@
+The gauge group of QED is U(1) — a single circle of phases that all commute. QCD is built on SU(3). The weak sector is built on SU(2) times U(1).
+
+These groups do not commute. And that single fact is what makes the gauge bosons carry charge.
+
+Yang and Mills wrote this theory down in 1954, decades before anyone knew it actually described nature.

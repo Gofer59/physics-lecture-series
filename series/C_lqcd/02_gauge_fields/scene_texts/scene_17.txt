@@ -1,0 +1,3 @@
+The lattice only knows dimensionless ratios. To convert to MeV or femtometers, you need a physical reference. The Sommer parameter r-naught is defined by a condition on the force between static quarks — r squared times dV dr equals 1.65 — and evaluates to about half a femtometer.
+
+Compute r-naught over a on the lattice, match to the physical value, and you have fixed the lattice spacing in femtometers.

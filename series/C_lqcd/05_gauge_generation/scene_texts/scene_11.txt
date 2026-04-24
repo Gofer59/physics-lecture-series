@@ -1,0 +1,5 @@
+The molecular dynamics force has two pieces. The gauge force is cheap — a sum of staples, directly computable. The fermion force is not.
+
+To evaluate the fermion force you must solve D-dagger D chi equals phi for the pseudofermion field. That is a Krylov solver call, every single force evaluation.
+
+At light quark masses the solver becomes expensive. Its cost scales like one over the quark mass squared. Solver time dominates the simulation budget.

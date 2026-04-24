@@ -1,0 +1,3 @@
+The amplitude for a particle to travel from y to x is the vacuum expectation value of phi of x times phi of y. Evaluate it. For timelike separations, it oscillates as expected.
+
+But for spacelike separations, it decays like exponential of minus m times r — small, but nonzero. The same pathology as in single-particle relativistic quantum mechanics. At first glance, quantum field theory has not fixed causality at all.

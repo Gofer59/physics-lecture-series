@@ -1,0 +1,3 @@
+The simplest random number generator. x-n-plus-one equals a times x-n plus c, modulo m. Cheap, fast, common. Period at most m.
+
+The dark secret. d-tuples of consecutive outputs lie on at most m to the one-over-d hyperplanes in d-dimensional space. Marsaglia's theorem. For m equal to two to the thirty-one, that is bad in high dimensions. Never use a bare linear congruential generator for serious work. Shuffle it, or combine with something better.

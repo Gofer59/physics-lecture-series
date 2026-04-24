@@ -1,65 +1,131 @@
-# QFT-V02 Narration — The Klein-Gordon Field
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_A_qft/qft_v02_slides.md -->
+# QFT-V02 — The Klein-Gordon Field | Narration Transcript
 
 ## Scene 01
-TODO
+
+In ordinary relativistic quantum mechanics, the amplitude for a particle to propagate from one spacetime point to another does not vanish outside the light cone. It decays exponentially, but it is never zero. That is a disaster. Signals leak faster than light.
+
+The resolution is drastic. Stop treating particles as the fundamental objects. Promote the field itself to a quantum operator. Quantum field theory is the price causality exacts from quantum mechanics.
+
+If you thought single-particle quantum mechanics was the endpoint — it is not. It is an approximation that quietly violates relativity whenever you are not watching.
 
 ## Scene 02
-TODO
+
+Before quantizing, remind yourself what a classical relativistic scalar field looks like. Its Lagrangian is the simplest Lorentz-invariant expression you can write. A kinetic term quadratic in derivatives, minus a mass term quadratic in the field.
+
+The equation of motion is the Klein-Gordon equation: the d'Alembertian plus mass squared, acting on phi of x. Fourier-decompose it, and every momentum mode obeys the equation of a simple harmonic oscillator, with frequency equal to the relativistic energy, omega-p.
 
 ## Scene 03
-TODO
+
+Quantization is the old trick applied to a new object. In quantum mechanics, position and momentum became operators with a nonzero commutator. Now the field phi of x, and its conjugate momentum pi of x, become operators.
+
+Their equal-time commutator is i times a three-dimensional delta function. The field at one point does not commute with its rate of change at the same point. That single postulate turns a classical field into a quantum one.
 
 ## Scene 04
-TODO
+
+Each Fourier mode of the field is a quantum harmonic oscillator. So we introduce creation and annihilation operators for it — ladder operators, a-dagger and a, one pair per momentum. They obey a commutator given by a delta function in momentum space.
+
+The field itself becomes an integral over all momenta: a destroying a particle, plus a-dagger creating one. Everything familiar from the harmonic oscillator generalizes. But now there is one oscillator per point in momentum space.
 
 ## Scene 05
-TODO
+
+Express the Hamiltonian in terms of ladder operators, and something beautiful happens. It becomes an integral over momenta of omega-p times a-dagger times a. The total energy is the number of quanta at each momentum, weighted by their frequency.
+
+But naively, there is also an infinite zero-point energy — vacuum fluctuations from every mode. Normal ordering discards it by fiat. We declare the vacuum energy to be zero.
+
+The infinite zero-point energy has been annoying physicists since 1930. It re-emerges the moment gravity enters the room, which is one reason the cosmological constant is such a headache.
 
 ## Scene 06
-TODO
+
+The vacuum is the state annihilated by every a. Acting with one creation operator gives a one-particle state. Acting with several gives multi-particle states. The whole Hilbert space is a direct sum over particle number. This is Fock space.
+
+Because the creation operators commute with each other, the states are automatically symmetric under particle exchange. Bose-Einstein statistics falls out for free. Identical particles are not a postulate of this theory. They are built into the algebra.
 
 ## Scene 07
-TODO
+
+In the Heisenberg picture, the field phi of x and t evolves as an operator. The Heisenberg equation recovers the operator Klein-Gordon equation.
+
+Write it out, and phi splits into two pieces. An annihilation part multiplied by a positive-frequency plane wave. And a creation part, multiplied by a negative-frequency plane wave. The field simultaneously destroys and creates quanta. A measurement of phi at a point is a mixture of both. That is what a quantum field does.
 
 ## Scene 08
-TODO
+
+The amplitude for a particle to travel from y to x is the vacuum expectation value of phi of x times phi of y. Evaluate it. For timelike separations, it oscillates as expected.
+
+But for spacelike separations, it decays like exponential of minus m times r — small, but nonzero. The same pathology as in single-particle relativistic quantum mechanics. At first glance, quantum field theory has not fixed causality at all.
 
 ## Scene 09
-TODO
+
+The right quantity to look at is not the amplitude, but the commutator of two fields. Compute it, and the spacelike piece cancels against a second amplitude running the other way — an antiparticle travelling from x to y.
+
+The two contributions are related by a Lorentz boost that flips the sign of the separation. The commutator vanishes outside the light cone. Measurements at spacelike separation are independent.
+
+Antiparticles are not an optional extra in QFT. They are the price of believing in both relativity and quantum mechanics simultaneously.
 
 ## Scene 10
-TODO
+
+When we actually compute amplitudes, we need the time-ordered product of two fields — the Feynman propagator. In momentum space it is i, divided by p-squared minus m-squared, plus a tiny positive imaginary number. The famous i-epsilon.
+
+That small imaginary shift pushes the poles off the real axis, and selects the right boundary conditions. Particles travel forward in time, antiparticles backward. This single object appears on every internal line of every diagram for the rest of the series.
 
 ## Scene 11
-TODO
+
+So far phi was real — the particle is its own antiparticle. Promote phi to a complex field, and the Lagrangian gains a U(1) symmetry under rephasing. Noether's theorem gives a conserved current and a conserved charge.
+
+Quantize. The field now contains a-dagger, which creates a particle of charge plus one, and a separate b-dagger, which creates an antiparticle of charge minus one. Same mass, opposite charge — exactly what the commutator argument demanded.
 
 ## Scene 12
-TODO
+
+The conserved charge, written in ladder operators, is simply the number of particles, minus the number of antiparticles. It commutes with the Hamiltonian, so it is conserved in time. Every interaction preserves it.
+
+For the real Klein-Gordon field, with no separate b, the charge is identically zero. The particle is neutral, and is its own antiparticle. All of this machinery, built just to quantize a free scalar, already predicts that charge is conserved, and that antimatter exists.
 
 ## Scene 13
-TODO
+
+Add a classical source j of x, coupled to phi. The equation of motion becomes Klein-Gordon with j on the right-hand side. Turn the source on, let it act, turn it off. The expected number of particles produced in each momentum mode is the Fourier transform of j, squared, divided by two E.
+
+This is the simplest model of particle production imaginable. And the template for how a radio antenna makes photons.
+
+This is also the mechanism by which the early universe filled itself with particles. A sufficiently vigorous expansion of spacetime is, for QFT, just a very loud j of x.
 
 ## Scene 14
-TODO
+
+There is a cleaner way to see what we just did. Think of the classical field as a function on space. Its Fourier modes are labelled by momentum. Quantize each mode as an independent harmonic oscillator.
+
+The n-th excited state of the mode with momentum p means, simply, n particles of that momentum. Fock space is not something mystical. It is the tensor product of infinitely many quantum oscillators. This viewpoint is called second quantization — though nothing has been quantized twice.
 
 ## Scene 15
-TODO
+
+Starting from "quantize a relativistic field", we obtained a particle interpretation automatically. Bose statistics automatically. Antiparticles automatically. Charge conservation automatically. Causality automatically.
+
+None of these were postulates of ordinary quantum mechanics. They emerge as consequences of demanding relativity and quantum mechanics simultaneously. This is the deep payoff of QFT. And we have not even added interactions yet.
 
 ## Scene 16
-TODO
+
+One technical but essential detail. The obvious normalization of one-particle states is not Lorentz invariant. Boosted observers would disagree on probabilities.
+
+The fix is to include a factor of the square root of two E-p in the definition of the momentum state. With this convention, the inner product of two momentum states is manifestly Lorentz covariant, and the integration measure over momenta becomes invariant too. This is the convention you will see everywhere in Peskin and Schroeder.
 
 ## Scene 17
-TODO
+
+The Feynman propagator is a Green's function of the Klein-Gordon operator. Apply the Klein-Gordon operator to D-F, and you get a four-dimensional delta function, up to a factor of i.
+
+Physically, D-F is what you get when you inject a point disturbance into a free field, and ask how it propagates. On every internal line of every Feynman diagram, we are summing over all the ways a field ripple can travel between two events, weighted by this Green's function.
 
 ## Scene 18
-TODO
+
+Why go through this whole construction? Because every scattering cross section, every decay rate, every high-precision QED prediction reduces to products of Feynman propagators, tied together at interaction vertices.
+
+The free Klein-Gordon theory is trivial. Nothing scatters off anything. But it supplies the vocabulary: propagators, creation and annihilation, Fock space. Add interactions, and the rest of QFT is just an expansion built on top of this machinery.
 
 ## Scene 19
-TODO
+
+We quantized a relativistic scalar field by imposing canonical commutators on phi and pi. Each momentum mode became a harmonic oscillator. Fock space gave us particles, and automatic Bose statistics.
+
+Causality forced the existence of antiparticles and a charge conservation law. The Feynman propagator, with its i-epsilon prescription, emerged as the Green's function of the free theory. It will be the basic building block of every calculation to come.
+
+All this, and the particles still do not interact with anything. That part starts next episode.
 
 ## Scene 20
-TODO
+
+The Klein-Gordon field describes spin-zero particles — the Higgs boson, for instance. But most of the matter around us is spin one-half. Electrons, quarks, neutrinos.
+
+To describe them, we need a first-order equation whose square is the Klein-Gordon equation, built from objects that anticommute. Coming up next: the Clifford algebra, Dirac spinors, and the equation that predicted antimatter before anyone had seen it.

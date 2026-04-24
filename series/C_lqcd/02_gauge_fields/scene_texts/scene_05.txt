@@ -1,0 +1,3 @@
+Sum the real trace of one minus the plaquette over every plaquette on the lattice. Multiply by beta, which equals two N over g squared. That is Wilson's gauge action.
+
+As a goes to zero, it reproduces the continuum Yang–Mills action. It is exactly gauge-invariant at finite a. It has discretization errors of order a squared. And it is simple enough to program in an afternoon.

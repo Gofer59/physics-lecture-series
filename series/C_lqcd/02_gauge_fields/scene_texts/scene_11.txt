@@ -1,0 +1,3 @@
+At strong coupling, the Wilson loop decays like e to the minus sigma times R times T. The exponent scales with the enclosed area. That area law is equivalent to a linearly rising potential.
+
+This is confinement. A perimeter law — where the exponent scales with R plus T — would give a finite potential at large R, meaning no confinement. The Wilson criterion is this: confinement is an area law.

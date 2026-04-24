@@ -1,0 +1,3 @@
+A Euclidean path integral with N time slices equals the trace of T-hat to the N, where T-hat is the transfer matrix — the operator that propagates by one time step.
+
+Its eigenvalues are e to the minus a E sub n. So diagonalizing it recovers the Hamiltonian and the physical Hilbert space. This is how an integral over classical fields becomes quantum mechanics.

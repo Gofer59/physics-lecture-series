@@ -1,0 +1,3 @@
+We now have the two ingredients of free QFT. The Klein-Gordon field for bosons, and the Dirac field for fermions, with their respective propagators. To describe nature, we need them to interact.
+
+Coming up next: interactions turn on. We introduce the interaction picture and Dyson's time-ordered exponential. And, through Wick's theorem, we pull Feynman diagrams out of the formalism. The lines and vertices that adorn every physics textbook are about to become a calculable algorithm.

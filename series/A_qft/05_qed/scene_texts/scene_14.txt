@@ -1,0 +1,3 @@
+Photons have four polarization components, but only two physical ones. When summing over physical polarizations, you would naively project onto the two transverse modes — which spoils manifest Lorentz covariance.
+
+The Ward identity rescues us. In the sum over polarizations, contracted with any amplitude, you can replace the projection by minus g-mu-nu. The unphysical longitudinal and timelike modes cancel against each other. Covariance is preserved for free.

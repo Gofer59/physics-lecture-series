@@ -1,0 +1,5 @@
+After gauge fixing with a parameter xi, the photon propagator becomes minus i over q squared, times g-mu-nu minus one minus xi times q-mu q-nu over q squared.
+
+Set xi equal to one and you get Feynman gauge — the simplest. Set xi equal to zero and you get Landau gauge — purely transverse.
+
+Physical observables have to be independent of xi. Checking xi-independence is a standard sanity check in any serious QED or QCD calculation.

@@ -1,0 +1,3 @@
+The full Compton differential cross section is the Klein-Nishina formula, from 1929 — the first predictive QFT calculation that matched a real experiment.
+
+At low photon energies, it reduces to the classical Thomson cross section: eight pi alpha squared, over three m squared. At high energies, the cross section falls off logarithmically in the photon energy. The formula appears everywhere, from X-ray physics to cosmological recombination.

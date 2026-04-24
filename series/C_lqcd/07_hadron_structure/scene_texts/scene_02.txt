@@ -1,0 +1,5 @@
+A three-point function has three insertions. Create a hadron at time zero. Insert a current J at time t. Annihilate the hadron at time t sub s.
+
+At large source-sink separation, the ground state dominates on both sides. The three-point function factorizes: mod Z zero squared times e to the minus m sub H times t sub s, multiplied by the matrix element of the current between ground-state hadrons.
+
+Divide by the two-point function and the exponential prefactors cancel. The desired matrix element pops out.

@@ -1,0 +1,3 @@
+A summary. Gauge fields on the lattice live on links, as SU(3) elements. The Wilson action is a sum of plaquettes — exactly gauge-invariant, and reproducing Yang–Mills in the continuum.
+
+The Haar measure makes gauge fixing unnecessary. The Wilson loop measures the static quark potential. An area law equals confinement. The Polyakov loop is the order parameter for deconfinement. And the Sommer parameter sets the scale.

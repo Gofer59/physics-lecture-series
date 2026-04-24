@@ -1,0 +1,3 @@
+Coming up next: gauge fields went smoothly onto the lattice. Fermions do not. The naive discretization of the Dirac operator generates sixteen species instead of one — the doubling problem.
+
+The Nielsen–Ninomiya theorem proves this is unavoidable without sacrificing something: chiral symmetry, locality, or hypercubic symmetry. Next time we survey the zoo of lattice fermions — Wilson, staggered, overlap, domain wall, twisted mass. You asked for one electron. The lattice gave you sixteen. No refunds.

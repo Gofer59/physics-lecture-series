@@ -1,0 +1,3 @@
+Disconnected diagrams with closed vacuum loops and no external legs — vacuum bubbles — exponentiate, and cancel exactly between the numerator and the denominator of the correlation-function formula.
+
+The remarkable consequence is that only connected diagrams contribute to physical observables. You can throw away the bubbles without a second thought. This is the first major simplification of the perturbative expansion.

@@ -1,0 +1,3 @@
+QED has three ingredients. First, the Dirac Lagrangian for the electron. Second, the Maxwell Lagrangian for the photon: minus one-quarter times F-mu-nu squared, where F is the field-strength tensor.
+
+Third — and crucially — replace every ordinary derivative by a covariant derivative: partial minus i times e times A-mu. This couples the electron to the photon. The substitution is called minimal coupling. It is how local gauge invariance demands electromagnetism into existence.

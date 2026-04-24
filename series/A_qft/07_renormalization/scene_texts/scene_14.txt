@@ -1,0 +1,5 @@
+Non-renormalizable does not mean useless. It means the theory is an effective description, valid below some energy scale.
+
+Fermi theory of beta decay is fine well below the W-boson mass. Chiral perturbation theory for pions is fine below about a GeV. General relativity as a quantum theory is fine below the Planck scale.
+
+The modern view is that all field theories are effective theories. There is no reason to expect any theory to be valid at all energies.

@@ -1,0 +1,3 @@
+A comparison of the zoo. Wilson: cheap, order-a errors, no chiral symmetry. Clover: same as Wilson, with c-SW tuned, order a-squared errors. Staggered: cheapest, four tastes, remnant U(1), root problem.
+
+Domain wall: good chiral symmetry, cost N-five times Wilson. Overlap: exact chiral symmetry, fifty to a hundred times Wilson. Twisted mass: automatic order-a improvement, positive determinant. Every formulation trades chirality against cost against complexity.

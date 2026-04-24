@@ -1,0 +1,5 @@
+The right quantity to look at is not the amplitude, but the commutator of two fields. Compute it, and the spacelike piece cancels against a second amplitude running the other way — an antiparticle travelling from x to y.
+
+The two contributions are related by a Lorentz boost that flips the sign of the separation. The commutator vanishes outside the light cone. Measurements at spacelike separation are independent.
+
+Antiparticles are not an optional extra in QFT. They are the price of believing in both relativity and quantum mechanics simultaneously.

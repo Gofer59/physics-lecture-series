@@ -1,0 +1,3 @@
+Some systems have hard constraints that single-spin flips violate. Ice models enforce the two-in-two-out rule at every vertex. Kawasaki dynamics conserves total magnetisation.
+
+The solution. Loop algorithms that build a closed path through the lattice and reverse orientations along it, preserving the constraint exactly. The same idea reappears in dimer models and in stochastic-series-expansion quantum Monte Carlo.

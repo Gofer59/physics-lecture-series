@@ -1,0 +1,3 @@
+Not everything is a square lattice. Triangular, coordination six. Honeycomb, three, bipartite. Kagome, corner-sharing triangles, three per unit cell. Face-centred cubic, body-centred cubic, diamond.
+
+For anything beyond cubic, just give up on index formulas and build an explicit neighbour table. Memory cost, modest. Simplicity cost, saved.

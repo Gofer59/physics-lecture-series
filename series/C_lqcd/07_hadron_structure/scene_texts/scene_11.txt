@@ -1,0 +1,5 @@
+Three-point functions are dominated by excited-state contamination much more severely than two-point functions. At the physical pion mass, the nucleon's first excited state contaminates down to very late source-sink separations.
+
+Strategies: compute at several sink times and extrapolate to infinity. Perform explicit two-state fits. Or use the summation method, which sums the ratio over the insertion time and extracts the matrix element from the slope.
+
+This is typically the dominant systematic in nucleon structure calculations.

@@ -1,0 +1,3 @@
+Gibbs fails when coordinates are strongly correlated. Axis-aligned moves can only crawl along the thin diagonal of a narrow correlation ridge.
+
+Convergence is governed by the spectral radius of the Gauss-Seidel companion matrix. When coordinates are nearly collinear, this radius approaches one, and the chain mixes glacially. Block the correlated coordinates together and sample them jointly. Or use a different algorithm entirely.

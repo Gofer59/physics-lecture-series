@@ -1,0 +1,7 @@
+When a continuous global symmetry is spontaneously broken, there must be a massless particle for every broken generator. These are the Goldstone bosons.
+
+They correspond to flat directions along the bottom of the potential. Radial excitations have a restoring force and a mass. Angular excitations cost no energy and stay massless.
+
+The pions of QCD are approximate Goldstone bosons of broken chiral symmetry.
+
+Every broken symmetry comes with a massless ghost of its former self. Physicists call this Tuesday.

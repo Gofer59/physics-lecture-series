@@ -1,65 +1,127 @@
-# QFT-V05 Narration — Quantum Electrodynamics
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_A_qft/qft_v05_slides.md -->
+# QFT-V05 — Quantum Electrodynamics | Narration Transcript
 
 ## Scene 01
-TODO
+
+Quantum Electrodynamics is the theory of electrons, positrons, and photons. It predicts the anomalous magnetic moment of the electron to twelve significant figures, matching experiment at every one. It is arguably the most precisely tested theory in the history of science.
+
+All of that precision comes from a Lagrangian that fits on a single line — built from a Dirac fermion, coupled to a vector field, through a local U(1) gauge symmetry.
+
+If astrology were accurate to three decimals, we would call it a science. QED has twelve, and physicists still want more.
 
 ## Scene 02
-TODO
+
+QED has three ingredients. First, the Dirac Lagrangian for the electron. Second, the Maxwell Lagrangian for the photon: minus one-quarter times F-mu-nu squared, where F is the field-strength tensor.
+
+Third — and crucially — replace every ordinary derivative by a covariant derivative: partial minus i times e times A-mu. This couples the electron to the photon. The substitution is called minimal coupling. It is how local gauge invariance demands electromagnetism into existence.
 
 ## Scene 03
-TODO
+
+The QED Lagrangian is invariant under a local phase rotation of the electron field, combined with a shift of the vector potential. This is the statement of a local U(1) gauge symmetry.
+
+It is not a curiosity. Demanding gauge invariance uniquely dictates the form of the coupling, forbids a photon mass term, and will later generalize to Yang-Mills and the whole Standard Model. Electromagnetism is the simplest example of a profound principle.
 
 ## Scene 04
-TODO
+
+Read them off. The fermion propagator is i over p-slash minus m plus i-epsilon. The photon propagator, in Feynman gauge, is minus i times g-mu-nu, divided by q-squared plus i-epsilon. The interaction vertex is minus i times e times gamma-mu.
+
+External fermions and antifermions get u, v, u-bar, v-bar spinors. External photons get polarization vectors epsilon-mu. Closed fermion loops carry an overall minus sign. That is the complete rulebook for all of QED.
 
 ## Scene 05
-TODO
+
+Computing a cross section means squaring an amplitude, summing over spins, and collapsing the result using the spin-sum identities from the Dirac lecture. What remains is a trace of a long string of gamma matrices.
+
+A small library of identities — trace of the identity equals four, trace of two gammas equals four times the metric, trace of an odd number of gammas is zero, trace with gamma-five gives an epsilon tensor — reduces any unpolarized QED amplitude to a few lines of arithmetic.
+
+Trace technology is the kind of thing that sounds terrifying until someone prints you a cheat sheet. Then it is just algebra with extra steps.
 
 ## Scene 06
-TODO
+
+The simplest nontrivial QED process. An electron and positron annihilate into a photon, which pair-creates a muon and anti-muon. One diagram only, in the s-channel.
+
+Writing down the amplitude using the Feynman rules takes one line. Squaring and averaging over spins reduces, via trace technology, to a clean closed form. The differential cross section is alpha squared, over four E-cm squared, times one plus cosine-squared theta. The total integrates to four pi alpha squared, over three s.
 
 ## Scene 07
-TODO
+
+At the QED vertex, psi-bar gamma-mu psi conserves chirality. A left-handed electron couples to a left-handed current piece. Right to right.
+
+In the high-energy limit, where masses are negligible, only four of the sixteen possible spin configurations contribute to e-plus-e-minus to mu-plus-mu-minus. The other twelve vanish identically. This is what generates the one-plus-cosine-squared angular dependence. It is not numerical — it is a symmetry statement.
 
 ## Scene 08
-TODO
+
+The amplitudes for e-plus-e-minus to mu-plus-mu-minus, for electron-muon scattering, and for electron anti-muon scattering, are not three separate calculations. They are related by crossing symmetry.
+
+Flip the sign of an external momentum, and replace particle with antiparticle. An s-channel process turns into a t-channel or u-channel process. At the level of amplitudes, it is exact. One calculation buys you a family of processes.
 
 ## Scene 09
-TODO
+
+A photon scatters off an electron. Two tree-level diagrams contribute. The electron absorbs the photon and emits a new one, in the s-channel. Or it emits first, and absorbs later, in the u-channel.
+
+Both are required. Neither on its own is gauge invariant, and only the sum satisfies the Ward identity. This is the first place where the consistency of QED demands multiple diagrams. One is simply not enough.
 
 ## Scene 10
-TODO
+
+The full Compton differential cross section is the Klein-Nishina formula, from 1929 — the first predictive QFT calculation that matched a real experiment.
+
+At low photon energies, it reduces to the classical Thomson cross section: eight pi alpha squared, over three m squared. At high energies, the cross section falls off logarithmically in the photon energy. The formula appears everywhere, from X-ray physics to cosmological recombination.
 
 ## Scene 11
-TODO
+
+Electron-positron elastic scattering. Two diagrams contribute. S-channel annihilation plus recreation. And t-channel photon exchange.
+
+They interfere. The squared amplitude contains two moduli, plus a genuine interference term. Because fermions are being exchanged, the two diagrams have an explicit relative minus sign. A direct consequence of the anticommutation quantization from the Dirac lecture.
 
 ## Scene 12
-TODO
+
+The Ward identity says: contract any QED amplitude with the momentum of an external photon, and you get zero. This is the statement of current conservation, at the quantum level, inherited from gauge invariance.
+
+Operationally, it lets you replace the polarization sum over physical photon states with minus the Minkowski metric. That makes every calculation manifestly covariant. Any unphysical longitudinal polarization states decouple automatically.
 
 ## Scene 13
-TODO
+
+The Ward identity has profound consequences. First, the photon is exactly massless to all orders in perturbation theory. No radiative correction can give it a mass without violating gauge invariance.
+
+Second, charge renormalization is universal. The renormalized electric charge of every charged particle shifts by the same factor. Third, the identity Z-one equals Z-two drastically reduces the number of independent renormalization constants in QED. These facts will make renormalization possible in Lecture Seven.
 
 ## Scene 14
-TODO
+
+Photons have four polarization components, but only two physical ones. When summing over physical polarizations, you would naively project onto the two transverse modes — which spoils manifest Lorentz covariance.
+
+The Ward identity rescues us. In the sum over polarizations, contracted with any amplitude, you can replace the projection by minus g-mu-nu. The unphysical longitudinal and timelike modes cancel against each other. Covariance is preserved for free.
 
 ## Scene 15
-TODO
+
+Without any loops, tree-level QED already reproduces the Rutherford formula for Coulomb scattering. The Thomson cross section for low-energy light off electrons. The Bhabha angular distribution observed in every electron-positron collider. The one-plus-cosine-squared shape of muon pair production.
+
+Every one of these is a multi-decimal agreement with experiment. And we have not yet computed a single loop.
+
+Most physics theories do not survive their first meeting with experiment. QED's tree level just nails it — and that is before we start calculating anything difficult.
 
 ## Scene 16
-TODO
+
+Tree level gives you three or four decimal places. The real magic — the anomalous magnetic moment, the Lamb shift, the running of the coupling — lives in loop diagrams.
+
+But loop diagrams contain integrals over internal momenta, that diverge at high energy. This is the UV problem, and it is what will force us to renormalize in Lecture Seven. For now, the message is: tree level is shockingly good, and loops will make it better, once we know how to handle their infinities.
 
 ## Scene 17
-TODO
+
+A preview of what awaits. At tree level, the Dirac equation predicts g equals two, exactly, for the electron. The one-loop QED correction, computed by Schwinger in 1948, shifts it by alpha over two pi. A number around zero point zero zero one one six.
+
+This is the anomalous magnetic moment. It has been computed to five loops, and measured in Penning traps. Theory and experiment agree to twelve figures. This is the number that proves QED really is the right theory of electromagnetism at quantum scales.
 
 ## Scene 18
-TODO
+
+QED is the prototype of a gauge theory. Replace its U(1) symmetry by SU(3) and you get QCD. Replace it by SU(2) times U(1) and you get the electroweak theory.
+
+Replace its single vector boson by eight gluons, or three weak bosons, and the rest of the machinery survives. The Feynman rules, the Ward-like identities, the principle that propagators and vertices define the theory — all of it carries through. QED is the gateway to the Standard Model.
 
 ## Scene 19
-TODO
+
+QED is the gauge theory of U(1). It is given by a Dirac Lagrangian with a covariant derivative, plus a Maxwell term. Its Feynman rules are a fermion propagator, a photon propagator, and a single vertex factor, minus i times e times gamma-mu.
+
+Trace technology reduces spin-summed amplitudes to algebra. Canonical processes — e-plus-e-minus to mu-plus-mu-minus, Compton, Bhabha — agree with experiment at tree level. The Ward identity protects gauge invariance quantum mechanically, and foreshadows renormalizability.
 
 ## Scene 20
-TODO
+
+We have built QFT by canonical quantization. There is another formulation, due to Feynman himself, that is often more powerful. The path integral.
+
+It makes symmetries manifest. It handles gauge theories with grace, once you add Faddeev-Popov ghosts. And it generalizes to the non-perturbative regime, where diagrams fail. Coming up next: we reformulate everything we have learned in terms of integrals over field configurations — the language of every modern QFT textbook.

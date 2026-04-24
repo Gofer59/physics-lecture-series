@@ -1,0 +1,5 @@
+The reduced pseudo-Ioffe-time distribution M of nu and z-squared, computed on the lattice, is matched to the MS-bar light-cone PDF through a kernel. Schematically: M equals the integral of K against Q, plus corrections of order z-squared times Lambda-QCD squared.
+
+The kernel is known in perturbation theory and includes the Altarelli–Parisi splitting functions at next-to-leading order.
+
+Lattice results for the nucleon isovector momentum fraction agree with phenomenological fits from CT18 and NNPDF, within uncertainties.

@@ -1,0 +1,5 @@
+A useful practical rule. For any amplitude containing a fermion line, write the spinors and vertices from right to left, following the arrow on the diagram backwards.
+
+An incoming fermion contributes a u spinor on the right. An outgoing fermion contributes a u-bar on the left. Vertices and propagators get sandwiched in between, in the order they appear along the line. The prescription is strange at first, and completely mechanical once learned.
+
+Many physicists have spent an unreasonable portion of their PhD worrying about which direction to write a fermion line. The answer is: against the arrow. Always.

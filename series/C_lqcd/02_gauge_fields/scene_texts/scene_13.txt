@@ -1,0 +1,3 @@
+At very strong coupling, the Wilson action weights links toward random SU(3) elements. Expand the exponential in powers of beta, use the group integrals from earlier, and the leading contribution to the Wilson loop is the minimal tiling of its interior by plaquettes.
+
+That gives an area law automatically. Confinement emerges trivially in this limit. The nontrivial question is whether it survives as beta grows.

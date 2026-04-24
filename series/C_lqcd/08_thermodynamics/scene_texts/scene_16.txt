@@ -1,0 +1,5 @@
+The Electron-Ion Collider, coming online at Brookhaven in the 2030s, will probe the internal structure of the nucleon and of nuclei at unprecedented resolution. Gluon PDFs. Generalized parton distributions. Transverse-momentum-dependent PDFs. Exotic hadrons.
+
+Lattice QCD and the EIC are a natural partnership. The lattice predicts what the EIC should see. The EIC measures what the lattice must reproduce.
+
+Much of today's hadron structure lattice physics is explicitly targeted at this machine.

@@ -1,0 +1,5 @@
+Next video. How do you actually draw from the Boltzmann distribution, or any target known only up to a constant, without being able to invert or bound it?
+
+The answer is a Markov chain that stealths its way to the right distribution by construction. We meet Metropolis-Hastings, the single most important algorithm in computational statistical physics.
+
+One algorithm. Sixty years. A million papers. We'll do it in eight minutes.

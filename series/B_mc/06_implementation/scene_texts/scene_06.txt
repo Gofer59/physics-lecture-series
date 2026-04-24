@@ -1,0 +1,3 @@
+When sites interact only with nearest neighbours, colour them black and white. All black sites can be updated simultaneously. Their neighbours are white, which you do not touch. Then update all white.
+
+Two half-sweeps of embarrassingly parallel work per Monte Carlo sweep. In d dimensions, you need two to the d colours to enforce the independence. Works for Metropolis and heat-bath. Fundamental to GPU Ising codes.

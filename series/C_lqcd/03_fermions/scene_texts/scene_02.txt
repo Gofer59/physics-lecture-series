@@ -1,0 +1,3 @@
+Fermion fields anticommute, so their path integral uses Grassmann variables. The fundamental identity of Matthews and Salam: integrating a Grassmann Gaussian with kernel M produces the determinant of M itself — not one over the square root.
+
+So the fermion path integral gives det of D plus m as a weight. This determinant is a functional of the gauge field, and computing it is the central computational challenge of dynamical lattice QCD.

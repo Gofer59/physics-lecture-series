@@ -1,0 +1,5 @@
+Computing a cross section means squaring an amplitude, summing over spins, and collapsing the result using the spin-sum identities from the Dirac lecture. What remains is a trace of a long string of gamma matrices.
+
+A small library of identities — trace of the identity equals four, trace of two gammas equals four times the metric, trace of an odd number of gammas is zero, trace with gamma-five gives an epsilon tensor — reduces any unpolarized QED amplitude to a few lines of arithmetic.
+
+Trace technology is the kind of thing that sounds terrifying until someone prints you a cheat sheet. Then it is just algebra with extra steps.

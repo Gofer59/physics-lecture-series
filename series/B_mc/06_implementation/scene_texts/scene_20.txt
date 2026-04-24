@@ -1,0 +1,5 @@
+The natural continuation of this series is lattice quantum chromodynamics. The most demanding application of Monte Carlo methods ever attempted.
+
+Quark and gluon fields on a spacetime grid. Hamiltonian Monte Carlo integrating through gauge symmetry. Correlated fits with pyerrors extracting hadron masses. Cluster-free critical slowing down battled with multigrid. Everything we've built is about to be stress-tested at the edge of what computation can do.
+
+Monte Carlo learned on spins. Grew up on QCD. See you there.

@@ -1,0 +1,5 @@
+Quantum chromodynamics is the strong-force piece. Six quark flavours, eight gluons, one coupling that runs fast.
+
+At high energies, quarks scatter almost freely. That is asymptotic freedom. At low energies, they are confined into colourless hadrons.
+
+Both regimes live in the same Lagrangian. They look different only because the coupling is different.

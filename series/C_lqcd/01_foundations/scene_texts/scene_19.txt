@@ -1,0 +1,3 @@
+Let us collect what we built. The Euclidean path integral on a lattice is a non-perturbative definition of quantum field theory. It is simultaneously a UV and an IR regulator.
+
+Euclidean correlators encode the energy spectrum. The transfer matrix guarantees a quantum interpretation. Statistical mechanics provides the computational engine. The continuum limit lives at a critical point, reached for QCD by asymptotic freedom. And Symanzik improvement keeps errors small.

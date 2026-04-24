@@ -1,0 +1,3 @@
+Staggered fermions come in multiples of four. To get two light quarks and one strange quark, you must take a square root and a fourth root of the staggered determinant.
+
+This rooting is mathematically uncontrolled at finite a — it is not obviously a local operation. But extensive numerical evidence suggests it recovers the correct continuum theory. The lattice community has made peace with a fourth root that may or may not be local. Ask again in ten years.

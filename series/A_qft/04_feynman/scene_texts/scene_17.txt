@@ -1,0 +1,3 @@
+Take two Dirac fermions scattering via the exchange of a scalar — the Yukawa model. At tree level, two diagrams contribute. A t-channel scalar exchange, and a u-channel scalar exchange — because the fermions are identical.
+
+The amplitude squared and averaged over spins produces the Yukawa potential in the non-relativistic limit. An attractive force that falls off like a screened Coulomb, with range given by one over the scalar mass. This was Yukawa's original model of the nuclear force.

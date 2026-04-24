@@ -1,0 +1,5 @@
+Kenneth Wilson, in the 1970s, reinterpreted renormalization as an active physical process.
+
+Start at a high cutoff Lambda. Integrate out all field modes between b times Lambda and Lambda. What comes out is an effective action at the lower scale, with shifted couplings and new operators.
+
+Operators sort themselves. Relevant ones grow as we flow to the infrared. Marginal ones stay the same. Irrelevant ones shrink. Universality is the consequence: many different ultraviolet theories flow to the same infrared fixed point.

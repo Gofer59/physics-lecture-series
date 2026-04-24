@@ -1,0 +1,7 @@
+A microsecond after the Big Bang, the universe was hotter than ten to the twelfth kelvin. No protons, no neutrons, no bound hadrons — just deconfined color charges in a hot soup. A quark–gluon plasma.
+
+Today, heavy-ion colliders at RHIC and the LHC briefly recreate it.
+
+To interpret what they measure — flow, viscosity, screening, equation of state — we need first-principles QCD at finite temperature. This is the lattice's other flagship application.
+
+Your morning coffee is roughly ten to the minus nine times the temperature at which QCD deconfines. Drink it with appreciation.

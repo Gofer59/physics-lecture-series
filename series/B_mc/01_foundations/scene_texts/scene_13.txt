@@ -1,0 +1,3 @@
+If your observable has odd structure around some symmetry point, pair each sample with its mirror image. The two are perfectly anti-correlated for the odd part. So the odd-component variance cancels exactly.
+
+You get the same mean for half the computational cost, assuming the odd part dominated the variance. A free lunch, when symmetry is on your side.

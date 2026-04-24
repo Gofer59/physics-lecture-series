@@ -1,0 +1,5 @@
+Quantum Electrodynamics is the theory of electrons, positrons, and photons. It predicts the anomalous magnetic moment of the electron to twelve significant figures, matching experiment at every one. It is arguably the most precisely tested theory in the history of science.
+
+All of that precision comes from a Lagrangian that fits on a single line — built from a Dirac fermion, coupled to a vector field, through a local U(1) gauge symmetry.
+
+If astrology were accurate to three decimals, we would call it a science. QED has twelve, and physicists still want more.

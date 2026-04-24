@@ -1,0 +1,5 @@
+The lattice path integral has astronomical dimensionality. Millions of variables per configuration. No deterministic method can sum them.
+
+Monte Carlo sampling draws configurations with probability proportional to the Boltzmann weight. What would take longer than the age of the universe deterministically becomes tractable statistically.
+
+This is the bridge from quantum field theory to computation.

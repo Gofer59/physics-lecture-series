@@ -1,0 +1,5 @@
+A realistic lattice has on the order of ten million link variables. Each is a three by three SU(3) matrix. The partition function is an integral over all of them, weighted by e to the minus S.
+
+Ten million links. Direct integration would finish approximately after the heat death of the universe.
+
+So we do not integrate. We sample. Generate a Markov chain of configurations distributed according to e to the minus S over Z, then average observables over the chain. Monte Carlo turns an impossible integral into a tractable simulation.

@@ -1,0 +1,5 @@
+The electroweak group is SU(2)-left times U(1)-hypercharge. Four gauge bosons, all massless at the Lagrangian level.
+
+A scalar doublet, the Higgs, acquires a vacuum expectation value of 246 GeV. Three of its four components are eaten by the W-plus, the W-minus, and the Z, which become massive.
+
+The remaining component is a physical scalar particle with a mass of 125 GeV. It was discovered at the LHC in 2012.

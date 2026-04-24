@@ -1,0 +1,5 @@
+Build a matrix of correlators C sub i j of t, using several operators with the same quantum numbers. Solve the generalized eigenvalue problem: C of t times v sub n equals lambda sub n times C of t-zero times v sub n.
+
+The eigenvalues lambda sub n decay like e to the minus E sub n times t. One calculation, a whole tower of energy levels. The eigenvectors build the optimal operator for each state.
+
+This is how modern calculations extract excited hadrons like the Roper resonance and exotic hybrids.

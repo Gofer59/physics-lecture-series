@@ -1,0 +1,3 @@
+The Ward identity says: contract any QED amplitude with the momentum of an external photon, and you get zero. This is the statement of current conservation, at the quantum level, inherited from gauge invariance.
+
+Operationally, it lets you replace the polarization sum over physical photon states with minus the Minkowski metric. That makes every calculation manifestly covariant. Any unphysical longitudinal polarization states decouple automatically.

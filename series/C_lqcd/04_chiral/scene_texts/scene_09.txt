@@ -1,0 +1,3 @@
+In the continuum, the axial U(1) symmetry is broken by the quantum anomaly. The divergence of the axial current picks up an F-F-tilde term, proportional to N-f over sixteen pi squared.
+
+Ginsparg–Wilson fermions reproduce this anomaly exactly, from the Jacobian of the modified chiral transformation. The same modification that gives exact chiral symmetry on the lattice also gives the correct anomalous breaking of its U(1) subgroup. Nothing is lost.

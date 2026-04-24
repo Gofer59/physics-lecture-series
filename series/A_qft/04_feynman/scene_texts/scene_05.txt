@@ -1,0 +1,3 @@
+What we really want is a correlation function: the vacuum expectation value of a time-ordered product of fields, in the full interacting theory.
+
+A master formula relates this to the free-theory vacuum expectation value of the same product, multiplied by Dyson's series. The denominator cancels all the vacuum bubbles. We have reduced the interacting theory to free-theory calculations, plus some combinatorics.

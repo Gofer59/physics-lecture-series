@@ -1,0 +1,3 @@
+Phase transitions live in the thermodynamic limit. Your lattice is finite. Singularities are rounded into smooth peaks whose height scales with system size.
+
+The finite-size scaling hypothesis relates an observable on a lattice of side L to a universal function of reduced temperature times L to the one over nu. Collapse curves from different L, and the exponents are in the collapse.

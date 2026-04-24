@@ -1,0 +1,5 @@
+Naive error bars on correlated samples are wrong. They understate the uncertainty by a factor of square root of two tau-int. That is not a rounding issue.
+
+The standard fix is binning — average over bin sizes much larger than tau-int until the error stabilizes. Jackknife leaves one out at a time. Bootstrap resamples with replacement.
+
+Every modern lattice paper reports one of these with explicit autocorrelation correction. Getting the error bar right matters as much as getting the mean.

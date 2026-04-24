@@ -1,0 +1,5 @@
+For pure gauge theory the Metropolis algorithm is very direct. Pick a link. Propose a multiplicative update — U goes to X times U, with X near the identity. Compute the change in action. Only the four staples touching that link contribute, so it is cheap.
+
+Accept with probability minimum of one and e to the minus delta S. Reject means you leave U alone. Sweep through every link, then repeat.
+
+Simple, exact, and fully local. This is how lattice simulations started in 1980.

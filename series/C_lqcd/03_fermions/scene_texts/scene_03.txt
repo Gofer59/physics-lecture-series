@@ -1,0 +1,3 @@
+Expand the naive Dirac operator in Fourier space. It contains sine of p-mu times a, which vanishes at both p-mu equals zero and p-mu equals pi over a. Two zeros per direction.
+
+In four dimensions, two to the fourth is sixteen — sixteen massless fermion species. This is not a trivial bug. It is a structural consequence of using a symmetric discretization on a compact momentum lattice. The lattice insists on pairing particles with doublers.

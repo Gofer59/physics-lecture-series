@@ -1,0 +1,5 @@
+The W mass is the coupling g times v over two, coming in at about 80.4 GeV. The Z mass involves a combination of g and the hypercharge coupling, and it comes out to 91.2 GeV.
+
+The photon remains massless, because one generator of the original group is left unbroken. The ratio of W and Z masses defines the Weinberg angle.
+
+Its measured value and its predicted value agree at the per-mille level. Not a fit. A check.

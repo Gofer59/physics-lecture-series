@@ -1,65 +1,161 @@
-# QFT-V07 Narration — Renormalization
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_A_qft/qft_v07_slides.md -->
+# QFT-V07 — Renormalization | Narration Transcript
 
 ## Scene 01
-TODO
+
+Compute one loop in QED and you get infinity. The integral over the momentum of a virtual particle diverges at high energy. For decades this looked like a fatal defect.
+
+The resolution, worked out in the late 1940s, is conceptually radical. The parameters in the Lagrangian are not the parameters you measure. The bare mass and charge are divergent. The physical mass and charge are finite. Renormalization is the process of trading one for the other.
+
+Dirac died hating renormalization. Feynman called it hocus-pocus. It works to twelve decimal places. Both things are true.
 
 ## Scene 02
-TODO
+
+Loop integrals of the form integral of d-four-k over k squared minus m squared, times k minus p squared minus m squared, behave like the logarithm of the upper cutoff at large k.
+
+That is a logarithmic ultraviolet divergence. Higher-dimension integrals diverge polynomially. The divergences are sensitive only to the ultraviolet — the very short-distance behaviour of the theory — and they parametrize our ignorance of physics at arbitrarily small scales.
+
+Renormalization is how we package that ignorance.
 
 ## Scene 03
-TODO
+
+Before absorbing divergences, we have to make them mathematically manageable. That is regularization.
+
+Several schemes exist. A hard cutoff at momentum Lambda is simple but breaks symmetries. Pauli-Villars subtracts heavy fictitious particles. Dimensional regularization computes in d equal to four minus two epsilon dimensions, replacing infinities with poles in epsilon.
+
+Dim reg is the industry standard. It preserves Lorentz invariance and gauge invariance automatically, and that matters.
 
 ## Scene 04
-TODO
+
+Dimensional regularization boils down to one master integral. An integral of one over k squared minus Delta, to the power n, in d dimensions, equals a combinatorial prefactor times a gamma function of n minus d over two, divided by a gamma function of n, times Delta to a power.
+
+Set d equal to four minus two epsilon. The ultraviolet divergence shows up as a one-over-epsilon pole inside the gamma function.
+
+The pole is the divergence, made explicit. Everything we renormalize is a one-over-epsilon subtraction.
 
 ## Scene 05
-TODO
+
+The first classic loop in QED is the photon self-energy, also called vacuum polarization. A photon briefly disappears into a virtual electron-positron pair, then reassembles itself.
+
+The amplitude is a function of the photon's momentum squared. The Ward identity forces it to be proportional to q squared times g-mu-nu minus q-mu q-nu.
+
+The coefficient has a one-over-epsilon pole — a UV divergence. We absorb it into the electric charge.
 
 ## Scene 06
-TODO
+
+After renormalization, the photon self-energy has a finite remainder that depends logarithmically on energy. Sum those corrections to all orders and the coupling runs.
+
+At very low energy — photons scattering off weak fields — alpha equals one over 137. At the Z-boson mass scale of 91 GeV, alpha has climbed to about one over 128.
+
+The coupling runs because virtual electron-positron pairs screen the bare charge. The closer you look, the more bare charge you see.
 
 ## Scene 07
-TODO
+
+The electron propagator also gets one-loop corrections. An electron emits and reabsorbs a photon. The resulting self-energy shifts the pole of the propagator.
+
+The bare mass is divergent. The residue of the pole is divergent. But they arrange themselves so that the physical mass, defined as the pole position, comes out finite. Observable amplitudes come out finite too.
+
+The pole of the dressed propagator is the physical mass. That is a renormalization condition.
 
 ## Scene 08
-TODO
+
+We split the Lagrangian into two pieces. A renormalized part, plus a counterterm part. The counterterms have exactly the structure needed to cancel divergences order by order in perturbation theory.
+
+In QED there are only three of them. Delta-two for the electron field, delta-three for the photon, and delta-one for the vertex. The Ward identity forces delta-one equal to delta-two.
+
+That is a massive simplification. It is why QED renormalizes at all.
 
 ## Scene 09
-TODO
+
+Renormalization requires conditions — a choice of what "physical" means.
+
+Two common choices. On-shell scheme, where m is the pole mass and e is the Thomson-limit charge. And MS-bar, where you simply subtract the one-over-epsilon poles plus a universal constant.
+
+On-shell parameters are physically meaningful. MS-bar parameters are easier to compute with, but depend on an arbitrary scale mu. Observables have to be independent of the scheme. Choosing one is bookkeeping, not physics.
 
 ## Scene 10
-TODO
+
+Because bare parameters are fictional and physical couplings depend on the renormalization scale mu, we can ask how the coupling evolves as we change mu.
+
+The answer is the beta function. Mu times the derivative of g with respect to mu equals beta of g.
+
+In QED, beta is positive and alpha grows with energy. In QCD, beta is negative and the coupling shrinks with energy. That single sign difference is the most consequential fact in the Standard Model.
 
 ## Scene 11
-TODO
+
+In 1973, Gross, Wilczek, and Politzer discovered that non-abelian gauge theories can have a negative beta function. The coupling shrinks at high energy.
+
+For QCD, the beta function is proportional to minus eleven times a gauge factor, minus four times the number of fermion flavours. For sixteen or fewer flavours it is negative. At asymptotically high energies, quarks and gluons behave almost as free particles. At low energies the coupling grows, and confinement takes over.
+
+Asymptotic freedom is the answer to the question: why are quarks free inside protons but glued shut when you try to take them out? For this answer, three people shared a Nobel Prize. It is a good answer.
 
 ## Scene 12
-TODO
+
+Ultraviolet is not the only problem. Soft photon emission — an electron radiating a photon whose energy goes to zero — produces logarithmic divergences in amplitudes too.
+
+These are infrared divergences. They are physical, in a funny sense: no real detector has infinite energy resolution. The Bloch-Nordsieck theorem, and later KLN, say that summing virtual corrections with real soft emission gives an infrared-finite result.
+
+The detector forgets the soft photons. The amplitude forgets them too.
 
 ## Scene 13
-TODO
+
+Not every theory is renormalizable. A simple dimensional rule tells you in advance.
+
+If every coupling in the Lagrangian has mass dimension greater than or equal to zero, only finitely many types of divergence appear, and a finite number of counterterms absorbs them all. If any coupling has negative mass dimension, new counterterms appear at every order.
+
+QED, QCD, and phi-to-the-fourth are renormalizable. The Fermi theory of weak interactions, and general relativity, are not.
 
 ## Scene 14
-TODO
+
+Non-renormalizable does not mean useless. It means the theory is an effective description, valid below some energy scale.
+
+Fermi theory of beta decay is fine well below the W-boson mass. Chiral perturbation theory for pions is fine below about a GeV. General relativity as a quantum theory is fine below the Planck scale.
+
+The modern view is that all field theories are effective theories. There is no reason to expect any theory to be valid at all energies.
 
 ## Scene 15
-TODO
+
+Kenneth Wilson, in the 1970s, reinterpreted renormalization as an active physical process.
+
+Start at a high cutoff Lambda. Integrate out all field modes between b times Lambda and Lambda. What comes out is an effective action at the lower scale, with shifted couplings and new operators.
+
+Operators sort themselves. Relevant ones grow as we flow to the infrared. Marginal ones stay the same. Irrelevant ones shrink. Universality is the consequence: many different ultraviolet theories flow to the same infrared fixed point.
 
 ## Scene 16
-TODO
+
+Scalar particles have no symmetry protecting their mass. The Higgs, at 125 GeV, receives quadratic corrections of order the cutoff squared.
+
+If the cutoff is the Planck scale, those corrections are thirty-four orders of magnitude larger than the physical Higgs mass. Only a cancellation fine-tuned to one part in ten to the thirty-four can save it. Fermion masses are safe — chiral symmetry protects them. The photon is protected by gauge invariance.
+
+The hierarchy problem is why physicists spent thirty years expecting to find supersymmetric particles at the LHC. So far, no such luck.
 
 ## Scene 17
-TODO
+
+Schwinger computed the first QED correction to the electron's magnetic moment in 1948. g equals two, plus alpha over pi. About zero point zero zero one one six.
+
+Today the calculation has been pushed to five loops, involving more than twelve thousand Feynman diagrams. The experimental measurement from Penning traps agrees with theory to twelve figures.
+
+That is what renormalization buys you. Not just finite answers, but the most precisely tested theory in human history.
 
 ## Scene 18
-TODO
+
+The deep lesson: a Lagrangian is not a description of physics at all scales. It is an effective description at one scale, and the parameters in it run with the scale.
+
+What we call the mass of the electron implicitly means the mass at the scale we measured it. The same theory at different energies looks different.
+
+Renormalization is not a fix. It is a feature. It is how physics becomes scale-aware.
 
 ## Scene 19
-TODO
+
+Loops are divergent. Regularization makes them tractable, and dimensional regularization does so without violating symmetries.
+
+Counterterms absorb the divergences. The Ward identity constrains them in QED. Running couplings come from the beta function. QED screens, QCD is asymptotically free. Power counting distinguishes renormalizable theories from effective ones.
+
+Wilson reinterpreted the entire framework as integrating out high-energy modes, and put scale at the centre of modern physics.
 
 ## Scene 20
-TODO
+
+We built QED on a U(1) gauge symmetry. The Standard Model uses bigger groups. SU(3) for colour, and SU(2) times U(1) for the electroweak sector.
+
+The resulting Yang-Mills theories have gauge bosons that carry charge and self-interact. Next episode generalizes gauge invariance to non-abelian groups.
+
+We introduce ghost fields and BRST symmetry, explain asymptotic freedom from the structure-constant signs, and show how spontaneous symmetry breaking gives mass to the W and Z bosons via the Higgs mechanism.

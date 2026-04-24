@@ -1,0 +1,3 @@
+Wrap a Wilson line once around the periodic time direction. That closed line — the Polyakov loop — is gauge-invariant, and its expectation value is related to the free energy of a single static quark.
+
+If it is zero, putting one quark into the vacuum costs infinite energy. That is confinement. If it is nonzero, the quark is free. The Polyakov loop is an order parameter.

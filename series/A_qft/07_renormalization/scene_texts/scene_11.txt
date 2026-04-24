@@ -1,0 +1,5 @@
+In 1973, Gross, Wilczek, and Politzer discovered that non-abelian gauge theories can have a negative beta function. The coupling shrinks at high energy.
+
+For QCD, the beta function is proportional to minus eleven times a gauge factor, minus four times the number of fermion flavours. For sixteen or fewer flavours it is negative. At asymptotically high energies, quarks and gluons behave almost as free particles. At low energies the coupling grows, and confinement takes over.
+
+Asymptotic freedom is the answer to the question: why are quarks free inside protons but glued shut when you try to take them out? For this answer, three people shared a Nobel Prize. It is a good answer.

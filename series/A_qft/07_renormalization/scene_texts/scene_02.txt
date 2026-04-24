@@ -1,0 +1,5 @@
+Loop integrals of the form integral of d-four-k over k squared minus m squared, times k minus p squared minus m squared, behave like the logarithm of the upper cutoff at large k.
+
+That is a logarithmic ultraviolet divergence. Higher-dimension integrals diverge polynomially. The divergences are sensitive only to the ultraviolet — the very short-distance behaviour of the theory — and they parametrize our ignorance of physics at arbitrarily small scales.
+
+Renormalization is how we package that ignorance.

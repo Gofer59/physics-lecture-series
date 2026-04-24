@@ -1,0 +1,3 @@
+Every term in the Dyson expansion, after applying Wick's theorem, is a sum of products of propagators, connecting external points through interaction vertices.
+
+Draw each such product as a graph. Dots for external points. Dots for vertices. Lines for propagators. The graph and the analytic expression are in one-to-one correspondence. The Feynman diagram is literally a picture of the Wick contractions.

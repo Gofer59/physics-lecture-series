@@ -1,0 +1,5 @@
+Normalizing flows learn to generate gauge configurations directly, sidestepping Markov chain equilibration. Score-based models accelerate near-chiral sampling. Neural-network surrogates reconstruct x-dependent PDFs from noisy moments. Attention-based architectures extract features from correlators.
+
+Machine learning for lattice QCD is moving from toy-model demonstrations — the Schwinger model, phi to the fourth — toward production simulations.
+
+Twenty years ago, lattice papers had no neural networks. Twenty years from now, they may have nothing else.

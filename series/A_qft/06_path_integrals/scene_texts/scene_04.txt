@@ -1,0 +1,5 @@
+Z of J contains both connected and disconnected diagrams. Take its logarithm — minus i times log of Z — and call the result W of J.
+
+W of J generates only the connected correlators. This is the same simplification that cancelled vacuum bubbles in the canonical picture, now rephrased as: just take a log.
+
+Connected diagrams are the ones that matter, and they are the functional derivatives of W. Everything else was bookkeeping.

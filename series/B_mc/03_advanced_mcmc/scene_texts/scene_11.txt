@@ -1,0 +1,3 @@
+The algorithm. Refresh momentum from a Gaussian. Run L leapfrog steps of size epsilon. Propose the final q and p. Accept with the Metropolis ratio based on energy difference. The correction compensates for leapfrog's energy drift.
+
+Scaling: optimal epsilon goes as d to the minus one-quarter. You need order d to the one-quarter steps for a given error. Optimal acceptance rate is about zero point six five one. For smooth, high-dimensional targets, HMC dominates.

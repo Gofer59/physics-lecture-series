@@ -1,0 +1,3 @@
+Treat optimisation as sampling from a temperature-dependent Boltzmann distribution. Raise f to an inverse temperature. As that inverse temperature goes to infinity, the distribution concentrates on the minima of V.
+
+Run MCMC with a schedule that slowly cools. No gradients required. Works on discrete configurations, combinatorial problems, travelling salesman, everything that is otherwise intractable.

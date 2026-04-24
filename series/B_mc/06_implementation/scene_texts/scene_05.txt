@@ -1,0 +1,5 @@
+The easiest kind of parallelism. Run P independent replicas with different random seeds. Average at the end. Error drops by the square root of P. Zero inter-processor communication. Perfect scaling.
+
+Great for error estimation via many short runs. For averaging over quenched disorder. And as the communication substrate of parallel tempering. When it works, nothing beats it.
+
+The first rule of parallel Monte Carlo. If you can run independent copies, do that. Then have lunch.

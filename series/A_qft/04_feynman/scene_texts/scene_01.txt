@@ -1,0 +1,5 @@
+Every textbook of particle physics is full of little cartoons: straight lines, wavy lines, curly lines, joined at vertices. These are not mnemonics, and they are not illustrations. Each diagram is an algorithm — a precise instruction to write down a contribution to a scattering amplitude.
+
+Compute enough of them, and you can predict the outcome of a collision at the LHC to six decimal places. The story of this episode is how an abstract perturbation series, in the interaction picture, becomes a set of pictures anyone can draw on a napkin.
+
+Feynman diagrams are how physicists have been getting away with drawing rather than computing since 1949. This is not a bug.

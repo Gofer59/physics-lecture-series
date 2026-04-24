@@ -1,0 +1,3 @@
+In the Boltzmann distribution, low-energy states carry enormous weight, and high-energy states are astronomically suppressed. Sample uniformly from state space and almost every sample lives where the Boltzmann factor is essentially zero.
+
+Reweighting is catastrophic. The handful of low-energy samples, if any, dominate the entire estimate. Naive sampling is not just inefficient. It is pathological.

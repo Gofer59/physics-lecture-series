@@ -1,0 +1,3 @@
+Take one more Legendre transform, from W of J to Gamma of phi classical, and you land on the effective action. It generates the one-particle-irreducible correlation functions — the true building blocks, because every reducible diagram is a product of irreducible ones.
+
+At tree level, the effective action equals the classical action. Loop corrections, resummed, give Gamma its full quantum content. Its effective potential, evaluated at its minimum, tells you the actual ground state of the theory.

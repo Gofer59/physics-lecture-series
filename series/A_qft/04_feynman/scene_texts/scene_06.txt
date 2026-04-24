@@ -1,0 +1,3 @@
+The combinatorial key is Wick's theorem. A time-ordered product of free fields equals a normal-ordered version of the same product, plus a sum over all possible pairwise contractions.
+
+A contraction is just the Feynman propagator between the two points. Because normal-ordered operators annihilate the vacuum, only the fully contracted terms survive in a vacuum expectation value. And those are exactly sums of propagators, tied together.

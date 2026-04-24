@@ -1,0 +1,7 @@
+Parton distribution functions are defined through matrix elements of field operators separated along the light cone. The light cone is a feature of Minkowski spacetime. On a Euclidean lattice, the light cone collapses to a point.
+
+You cannot directly compute a PDF on a Euclidean lattice. This is not a technical inconvenience. It is a structural feature of the formalism.
+
+For decades the lattice could compute only the lowest few Mellin moments, and only up to the third moment before hypercubic-group operator mixing became uncontrollable.
+
+The lattice's oldest unspoken problem: we went Euclidean for the path integral, and the light cone refused to come with us.

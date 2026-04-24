@@ -1,0 +1,5 @@
+Schwinger computed the first QED correction to the electron's magnetic moment in 1948. g equals two, plus alpha over pi. About zero point zero zero one one six.
+
+Today the calculation has been pushed to five loops, involving more than twelve thousand Feynman diagrams. The experimental measurement from Penning traps agrees with theory to twelve figures.
+
+That is what renormalization buys you. Not just finite answers, but the most precisely tested theory in human history.

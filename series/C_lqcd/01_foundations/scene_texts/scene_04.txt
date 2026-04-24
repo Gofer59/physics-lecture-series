@@ -1,0 +1,3 @@
+After the Wick rotation, a quantum field theory looks exactly like classical statistical mechanics in four dimensions. Field configurations play the role of spin configurations. The Boltzmann weight e to the minus S sub E tells you which ones matter.
+
+Importance sampling — the Metropolis algorithm — can now visit the configurations that dominate the partition function. Two fields, one framework.

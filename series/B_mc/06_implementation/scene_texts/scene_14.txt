@@ -1,0 +1,3 @@
+Two uniform numbers in, two standard normals out. The square root of minus two times the logarithm of U-one, times the cosine of two pi U-two. And the sine counterpart. Elegant and exact. Costs a logarithm and a trig call per pair.
+
+The polar variant avoids trig via rejection in a disc. For general mean and variance, shift and scale. Y equals mu plus sigma times X. Every Monte Carlo code uses this.

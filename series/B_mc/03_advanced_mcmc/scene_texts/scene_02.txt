@@ -1,0 +1,3 @@
+When you can sample from each conditional distribution in closed form, the distribution of one coordinate given all the others, Gibbs sampling is the natural algorithm.
+
+Cycle through coordinates. Replace each with a draw from its full conditional. Every update is accepted by construction. It is Metropolis-Hastings with acceptance identically one. Powerful for conjugate Bayesian models, essential for hierarchical structures.

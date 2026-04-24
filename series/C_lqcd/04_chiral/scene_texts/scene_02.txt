@@ -1,0 +1,3 @@
+With N-f massless flavors, QCD has a classical symmetry: SU(N-f) left, times SU(N-f) right, times U(1) vector, times U(1) axial. The vector SU(N-f) and U(1) vector survive — they are flavor rotations and baryon number.
+
+The axial SU(N-f) is spontaneously broken by the vacuum, giving N-f squared minus one Goldstone bosons. The U(1) axial is broken by the quantum anomaly — which is why the eta-prime is unexpectedly heavy, rather than a ninth light pseudoscalar.

@@ -1,0 +1,5 @@
+Generalized parton distributions extend PDFs to include momentum transfer between initial and final states. They depend on three variables: x, the longitudinal momentum fraction; xi, the skewness; and t, the total momentum transfer squared.
+
+At xi equals zero the Fourier transform in t gives a two-dimensional impact-parameter density. That is literally the quark distribution projected onto the transverse plane.
+
+GPDs are nucleon tomography.

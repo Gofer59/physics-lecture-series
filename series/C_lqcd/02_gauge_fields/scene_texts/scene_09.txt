@@ -1,0 +1,3 @@
+Take a rectangular path of spatial extent R and temporal extent T. Multiply the link variables around it. Trace over color. This is the Wilson loop.
+
+In physical terms, it measures the work done by the gauge field as a quark–antiquark pair is created, separated by R, held for a time T, and annihilated. Its expectation value encodes the static potential between two color charges.

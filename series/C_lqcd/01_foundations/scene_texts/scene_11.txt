@@ -1,0 +1,3 @@
+To recover continuous spacetime we need a to go to zero while keeping physical masses fixed. In lattice units, that means the correlation length must diverge.
+
+The system must sit at a second-order phase transition. Continuum quantum field theory is, in Wilson's words, a critical phenomenon. Universality then guarantees the limit depends only on symmetries — not on lattice details.

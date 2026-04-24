@@ -1,0 +1,3 @@
+For QCD, the required critical point sits at zero bare coupling, because the theory is asymptotically free. Increasing the inverse coupling beta makes the lattice spacing exponentially smaller.
+
+This is not a coincidence. It is precisely why the lattice works for QCD and gets stuck for theories like QED. Asymptotic freedom: the rare case where the universe does exactly what we would like.

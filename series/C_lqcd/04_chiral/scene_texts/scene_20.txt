@@ -1,0 +1,3 @@
+Coming up next: we have the action, the fermion formulation, and the chiral structure. What is missing is how to actually sample gauge configurations on a computer.
+
+Next time: Metropolis for pure gauge theory, heat bath and overrelaxation, the fermion determinant as a pseudofermion action, and Hybrid Monte Carlo — the algorithm that made dynamical lattice QCD possible. The lattice is well-defined. Good. Now the hard part: getting a computer to explore it without getting stuck forever.

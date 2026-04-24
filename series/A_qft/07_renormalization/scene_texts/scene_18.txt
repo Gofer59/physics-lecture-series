@@ -1,0 +1,5 @@
+The deep lesson: a Lagrangian is not a description of physics at all scales. It is an effective description at one scale, and the parameters in it run with the scale.
+
+What we call the mass of the electron implicitly means the mass at the scale we measured it. The same theory at different energies looks different.
+
+Renormalization is not a fix. It is a feature. It is how physics becomes scale-aware.

@@ -1,0 +1,3 @@
+Pick the structure to match the access pattern. Arrays for constant-time random access. Spins, neighbour tables, Boltzmann factor lookups. Linked lists for constant-time insert and delete without random access. Active-site lists in event-driven simulations.
+
+Trees and heaps for logarithmic-time priority operations. Continuous-time Monte Carlo. Circular buffers for streaming autocorrelation. Each is a trade-off. No structure dominates.

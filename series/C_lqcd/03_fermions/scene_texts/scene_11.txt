@@ -1,0 +1,3 @@
+Kaplan's idea, refined by Shamir: work in five dimensions, with a Wilson-like action. Left-handed chiral modes live on one four-dimensional boundary, right-handed modes on the other.
+
+The chiralities are spatially separated, so their mixing is exponentially suppressed in the fifth-dimensional extent. Take the fifth extent large enough, and you recover overlap-like chiral symmetry. In practice, sixteen to thirty-two layers. Cost scales linearly with that number.

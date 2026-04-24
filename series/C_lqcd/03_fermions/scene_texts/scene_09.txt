@@ -1,0 +1,3 @@
+In 1998, Luscher showed that the Ginsparg–Wilson relation implies an exact symmetry of the massless lattice action. A modified chiral rotation, where gamma-five gets replaced by gamma-five-hat — gamma-five times one minus a D.
+
+This symmetry reduces to the continuum rotation as a goes to zero. Every Ward identity that follows from chiral symmetry holds exactly on the lattice. The no-go theorem was outflanked by redefining what chiral means.

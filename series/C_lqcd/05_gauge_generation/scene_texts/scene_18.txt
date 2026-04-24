@@ -1,0 +1,7 @@
+Modern efforts apply normalizing flows, score-based models, and neural-network proposals to help HMC sample more efficiently. The targets are topological freezing and near-chiral simulations.
+
+Most methods are still in proof-of-concept for full QCD. For toy models like the Schwinger model or phi to the fourth, they already beat traditional sampling.
+
+Machine learning for lattice QCD is a rapidly moving frontier.
+
+The lattice, meet the neural network. Be nice to each other.

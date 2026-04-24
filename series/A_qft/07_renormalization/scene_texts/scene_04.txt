@@ -1,0 +1,5 @@
+Dimensional regularization boils down to one master integral. An integral of one over k squared minus Delta, to the power n, in d dimensions, equals a combinatorial prefactor times a gamma function of n minus d over two, divided by a gamma function of n, times Delta to a power.
+
+Set d equal to four minus two epsilon. The ultraviolet divergence shows up as a one-over-epsilon pole inside the gamma function.
+
+The pole is the divergence, made explicit. Everything we renormalize is a one-over-epsilon subtraction.

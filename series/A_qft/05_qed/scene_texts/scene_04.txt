@@ -1,0 +1,3 @@
+Read them off. The fermion propagator is i over p-slash minus m plus i-epsilon. The photon propagator, in Feynman gauge, is minus i times g-mu-nu, divided by q-squared plus i-epsilon. The interaction vertex is minus i times e times gamma-mu.
+
+External fermions and antifermions get u, v, u-bar, v-bar spinors. External photons get polarization vectors epsilon-mu. Closed fermion loops carry an overall minus sign. That is the complete rulebook for all of QED.

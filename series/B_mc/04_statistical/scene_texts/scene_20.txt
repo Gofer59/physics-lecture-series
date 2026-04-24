@@ -1,0 +1,5 @@
+Next video. What to do when MCMC mixes poorly from the start. Simulated annealing for optimisation. Simulated tempering and parallel tempering to cross barriers. Sequential Monte Carlo for filtering and rare events.
+
+Variational inference as a deterministic, biased, often dramatically faster alternative. Plus expectation-maximisation, the optimisation sibling of VI.
+
+Sometimes the right answer isn't a better chain. It's a different algorithm entirely.

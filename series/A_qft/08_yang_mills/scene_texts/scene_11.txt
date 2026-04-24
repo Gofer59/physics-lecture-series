@@ -1,0 +1,5 @@
+The flip side of asymptotic freedom is low energy. There, the coupling grows, perturbation theory collapses, and quarks cannot be pulled apart.
+
+A linear rising potential traps them. Pull two quarks apart and the energy between them grows like a stretched string, with a tension of roughly 440 MeV squared. Stretch it far enough and it snaps. But instead of free quarks, a new quark-antiquark pair pops out.
+
+Free quarks are not a thing.

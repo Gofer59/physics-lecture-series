@@ -1,0 +1,5 @@
+We established that Monte Carlo is the law of large numbers applied to expectations. Error one over the square root of N, dimension-free.
+
+We saw transformation methods, inverse CDF and Knothe-Rosenblatt. Accept-reject schemes, rejection and ABC. And two handles for variance. Importance sampling with effective sample size as diagnostic, and antithetic and control variates as symmetry-exploiting reducers.
+
+Naive sampling dies in statistical physics. Importance sampling via Boltzmann weighting is the escape hatch.

@@ -1,0 +1,3 @@
+Pick a random seed spin. For each aligned neighbour, add it to the cluster with probability one minus the exponential of minus two beta J. Recurse. Flip every spin in the cluster.
+
+The bond probability is precisely what detailed balance requires. Acceptance is always one. In two-dimensional Ising, the dynamic exponent drops from two point one seven to about zero point two five. Enormous near the critical point. A quiet algorithmic revolution.

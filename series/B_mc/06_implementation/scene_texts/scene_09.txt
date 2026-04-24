@@ -1,0 +1,3 @@
+In one-dimensional Ising, the acceptance of a single flip depends only on whether the two neighbours are aligned and whether the centre matches them. Three cases.
+
+Neighbours differ. Always accept. Neighbours aligned and centre matches, flip with probability p. Neighbours aligned and centre doesn't match, always flip. Encode each case as a Boolean of bit-vectors. All sixty-four systems evolve in constant wall-clock time per site.

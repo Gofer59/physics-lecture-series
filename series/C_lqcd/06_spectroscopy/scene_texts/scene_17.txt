@@ -1,0 +1,5 @@
+Beyond ground-state hadrons lies a rich spectrum. Radial excitations — pi, pi of thirteen hundred, pi of eighteen hundred. Exotic states — the X, Y, Z tetraquarks. Glueballs, predicted but elusive. Hybrid mesons with explicit gluonic content.
+
+The variational method plus smearing machinery extracts their masses.
+
+Lattice predictions for the glueball spectrum drive experimental searches. For candidates like the X of three eight seven two, the lattice tests molecular versus compact tetraquark interpretations.

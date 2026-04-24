@@ -1,0 +1,3 @@
+The anticommuting objects Dirac needed form a structure called the Clifford algebra. In four dimensions, you need at least four matrices, each four-by-four, called the gamma matrices.
+
+They satisfy a simple rule: the anticommutator of any two gammas is twice the Minkowski metric, times the identity. Everything else about Dirac spinors — the boost and rotation generators, the spin of the electron, parity — is derived from this one relation. Clifford algebras are the true fabric of relativistic spin.

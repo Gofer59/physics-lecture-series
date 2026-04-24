@@ -1,0 +1,3 @@
+Run K chains simultaneously at different temperatures. Each chain does ordinary MCMC. Occasionally propose swapping configurations between adjacent-temperature chains. Accept with a ratio of Boltzmann weights. No partition function ratios required. They cancel.
+
+Geometric temperature spacing is often optimal. Trivially parallel across processors. A Monte Carlo practitioner's favourite barrier-crossing tool.

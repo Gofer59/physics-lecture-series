@@ -1,0 +1,3 @@
+Out of psi-bar and psi, sandwiched with products of gamma matrices, one can construct exactly sixteen independent combinations. They group by Lorentz transformation: one scalar, one pseudoscalar which flips sign under parity, four vectors, four axial vectors, and six tensor components.
+
+Every interaction term in every Standard Model Lagrangian is built from these bilinears. QED uses the vector current. The weak interaction famously uses a combination of vector and axial vector — which is why it violates parity.

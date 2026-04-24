@@ -1,0 +1,3 @@
+Fourier-transform the free lattice theory. The propagator becomes one over p-hat squared plus m squared, where the lattice momentum p-hat is two over a times sine of p a over two.
+
+At small momenta this reproduces the continuum. At the edge of the Brillouin zone it bends over. The lattice gives you a UV cutoff at pi over a, and a finite box gives you an IR cutoff as well.

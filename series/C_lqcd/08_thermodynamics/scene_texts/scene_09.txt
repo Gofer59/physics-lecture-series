@@ -1,0 +1,7 @@
+Lattice methods apply to any non-perturbative field theory. A famous application: the Higgs sector.
+
+Is phi to the fourth theory trivial — does its renormalized coupling vanish in the continuum limit? Luscher and Weisz proved yes.
+
+That means the Standard Model Higgs cannot be a truly fundamental theory. There must be new physics at some high scale. The lattice turns a mathematical question into a computational one and gives an upper bound on the Higgs mass consistent with Standard Model perturbativity, about seven to eight hundred GeV. The discovered Higgs at one hundred twenty-five GeV sits comfortably under that bound.
+
+phi to the fourth is trivial. Most physicists would prefer not to call their favorite theories that, but the lattice does not mince words.

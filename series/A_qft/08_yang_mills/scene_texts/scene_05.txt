@@ -1,0 +1,5 @@
+In QED, the field strength is the curl of the potential. In Yang-Mills, there is an extra piece — a commutator of the gauge field with itself, weighted by the structure constants.
+
+This extra term has no analog in electromagnetism. It is the reason gluons self-interact.
+
+The abelian theory is a theory about photons. The non-abelian theory is a theory about photons that bite.

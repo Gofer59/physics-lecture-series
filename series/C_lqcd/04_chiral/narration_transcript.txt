@@ -1,65 +1,121 @@
-# LQCD-V04 Narration — Chiral Symmetry on the Lattice
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_C_lqcd/lqcd_v04_slides.md -->
+# LQCD-V04 — Chiral Symmetry on the Lattice | Narration Transcript
 
 ## Scene 01
-TODO
+
+Massless quarks come in two independent chiralities: left and right. The QCD Lagrangian in the massless limit treats them as two decoupled worlds, related only by color. This is chiral symmetry.
+
+But the physical world has pions that are absurdly light compared to other hadrons. Baryons whose masses refuse to line up in mirror multiplets. A nucleon built almost entirely from binding energy. All of that is chiral symmetry — spontaneously broken by the vacuum. Pions are light because they are the vacuum remembering a broken symmetry. Physics: where a ghost determines the mass spectrum.
 
 ## Scene 02
-TODO
+
+With N-f massless flavors, QCD has a classical symmetry: SU(N-f) left, times SU(N-f) right, times U(1) vector, times U(1) axial. The vector SU(N-f) and U(1) vector survive — they are flavor rotations and baryon number.
+
+The axial SU(N-f) is spontaneously broken by the vacuum, giving N-f squared minus one Goldstone bosons. The U(1) axial is broken by the quantum anomaly — which is why the eta-prime is unexpectedly heavy, rather than a ninth light pseudoscalar.
 
 ## Scene 03
-TODO
+
+The QCD vacuum is a condensate. The expectation value of psi-bar psi is nonzero, around minus 250 MeV cubed. This order parameter transforms nontrivially under axial rotations, so the vacuum does not respect chiral symmetry — even though the Lagrangian does.
+
+The consequence: for two flavors, three Goldstone bosons — the three pions. Their masses vanish in the chiral limit. The Gell-Mann–Oakes–Renner formula gives pion mass squared proportional to quark mass.
 
 ## Scene 04
-TODO
+
+We met this theorem already. Any doubler-free, local, translation-invariant lattice Dirac operator cannot satisfy the standard chiral anticommutator.
+
+For two decades, this seemed to be the final word. Every lattice fermion had to either double, delocalize, or break chiral symmetry explicitly. Wilson broke it. Staggered kept only a U(1) remnant. Something had to give.
 
 ## Scene 05
-TODO
+
+In 1982, in a paper that was immediately forgotten, Ginsparg and Wilson proposed a modified anticommutator. D gamma-five plus gamma-five D equals a times D gamma-five D. The right-hand side is local, and vanishes as a goes to zero.
+
+It is broken at finite a, but in a precisely controlled way — a contact term that affects only coincident points, not the propagator at separation. The physical chiral Ward identities would still hold. Fifteen years is roughly the half-life of a good idea that arrives too early.
 
 ## Scene 06
-TODO
+
+In 1998, Luscher showed the Ginsparg–Wilson relation implies an exact symmetry of the massless action. A modified chiral rotation, where gamma-five gets replaced by gamma-five times one minus a D.
+
+This is not a trick. It is a genuine continuous symmetry, with a conserved current, Ward identities, and all the structure you expect. Nielsen–Ninomiya assumed the naive rotation. Luscher found a better one.
 
 ## Scene 07
-TODO
+
+The Ginsparg–Wilson relation forces the eigenvalues of D to lie on a circle in the complex plane — centered at one over a, with radius one over a. Real eigenvalues sit at two points: exact zero modes on one side, doubler modes on the other.
+
+Complex eigenvalues come in conjugate pairs. As a goes to zero, the circle grows until it becomes the continuum imaginary axis. Chiral structure is literally drawn in the spectrum.
 
 ## Scene 08
-TODO
+
+The zero modes of a Ginsparg–Wilson Dirac operator have definite chirality — either plus one or minus one. Their net count — n-plus minus n-minus — equals the topological charge of the gauge configuration.
+
+This is the Atiyah–Singer index theorem, realized exactly on the lattice. A deep piece of continuum differential geometry is not lost in discretization. It is preserved — by the right choice of fermion action.
 
 ## Scene 09
-TODO
+
+In the continuum, the axial U(1) symmetry is broken by the quantum anomaly. The divergence of the axial current picks up an F-F-tilde term, proportional to N-f over sixteen pi squared.
+
+Ginsparg–Wilson fermions reproduce this anomaly exactly, from the Jacobian of the modified chiral transformation. The same modification that gives exact chiral symmetry on the lattice also gives the correct anomalous breaking of its U(1) subgroup. Nothing is lost.
 
 ## Scene 10
-TODO
+
+The order parameter for spontaneous chiral symmetry breaking is the expectation of psi-bar psi. On the lattice with Ginsparg–Wilson fermions, it equals minus the average of the inverse Dirac operator per unit volume — directly physical, no additive renormalization.
+
+With Wilson fermions, you instead have to subtract a power divergence of order one over a cubed before anything physical remains. Ginsparg–Wilson gives you the answer cleanly. Wilson makes you bleed for it.
 
 ## Scene 11
-TODO
+
+In 1980, Banks and Casher derived a striking identity. The condensate equals minus pi times rho at zero — where rho at zero is the density of small Dirac eigenvalues in the infinite-volume, massless limit.
+
+A nonzero condensate demands an accumulation of near-zero eigenvalues of the Dirac operator. Chiral symmetry breaking, viewed microscopically, is eigenvalues piling up at the spectral origin.
 
 ## Scene 12
-TODO
+
+The derivation sketch. The propagator sum over gamma-five-hermitian eigenvalue pairs gives psi-bar psi proportional to a sum of two m over m squared plus lambda-k squared. In the infinite-volume limit, replace the sum by an integral over rho of lambda.
+
+In the chiral limit, the Lorentzian becomes two pi times a delta function. The integral collapses to two pi times rho at zero. The order of limits matters: mass to zero before volume to infinity gives zero. Volume first gives the condensate. Order of limits: where entire physical phenomena hide.
 
 ## Scene 13
-TODO
+
+Adding a mass the naive way — m times psi-bar psi — breaks the modified lattice chiral symmetry badly. The right construction is D plus m times one minus a D over two.
+
+The mass term comes with its own factor of one minus a D over two, so that it breaks chirality in exactly the same controlled way the continuum mass does. In the limit, both converge to the continuum Dirac operator plus mass. Even the mass term has to respect the modified symmetry.
 
 ## Scene 14
-TODO
+
+Heat QCD and the condensate melts. Above a critical temperature around 155 MeV, the expectation of psi-bar psi drops toward zero. The vacuum forgets its chiral bias.
+
+In the spectral picture, the accumulation at zero evaporates — rho at zero goes to zero. For physical quark masses, this is a smooth crossover, not a sharp transition. And it happens near the deconfinement crossover. Both order parameters — chiral condensate and Polyakov loop — shift together.
 
 ## Scene 15
-TODO
+
+With Wilson fermions, the pion is no longer an exact Goldstone at any finite a — chiral symmetry was broken explicitly, so the pion mass does not go cleanly to zero. With staggered fermions, one pion remains exactly massless in the chiral limit, while fifteen taste partners pick up discretization-induced masses.
+
+With Ginsparg–Wilson fermions, the full pattern of exact Goldstone bosons survives on the lattice — at much higher cost.
 
 ## Scene 16
-TODO
+
+Run a simulation with overlap fermions. Count the zero modes of D on each gauge configuration, weight by chirality, and you get an integer for every configuration: the topological charge.
+
+This lattice index theorem is practically useful. It lets you monitor topological charge, check for topological freezing at fine lattice spacing, and probe theta-vacuum physics. An abstract geometric result becomes a diagnostic.
 
 ## Scene 17
-TODO
+
+Ginsparg–Wilson fermions — overlap or domain wall — cost ten to a hundred times Wilson per Dirac inversion. That cost buys you exact chiral symmetry, integer topological charge, direct access to the condensate, and controllable chiral extrapolations.
+
+For most precision physics, this is worth it. For others, improved Wilson or staggered at cheap cost is good enough. Every collaboration picks a spot on the trade-off curve. Chiral symmetry: the fermion feature that costs roughly as much as a new supercomputer.
 
 ## Scene 18
-TODO
+
+Push the lattice into a corner of parameter space where the pion Compton wavelength is larger than the box. Pion mass times L less than one. In this epsilon regime, zero modes of the Dirac operator dominate the path integral, and the theory reduces to a chiral random matrix model.
+
+It sounds exotic, but it is a controlled tool for extracting the chiral condensate and low-energy constants from a regime where the physics is genuinely different.
 
 ## Scene 19
-TODO
+
+A summary. Continuum QCD has SU(N-f) left times SU(N-f) right chiral symmetry, spontaneously broken, producing pions. Nielsen–Ninomiya forbids the naive realization on a lattice.
+
+The Ginsparg–Wilson relation evades it by allowing an exact but modified chiral symmetry, realized by overlap and domain wall fermions. The lattice index theorem ties zero modes to topology. Banks–Casher connects the condensate to spectral density. And chiral symmetry is restored at high temperature.
 
 ## Scene 20
-TODO
+
+Coming up next: we have the action, the fermion formulation, and the chiral structure. What is missing is how to actually sample gauge configurations on a computer.
+
+Next time: Metropolis for pure gauge theory, heat bath and overrelaxation, the fermion determinant as a pseudofermion action, and Hybrid Monte Carlo — the algorithm that made dynamical lattice QCD possible. The lattice is well-defined. Good. Now the hard part: getting a computer to explore it without getting stuck forever.

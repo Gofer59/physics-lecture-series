@@ -1,0 +1,3 @@
+A special and mostly theoretical proposal. Draw from a fixed distribution g, regardless of current state. The acceptance ratio becomes the importance weight ratio. When f is bounded by M times g, the chain is uniformly ergodic with rate one minus one over M.
+
+Lovely theorems, usually poor in practice. Essentially importance sampling in disguise, with all its dimensional failures.

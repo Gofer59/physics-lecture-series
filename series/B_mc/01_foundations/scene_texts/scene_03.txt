@@ -1,0 +1,3 @@
+The same machinery underlies Bayesian posterior inference and the Boltzmann distribution of statistical mechanics. In both, the target density is known only up to a normalising constant, and that constant is itself an intractable integral.
+
+The observable you care about is always an expectation. Monte Carlo lets you compute that expectation without ever touching the normaliser. Two fields, one tool, one escape hatch.

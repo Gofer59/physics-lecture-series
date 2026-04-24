@@ -1,0 +1,5 @@
+The fermion content comes in three identical copies. Up and down, charm and strange, top and bottom for the quarks. Electron, muon, and tau for the charged leptons. Three neutrinos to match.
+
+Left-handed fermions sit in doublets. Right-handed ones sit in singlets. Right-handed neutrinos are absent in the minimal theory.
+
+Their absence is a clue, not a feature.

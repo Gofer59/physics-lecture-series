@@ -1,0 +1,3 @@
+Naive sigma divided by the square root of N underestimates the error for correlated chains. Block the data into bins of size b. Compute block averages. Estimate variance from those.
+
+As b grows past the autocorrelation time, the block averages become approximately independent and the estimated variance plateaus at the correct value. Simple, robust, and the only thing standing between you and a wrong error bar.

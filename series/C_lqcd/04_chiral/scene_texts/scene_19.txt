@@ -1,0 +1,3 @@
+A summary. Continuum QCD has SU(N-f) left times SU(N-f) right chiral symmetry, spontaneously broken, producing pions. Nielsen–Ninomiya forbids the naive realization on a lattice.
+
+The Ginsparg–Wilson relation evades it by allowing an exact but modified chiral symmetry, realized by overlap and domain wall fermions. The lattice index theorem ties zero modes to topology. Banks–Casher connects the condensate to spectral density. And chiral symmetry is restored at high temperature.

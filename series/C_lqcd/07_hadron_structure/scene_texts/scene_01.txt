@@ -1,0 +1,7 @@
+Two-point functions give hadron masses. For precision flavor physics — CKM elements, B-meson mixing, meson decays — we need matrix elements of operators between hadron states. That requires three-point functions.
+
+For internal structure — how a proton's momentum and spin are shared between quarks and gluons — we need parton distributions.
+
+Lattice QCD goes beyond the spectrum when it starts answering the real question: what is a proton made of?
+
+Masses were the easy part. Now we ask the proton to open up and talk about its feelings.

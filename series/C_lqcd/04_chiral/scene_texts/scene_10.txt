@@ -1,0 +1,3 @@
+The order parameter for spontaneous chiral symmetry breaking is the expectation of psi-bar psi. On the lattice with Ginsparg–Wilson fermions, it equals minus the average of the inverse Dirac operator per unit volume — directly physical, no additive renormalization.
+
+With Wilson fermions, you instead have to subtract a power divergence of order one over a cubed before anything physical remains. Ginsparg–Wilson gives you the answer cleanly. Wilson makes you bleed for it.

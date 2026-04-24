@@ -1,0 +1,5 @@
+You cannot invert the Boltzmann CDF. You cannot bound it for rejection. You cannot even evaluate it pointwise in normalised form, because the partition function is exactly the integral you gave up on.
+
+And yet you need expectations under it. There is one escape. Build a Markov chain whose long-run distribution is your target, then average along its trajectory.
+
+The partition function is like rent in Paris. You know it exists. You will never compute it. But somehow life goes on.

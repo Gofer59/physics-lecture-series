@@ -1,0 +1,5 @@
+The path integral reformulates quantum field theory as a functional integral over field configurations, weighted by the exponential of i times the action.
+
+Correlators come from functional derivatives of Z of J. Connected correlators come from W of J. Irreducible ones come from the effective action. Grassmann variables handle fermions, with a determinant where bosons get its inverse. Gauge fields need Faddeev-Popov ghosts. Wick rotation links the theory to statistical mechanics and the lattice.
+
+Symmetries give Ward identities, and occasionally, anomalies.

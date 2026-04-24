@@ -1,0 +1,3 @@
+Charm and bottom quarks have masses comparable to one over a on typical lattices. A small-ma expansion fails. Three strategies. The Fermilab action adds mass-dependent counterterms. Lattice NRQCD uses a non-relativistic expansion. Lattice HQET starts from the static limit and adds one-over-mass corrections.
+
+For very fine lattices, below about 0.05 femtometers, a fully relativistic action works. Which to use depends on the physics goal.

@@ -1,0 +1,5 @@
+Next video. How do we escape the single-spin-flip prison? Gibbs, the slice sampler, gradient-informed MALA and HMC for continuous targets. And the crown jewels. Wolff and Swendsen-Wang cluster algorithms that drive the dynamic exponent down by an order of magnitude near criticality.
+
+Each method is a direct response to a specific failure of random-walk Metropolis.
+
+Random walks are what you do when you have no information. Everything else is what you do when you have a little.

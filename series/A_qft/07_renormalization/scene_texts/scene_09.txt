@@ -1,0 +1,5 @@
+Renormalization requires conditions — a choice of what "physical" means.
+
+Two common choices. On-shell scheme, where m is the pole mass and e is the Thomson-limit charge. And MS-bar, where you simply subtract the one-over-epsilon poles plus a universal constant.
+
+On-shell parameters are physically meaningful. MS-bar parameters are easier to compute with, but depend on an arbitrary scale mu. Observables have to be independent of the scheme. Choosing one is bookkeeping, not physics.

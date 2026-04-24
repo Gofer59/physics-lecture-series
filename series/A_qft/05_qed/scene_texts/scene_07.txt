@@ -1,0 +1,3 @@
+At the QED vertex, psi-bar gamma-mu psi conserves chirality. A left-handed electron couples to a left-handed current piece. Right to right.
+
+In the high-energy limit, where masses are negligible, only four of the sixteen possible spin configurations contribute to e-plus-e-minus to mu-plus-mu-minus. The other twelve vanish identically. This is what generates the one-plus-cosine-squared angular dependence. It is not numerical — it is a symmetry statement.

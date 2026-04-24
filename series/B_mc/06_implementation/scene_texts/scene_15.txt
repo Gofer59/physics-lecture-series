@@ -1,0 +1,3 @@
+When neither transformation nor Box-Muller applies, rejection returns. Draw x uniformly on the bounded domain. Draw u uniformly on the interval zero to M. Accept if u is below f of x. Acceptance rate equals the integral of f, over M times the domain length.
+
+Hybrid schemes decompose f into an easy piece, transform, plus a hard residual, reject. Essential for gamma, beta, and nonstandard custom densities.

@@ -1,0 +1,3 @@
+Partition your chain into non-overlapping blocks of size b. Compute the average within each block. Then take the variance of the block averages.
+
+When b exceeds the autocorrelation time, those block averages behave like independent samples, and the variance estimator is honest. Plot estimated sigma-b versus b. The plateau tells you the right error bar.

@@ -1,0 +1,3 @@
+The Ward identity has profound consequences. First, the photon is exactly massless to all orders in perturbation theory. No radiative correction can give it a mass without violating gauge invariance.
+
+Second, charge renormalization is universal. The renormalized electric charge of every charged particle shifts by the same factor. Third, the identity Z-one equals Z-two drastically reduces the number of independent renormalization constants in QED. These facts will make renormalization possible in Lecture Seven.

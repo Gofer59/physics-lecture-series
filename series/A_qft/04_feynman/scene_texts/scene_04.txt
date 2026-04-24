@@ -1,0 +1,3 @@
+The amplitude for a state at time t, given a state at time t-zero, is the time-ordered exponential of minus i, times the integral of H-int. Expand the exponential, and you get an infinite series.
+
+One term with zero insertions. One with a single insertion. One with two. And so on. Each term is a time-ordered product of fields. This is Dyson's series, and every Feynman diagram you will ever draw is a piece of it.

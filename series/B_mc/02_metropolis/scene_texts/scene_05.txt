@@ -1,0 +1,3 @@
+Here is the algorithm that made the last seventy years of computational physics possible. Propose a move from a proposal kernel q. Compute the ratio of targets times the ratio of proposals. Accept with probability equal to this ratio, capped at one.
+
+The normalising constant of the target cancels out of the ratio. You never needed it.

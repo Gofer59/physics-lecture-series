@@ -1,0 +1,5 @@
+The pion decay constant f-pi is defined by the matrix element of the axial current between the pion and the vacuum. The vacuum-to-pion amplitude is i f-pi times the pion momentum.
+
+On the lattice, extract f-pi from a two-point function of axial currents.
+
+Similarly, f-K fixes the ratio V-us over V-ud. The B-meson decay constants, f sub B and f sub B s, control B-meson mixing and the extraction of V-ub and V-td. Modern lattice calculations quote these at sub-percent precision.

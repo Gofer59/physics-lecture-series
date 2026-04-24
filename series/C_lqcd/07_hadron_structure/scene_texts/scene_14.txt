@@ -1,0 +1,7 @@
+Two interacting particles in a finite box do not have free momenta. Their interaction modifies the allowed energy levels.
+
+Luscher, in 1986, showed exactly how. The finite-volume spectrum determines the infinite-volume scattering phase shift through a condition: delta-zero of k plus phi of q equals n times pi. The variable q is k L over two pi, and phi is a known geometric function.
+
+The box is no longer a contaminant. It is an interferometer. Extracting scattering phase shifts becomes a lattice calculation.
+
+Finite volume: the bug that became the feature.

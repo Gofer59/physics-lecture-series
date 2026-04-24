@@ -1,0 +1,5 @@
+Not everything is solved. Isospin-breaking effects and electromagnetic corrections require dynamical QED — now being simulated but expensive.
+
+Long-distance contributions to K to pi pi require handling multi-hadron final states through Luscher methods. Gluon PDFs are notoriously hard because of operator mixing.
+
+The strong CP problem and theta-vacuum physics need better control of topological sampling. Transverse-momentum-dependent PDFs are a frontier. The Electron-Ion Collider era will demand more.

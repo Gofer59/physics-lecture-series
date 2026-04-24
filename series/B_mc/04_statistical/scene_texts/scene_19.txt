@@ -1,0 +1,3 @@
+Raw MCMC output becomes physics through a disciplined pipeline. Binning or Gamma-method for honest error bars. Jackknife or bootstrap for nonlinear functionals. pyerrors for book-keeping at scale. Correlated chi-squared for fits. Histogram reweighting for interpolation. Finite-size scaling for critical points and exponents.
+
+Skip any step, and your paper has a footnote it doesn't know about.

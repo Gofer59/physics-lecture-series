@@ -1,65 +1,131 @@
-# MC-V02 Narration — MCMC and the Metropolis-Hastings Algorithm
-
-<!-- Plain prose only. No SSML, no markdown, no stage directions.
-     Section headers MUST be exactly:  ## Scene NN
-     Source material: series_B_mc/mc_v02_slides.md -->
+# MC-V02 — MCMC and the Metropolis-Hastings Algorithm | Narration Transcript
 
 ## Scene 01
-TODO
+
+You cannot invert the Boltzmann CDF. You cannot bound it for rejection. You cannot even evaluate it pointwise in normalised form, because the partition function is exactly the integral you gave up on.
+
+And yet you need expectations under it. There is one escape. Build a Markov chain whose long-run distribution is your target, then average along its trajectory.
+
+The partition function is like rent in Paris. You know it exists. You will never compute it. But somehow life goes on.
 
 ## Scene 02
-TODO
+
+A Markov chain is a random walk where the future depends only on the present, not on the past. It is specified by a transition kernel. A rule that takes the current state and hands you a distribution for the next.
+
+Iterate the kernel, and the distribution of your position evolves in time. The question is where it goes.
 
 ## Scene 03
-TODO
+
+An invariant distribution is a fixed point of the Markov kernel. Start there, stay there. The easiest way to engineer invariance is to enforce detailed balance. Probability flowing from x to z exactly balances the flow back.
+
+This is strictly stronger than invariance. It is equivalent to time-reversibility. And it is the loophole that Metropolis-Hastings exploits.
 
 ## Scene 04
-TODO
+
+Invariance alone is not enough. You also need the chain to forget where it started and reach every region. Two conditions suffice. Irreducibility, meaning every state talks to every other, eventually. And aperiodicity, meaning no deterministic cycle.
+
+Together they give ergodicity. No matter your initial distribution, you converge to the invariant one. And geometric ergodicity gives it at an exponential rate.
 
 ## Scene 05
-TODO
+
+Here is the algorithm that made the last seventy years of computational physics possible. Propose a move from a proposal kernel q. Compute the ratio of targets times the ratio of proposals. Accept with probability equal to this ratio, capped at one.
+
+The normalising constant of the target cancels out of the ratio. You never needed it.
 
 ## Scene 06
-TODO
+
+Check detailed balance directly. The product of f at x and the Metropolis-Hastings kernel equals a symmetric minimum. Symmetric in x and z by construction. So f is invariant.
+
+Add ergodicity, and you converge to f. The proof is three lines. The consequence is that a ratio of unnormalised densities is all you ever need to sample from a target.
 
 ## Scene 07
-TODO
+
+The simplest practical choice. Propose the current state plus a Gaussian bump of width sigma. Symmetric proposal, so the acceptance collapses to the minimum of one and the density ratio. Always accept downhill in energy.
+
+Tuning sigma is everything. Too small and the chain crawls. Too large and every proposal is rejected.
+
+The optimal acceptance rate for high-dimensional random walk Metropolis is twenty-three point four percent. Not twenty, not twenty-five. Derived from a Langevin limit. Someone's PhD.
 
 ## Scene 08
-TODO
+
+A two-dimensional grid of spins, each plus or minus one. Energy equals negative coupling times the sum over nearest-neighbour products, minus field times total magnetisation. The Boltzmann distribution over spin configurations is the canonical MCMC playground.
+
+Single-spin-flip Metropolis is the starter algorithm. Flip one spin. Compute the local energy change. Accept with the exponential of minus beta times delta-E.
 
 ## Scene 09
-TODO
+
+Instead of proposing a flip and accepting, compute the exact conditional probability that the spin is up given all its neighbours. Sample it directly. Acceptance is always one. No wasted proposals.
+
+It is the same as Gibbs sampling for a single coordinate. For the Ising model with only two states it is nearly identical to Metropolis. But for Potts models with many states, it dominates.
 
 ## Scene 10
-TODO
+
+Start the chain in a bad place, and the first thousand samples are biased. Throw them out. That is burn-in.
+
+Now comes the harder problem. The remaining samples are positively correlated. Two neighbouring samples in a Markov chain are not two independent draws. The autocorrelation function decays exponentially, and the effective number of independent samples is N divided by roughly two times the integrated autocorrelation time.
+
+One thousand MCMC samples might be worth ten independent ones. You decide which number to brag about in the paper.
 
 ## Scene 11
-TODO
+
+Near a phase transition, correlated domains span the whole lattice. Single-spin flips can only change the domain boundary one step at a time. The autocorrelation time blows up as lattice size to a power. The dynamic critical exponent z, which for two-dimensional Ising with Metropolis is about two point one seven.
+
+Cost per independent sample scales as L to the d plus z. The algorithm is fighting the physics.
 
 ## Scene 12
-TODO
+
+You cannot prove a chain has converged. You can only detect when it hasn't. Geweke compares the mean from an early window with a late window, expecting a standard normal statistic. Gelman-Rubin runs several chains from dispersed starting points and looks at between-chain versus within-chain variance, expecting R-hat to approach one.
+
+Both flag problems. Neither certifies success.
+
+Convergence diagnostics can prove your chain has not converged. Proving the opposite requires religion.
 
 ## Scene 13
-TODO
+
+Variance of the sample mean is not sigma squared over N. It is sigma squared times one plus twice the sum of autocorrelations, all over N. Define tau-int as one-half plus that sum.
+
+Your effective sample size is N over two tau-int. Every MCMC paper should report it. Most don't. And the observable matters. Different observables have different tau-int on the same chain.
 
 ## Scene 14
-TODO
+
+For the two-dimensional Ising model on the square lattice, the exact critical temperature is two J divided by k-B times the logarithm of one plus the square root of two. Roughly two point two six nine in coupling units.
+
+Measure energy per spin, magnetisation, specific heat from the variance of energy, and susceptibility from the variance of magnetisation. Let them tell you where the phase transition lives. Onsager, nineteen forty-four.
 
 ## Scene 15
-TODO
+
+The law of large numbers survives correlation. The time average of an observable along an ergodic Markov chain converges to the expectation under f. The central limit theorem also survives, but the asymptotic variance is tau squared. Sigma squared inflated by the autocorrelation sum.
+
+Unlike importance sampling, every sample carries equal weight. And there is no weight degeneracy.
 
 ## Scene 16
-TODO
+
+Naive sigma divided by the square root of N underestimates the error for correlated chains. Block the data into bins of size b. Compute block averages. Estimate variance from those.
+
+As b grows past the autocorrelation time, the block averages become approximately independent and the estimated variance plateaus at the correct value. Simple, robust, and the only thing standing between you and a wrong error bar.
 
 ## Scene 17
-TODO
+
+A special and mostly theoretical proposal. Draw from a fixed distribution g, regardless of current state. The acceptance ratio becomes the importance weight ratio. When f is bounded by M times g, the chain is uniformly ergodic with rate one minus one over M.
+
+Lovely theorems, usually poor in practice. Essentially importance sampling in disguise, with all its dimensional failures.
 
 ## Scene 18
-TODO
+
+Real MCMC lives on a pile of small tricks. Tune the proposal width to target roughly fifty percent acceptance in low dimension, twenty-three percent in high dimension. Measure observables every couple of autocorrelation times to avoid redundancy.
+
+Pre-compute exponential Boltzmann factors into a lookup table so you never call an exponential inside the hot loop. Run blocking to get honest error bars. Craft, not just math.
 
 ## Scene 19
-TODO
+
+Metropolis-Hastings samples any target known up to a constant by running a reversible Markov chain. Detailed balance ensures correctness. Ergodicity ensures convergence.
+
+The price is correlated samples, problem-dependent tuning, and dynamic critical slowing that swallows local algorithms near phase transitions. Gibbs and heat bath handle conjugate and discrete cases cleanly. Diagnostics and blocking are non-negotiable.
 
 ## Scene 20
-TODO
+
+Next video. How do we escape the single-spin-flip prison? Gibbs, the slice sampler, gradient-informed MALA and HMC for continuous targets. And the crown jewels. Wolff and Swendsen-Wang cluster algorithms that drive the dynamic exponent down by an order of magnitude near criticality.
+
+Each method is a direct response to a specific failure of random-walk Metropolis.
+
+Random walks are what you do when you have no information. Everything else is what you do when you have a little.

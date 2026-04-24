@@ -1,0 +1,3 @@
+Single-histogram fails when you need to span a wide temperature range. Multiple-histogram reweighting combines several simulations, each at its own temperature, into one self-consistent estimate of the density of states.
+
+The free energies at each temperature are solved iteratively, so the overlapping histograms agree. Result. One smooth estimate of any observable across the whole temperature range.

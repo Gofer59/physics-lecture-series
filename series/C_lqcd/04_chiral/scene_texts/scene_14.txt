@@ -1,0 +1,3 @@
+Heat QCD and the condensate melts. Above a critical temperature around 155 MeV, the expectation of psi-bar psi drops toward zero. The vacuum forgets its chiral bias.
+
+In the spectral picture, the accumulation at zero evaporates — rho at zero goes to zero. For physical quark masses, this is a smooth crossover, not a sharp transition. And it happens near the deconfinement crossover. Both order parameters — chiral condensate and Polyakov loop — shift together.

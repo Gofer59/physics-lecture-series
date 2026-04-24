@@ -1,0 +1,3 @@
+The amplitudes for e-plus-e-minus to mu-plus-mu-minus, for electron-muon scattering, and for electron anti-muon scattering, are not three separate calculations. They are related by crossing symmetry.
+
+Flip the sign of an external momentum, and replace particle with antiparticle. An s-channel process turns into a t-channel or u-channel process. At the level of amplitudes, it is exact. One calculation buys you a family of processes.

@@ -1,0 +1,3 @@
+As we increase beta — decreasing the bare coupling — the lattice spacing must shrink according to a two-loop renormalization-group formula. This is asymptotic scaling. It is a prediction, not a convention.
+
+Compare r-naught over a measured at different beta to the predicted curve. If they fall on it, the continuum limit is being approached correctly. The lattice has a built-in consistency check.

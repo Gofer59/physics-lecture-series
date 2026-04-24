@@ -1,0 +1,5 @@
+Try to integrate naively over the photon field A-mu and you get infinity. The reason is gauge redundancy. Infinitely many A-mu configurations are physically equivalent, differing only by a gauge transformation.
+
+The path integral double-counts an entire gauge orbit. Each orbit has infinite volume. Every physical point is counted infinitely often, and the result is meaningless.
+
+Something must be done before the theory makes any sense at all.

@@ -1,0 +1,3 @@
+The QED Lagrangian is invariant under a local phase rotation of the electron field, combined with a shift of the vector potential. This is the statement of a local U(1) gauge symmetry.
+
+It is not a curiosity. Demanding gauge invariance uniquely dictates the form of the coupling, forbids a photon mass term, and will later generalize to Yang-Mills and the whole Standard Model. Electromagnetism is the simplest example of a profound principle.

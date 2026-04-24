@@ -1,0 +1,3 @@
+A gauge transformation is now a site-local rotation in SU(3). Each link transforms by a rotation at its start, multiplied on the left, and by the inverse rotation at its end, multiplied on the right.
+
+The product of links along a path picks up only the endpoint rotations. The product around any closed loop transforms by conjugation, so its trace is invariant. This is exact, not approximate — a property of the discretization itself.

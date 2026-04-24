@@ -1,0 +1,5 @@
+The lattice only gives you dimensionless ratios. To quote a mass in MeV you have to fix the lattice spacing.
+
+Compute a dimensional quantity on the lattice — the Omega baryon mass, the pion decay constant, the Sommer parameter r-zero, the Wilson flow scales t-zero or w-zero — and divide the measured lattice value by the known physical value.
+
+That gives you a in femtometers. Different choices give slightly different numbers. Tracking the difference is part of the error budget.

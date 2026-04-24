@@ -1,0 +1,3 @@
+Beyond parity, there are two other discrete symmetries. Charge conjugation, C, which swaps particles and antiparticles. And time reversal, T, which runs the movie backwards.
+
+The weak interaction also violates C and CP individually. But every local, Lorentz-invariant quantum field theory must respect the combined operation CPT exactly. CPT is a theorem, not a postulate. Any violation would overturn the entire framework.
